@@ -1668,7 +1668,6 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">Cantonal Engagement in the Prevention and
 Control of Vector-Borne Diseases in Switzerland and Liechtenstein</h1>
-<h3 class="subtitle">Supplement</h3>
 <h4 class="author">Julien Riou, Lilian Goepp, … (TO ADD)</h4>
 <h4 class="date">2025-06-26</h4>
 
@@ -1679,41 +1678,92 @@ Control of Vector-Borne Diseases in Switzerland and Liechtenstein</h1>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">load</span>(<span class="fu">paste0</span>(<span class="st">&quot;savepoints/savepoint_&quot;</span>,analysis_date,<span class="st">&quot;/shs_3.Rdata&quot;</span>))</span>
 <span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;R/setup.R&quot;</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<div id="open-text-answers" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Open text answers</h1>
-<p>The following tables show all open-text answers collected in the
-survey. Below each table is shown the result from a call to GPT-4 Turbo
-(june 2025) used to summarise all open-text answers, based on the
-following prompt:</p>
-<p><em>“I will provide you with a table of descriptive survey results
-from a 2025 national survey of cantonal authorities in Switzerland and
-Liechtenstein. The survey assessed awareness, measures, and needs
-related to tick- and mosquito-borne diseases. It was conducted via
-REDCap between April and June 2025 and included structured and open-text
-questions. The table includes open-text answers to the specified
-question in French or German. write a concise and consistent paragraph
-in English summarizing these open-text answers, in clear and neutral
-language suitable for a scientific report.”</em></p>
-<p>These summaries were used in the main text to complement the results.
-No other information was given to GPT-4 Turbo.</p>
-<div id="what-other-activities-is-your-authority-currently-20242025-implementing-in-the-field-of-tick-borne-diseases" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> What other activities
-is your authority currently (2024/2025) implementing in the field of
-tick-borne diseases?</h2>
-<div id="ieewhsmrsi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ieewhsmrsi table {
+<div id="introduction" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>This survey is part of the health project within the research program
+“Decision Support for Dealing with Climate Change in Switzerland: a
+cross-sectoral approach” (NCCS-Impacts). The goal of NCCS-Impacts is to
+develop practical climate-related services for the environment, the
+economy, and society. The associated health project, jointly led by the
+Federal Office of Public Health (FOPH) and the Federal Food Safety and
+Veterinary Office (FSVO), focuses on the themes of heat, mycotoxins, and
+vector-borne diseases.</p>
+<p>Regarding vector-borne diseases, a comprehensive risk assessment of
+current and future threats to humans and animals in Switzerland is being
+carried out. As part of this risk assessment, the project documents (1)
+the state of knowledge about vector-borne diseases among the Bernese
+population and (2) the implementation of measures by cantonal
+authorities. The national survey of cantonal departments of health,
+veterinary services, and the environment aims to gather information on
+cantonal engagement, specific measures, and collaboration with other
+stakeholders.</p>
+</div>
+<div id="methods" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Methods</h1>
+<p>To assess the engagement of cantonal authorities with regard to
+vector-borne diseases, a cross-sectional survey was conducted among
+selected stakeholders in cantonal departments responsible for health,
+veterinary services, and environmental protection.</p>
+<p>The survey was implemented using the REDCap electronic data capture
+platform (Research Electronic Data Capture, hosted by Unisanté) and
+administered via an online questionnaire. The questionnaire was
+distributed by email to targeted respondents within relevant cantonal
+services, based on their role and responsibilities in managing public
+health or environmental risks. Participation was voluntary. Participants
+were able to save their answers and come back to it later.</p>
+<p>The online survey was open from April 25 to June 6, 2025. A reminder
+was sent on May 16. The questionnaire included structured
+multiple-choice and checkbox items, as well as a small number of
+open-ended questions, covering topics such as awareness of vector-borne
+diseases, existing preventive measures, interdepartmental collaboration,
+and perceived needs or challenges.</p>
+<p>The full questionnaire is available online: <a href="https://redcap.unisante.ch/surveys/?s=YKERXDNR4KAMWYP9" class="uri">https://redcap.unisante.ch/surveys/?s=YKERXDNR4KAMWYP9</a>.
+Data were anonymised, exported securely from REDCap and described using
+R (version 4.4.2). Open-text answers in multiple languages were
+summarized using GPT-4-turbo (June 2025 version). More details are
+available in the supplementary file.</p>
+</div>
+<div id="results" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Results</h1>
+<div id="participants" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Participants</h2>
+<p>Requests for participation were sent to X persons. A total of 55
+complete responses were collected during the study period, covering all
+26 Swiss cantons and Liechtenstein. The number of answers per canton
+varied between 1 and 3. Participants primarily belonged to human health
+cantonal departments (n= 22), followed by the animal health
+departments(n= 17) and the environment departments (n= 16).</p>
+</div>
+<div id="involvement-and-resources" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Involvement and
+resources</h2>
+<p>Most participants (77%) reported that their authority is currently
+involved in the implementation of measures or activities related to
+diseases transmitted by ticks and mosquitoes, such as public relations,
+monitoring, or control (Table 1). Among the 12 respondents who indicated
+no current involvement, the most frequently cited reasons included a
+lack of financial or human resources (50%) and a perception that such
+diseases are outside the authority’s responsibilities (42%). Regarding
+the existence of cantonal strategies or action plans, 49% of respondents
+were aware of a plan for mosquito-borne diseases and 11% for tick-borne
+diseases, while 33% reported that no strategy exists in their canton.
+Half of the respondents (49%) indicated that their authority lacks human
+resources to develop or implement relevant activities, and 55% stated
+they have no dedicated budget.</p>
+<div id="lmovynazoy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lmovynazoy table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#ieewhsmrsi thead, #ieewhsmrsi tbody, #ieewhsmrsi tfoot, #ieewhsmrsi tr, #ieewhsmrsi td, #ieewhsmrsi th {
+#lmovynazoy thead, #lmovynazoy tbody, #lmovynazoy tfoot, #lmovynazoy tr, #lmovynazoy td, #lmovynazoy th {
 border-style: none;
 }
-#ieewhsmrsi p {
+#lmovynazoy p {
 margin: 0;
 padding: 0;
 }
-#ieewhsmrsi .gt_table {
+#lmovynazoy .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -1738,11 +1788,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_caption {
+#lmovynazoy .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#ieewhsmrsi .gt_title {
+#lmovynazoy .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -1753,7 +1803,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#ieewhsmrsi .gt_subtitle {
+#lmovynazoy .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -1764,7 +1814,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#ieewhsmrsi .gt_heading {
+#lmovynazoy .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -1775,12 +1825,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_bottom_border {
+#lmovynazoy .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_col_headings {
+#lmovynazoy .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -1794,7 +1844,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_col_heading {
+#lmovynazoy .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -1813,7 +1863,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#ieewhsmrsi .gt_column_spanner_outer {
+#lmovynazoy .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -1824,13 +1874,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#ieewhsmrsi .gt_column_spanner_outer:first-child {
+#lmovynazoy .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#ieewhsmrsi .gt_column_spanner_outer:last-child {
+#lmovynazoy .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#ieewhsmrsi .gt_column_spanner {
+#lmovynazoy .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -1841,10 +1891,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#ieewhsmrsi .gt_spanner_row {
+#lmovynazoy .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#ieewhsmrsi .gt_group_heading {
+#lmovynazoy .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1869,7 +1919,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#ieewhsmrsi .gt_empty_group_heading {
+#lmovynazoy .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -1883,13 +1933,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#ieewhsmrsi .gt_from_md > :first-child {
+#lmovynazoy .gt_from_md > :first-child {
 margin-top: 0;
 }
-#ieewhsmrsi .gt_from_md > :last-child {
+#lmovynazoy .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#ieewhsmrsi .gt_row {
+#lmovynazoy .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1907,7 +1957,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#ieewhsmrsi .gt_stub {
+#lmovynazoy .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -1919,7 +1969,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#ieewhsmrsi .gt_stub_row_group {
+#lmovynazoy .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -1932,13 +1982,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#ieewhsmrsi .gt_row_group_first td {
+#lmovynazoy .gt_row_group_first td {
 border-top-width: 2px;
 }
-#ieewhsmrsi .gt_row_group_first th {
+#lmovynazoy .gt_row_group_first th {
 border-top-width: 2px;
 }
-#ieewhsmrsi .gt_summary_row {
+#lmovynazoy .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -1947,14 +1997,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#ieewhsmrsi .gt_first_summary_row {
+#lmovynazoy .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_first_summary_row.thick {
+#lmovynazoy .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#ieewhsmrsi .gt_last_summary_row {
+#lmovynazoy .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1963,7 +2013,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_grand_summary_row {
+#lmovynazoy .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -1972,7 +2022,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#ieewhsmrsi .gt_first_grand_summary_row {
+#lmovynazoy .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1981,7 +2031,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_last_grand_summary_row_top {
+#lmovynazoy .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1990,10 +2040,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_striped {
+#lmovynazoy .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#ieewhsmrsi .gt_table_body {
+#lmovynazoy .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -2001,7 +2051,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_footnotes {
+#lmovynazoy .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -2014,7 +2064,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_footnote {
+#lmovynazoy .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -2022,7 +2072,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#ieewhsmrsi .gt_sourcenotes {
+#lmovynazoy .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -2035,68 +2085,73 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#ieewhsmrsi .gt_sourcenote {
+#lmovynazoy .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#ieewhsmrsi .gt_left {
+#lmovynazoy .gt_left {
 text-align: left;
 }
-#ieewhsmrsi .gt_center {
+#lmovynazoy .gt_center {
 text-align: center;
 }
-#ieewhsmrsi .gt_right {
+#lmovynazoy .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#ieewhsmrsi .gt_font_normal {
+#lmovynazoy .gt_font_normal {
 font-weight: normal;
 }
-#ieewhsmrsi .gt_font_bold {
+#lmovynazoy .gt_font_bold {
 font-weight: bold;
 }
-#ieewhsmrsi .gt_font_italic {
+#lmovynazoy .gt_font_italic {
 font-style: italic;
 }
-#ieewhsmrsi .gt_super {
+#lmovynazoy .gt_super {
 font-size: 65%;
 }
-#ieewhsmrsi .gt_footnote_marks {
+#lmovynazoy .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#ieewhsmrsi .gt_asterisk {
+#lmovynazoy .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#ieewhsmrsi .gt_indent_1 {
+#lmovynazoy .gt_indent_1 {
 text-indent: 5px;
 }
-#ieewhsmrsi .gt_indent_2 {
+#lmovynazoy .gt_indent_2 {
 text-indent: 10px;
 }
-#ieewhsmrsi .gt_indent_3 {
+#lmovynazoy .gt_indent_3 {
 text-indent: 15px;
 }
-#ieewhsmrsi .gt_indent_4 {
+#lmovynazoy .gt_indent_4 {
 text-indent: 20px;
 }
-#ieewhsmrsi .gt_indent_5 {
+#lmovynazoy .gt_indent_5 {
 text-indent: 25px;
 }
-#ieewhsmrsi .katex-display {
+#lmovynazoy .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#ieewhsmrsi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#lmovynazoy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table" style="table-layout:fixed;width:0px;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption>Table 1. Involvement and resources in the field of mosquito- and tick-borne diseases.</caption>
+  <colgroup>
+    <col style="width:600px;" />
+    <col style="width:100px;" />
+  </colgroup>
   <thead>
     <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
@@ -2104,30 +2159,71 @@ height: 0px !important;
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">What other activities is your authority currently (2024/2025) implementing in the field of tick-borne diseases?</td>
+    <tr><td headers="label" class="gt_row gt_left">&gt; Is your authority currently involved in the implementation of measures or activities (e.g., public relations, monitoring, or control) in the area of diseases transmitted by ticks and mosquitoes?</td>
 <td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Aufklärungs- und Informationskampagne ASP via Artikel in Bauernzeitung und für Tierärzte und Tierhalter</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Bei durch Zecken übertragene Tierseuchen (Coxiellose, Tularämie, etc.) gemäss Tierseuchenverordnung: Seuchenmeldung und Anordnung von Massnahmen gemäss Tierseuchenverordnung.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Im Rahmen der üblichen Informationen an Tierärztinnen und Tierärzte (Homepage, Tierärztekonferenz, Rundschreiben), sofern etwas Neues/Relevantes zu berichten ist</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Medienanfragen beantworten</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Mesures prévues par l&#39;OFE</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    MIse à jour du site et du flyer    https://www.vd.ch/actualites/actualite/news/i-nouvelle-brochure-de-prevention-contre-les-tiques</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Proposition d&#39;une vaccination gratuite contre l&#39;encéphalite à tique à l&#39;embauche des travailleurs de l&#39;Etat exposés professionnellement.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Überwachung der durch Zecken übertragenen Krankheiten im Rahmen des obligatorischen Meldewesens. In diesem Zusammenhang teilweise Informationsaustausch mit dem Veterinäramt (Tularämie). Und wir haben Informationen zu Zeckenübertragenen Krankheiten auf der Homepage. https://www.zh.ch/de/gesundheit/praevention-und-gesundheitsfoerderung/uebertragbare-krankheiten-impfungen.html#396311779</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Überwachung übertragbare Krankheiten, Antwort Medienanfragen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Vaccination des travailleurs à risque</td>
-<td headers="stat_0" class="gt_row gt_center">1 (10%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unknown</td>
-<td headers="stat_0" class="gt_row gt_center">45</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    Yes</td>
+<td headers="stat_0" class="gt_row gt_center">41 (77%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    No</td>
+<td headers="stat_0" class="gt_row gt_center">12 (23%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; If you answered no, what are the reasons?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">The introduction of measures/activities in the area of diseases transmitted by ticks and mosquitoes is currently being reviewed/planned.</td>
+<td headers="stat_0" class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Diseases transmitted by ticks and mosquitoes are not considered part of the responsibilities of your authority.</td>
+<td headers="stat_0" class="gt_row gt_center">5 (42%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Diseases transmitted by ticks and mosquitoes are not a high priority for your authority.</td>
+<td headers="stat_0" class="gt_row gt_center">1 (8.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">The number of cases of diseases transmitted by ticks and mosquitoes is not yet a significant concern to trigger measures in my area.</td>
+<td headers="stat_0" class="gt_row gt_center">2 (17%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Lack of financial and/or human resources.</td>
+<td headers="stat_0" class="gt_row gt_center">6 (50%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Lack of professionally trained personnel.</td>
+<td headers="stat_0" class="gt_row gt_center">1 (8.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Lack of public interest.</td>
+<td headers="stat_0" class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Lack of political decision/mandate.</td>
+<td headers="stat_0" class="gt_row gt_center">1 (8.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Lack of national guidelines/basics/recommendations to follow.</td>
+<td headers="stat_0" class="gt_row gt_center">1 (8.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">2 (17%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Other reasons</td>
+<td headers="stat_0" class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; Do you know of any strategy or action plan in your canton regarding 
+                    diseases transmitted by ticks and mosquitoes?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, for mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">27 (49%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No, neither for tick-borne nor mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">18 (33%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">11 (20%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; Does your authority have human resources to develop and implement 
+                    activities related to diseases transmitted by ticks and mosquitoes?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, for mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">22 (40%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No, neither for tick-borne nor mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">27 (49%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; Does your authority have a budget for the development and implementation 
+                    of activities in the field of diseases transmitted by ticks and mosquitoes?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">4 (7.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, for mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">18 (33%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No, neither for tick-borne nor mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">30 (55%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
   </tbody>
   
   <tfoot class="gt_footnotes">
@@ -2137,41 +2233,50 @@ height: 0px !important;
   </tfoot>
 </table>
 </div>
-<p><strong>GPT-4 Turbo output: </strong> <em>In response to the question
-on additional activities currently implemented in the field of
-tick-borne diseases, a small number of respondents (n = 9) provided
-open-text answers indicating targeted and context-specific measures.
-These included public awareness campaigns via professional agricultural
-media, responses to media inquiries, and routine dissemination of
-information to veterinarians through websites, conferences, or
-circulars. Some authorities described activities aligned with the Animal
-Disease Ordinance, such as mandatory reporting and coordination on
-diseases like tularemia and Q fever. Vaccination-related measures were
-also mentioned, including proposals for free vaccination against
-tick-borne encephalitis for at-risk state employees. Other responses
-referenced federal-level initiatives and disease surveillance
-obligations. Overall, the responses reflect limited but diverse
-engagements, with most authorities (n = 45) not reporting any additional
-tick-related activities.</em></p>
 </div>
-<div id="what-other-activities-is-your-authority-currently-20242025-implementing-in-the-field-of-mosquitzo-borne-diseases" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> What other activities
-is your authority currently (2024/2025) implementing in the field of
-mosquitzo-borne diseases?</h2>
-<div id="znqxfjryjs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#znqxfjryjs table {
+<div id="concrete-measures-and-activities" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Concrete measures and
+activities</h2>
+<p>Reported concrete measures and activities in the field of
+vector-borne diseases varied markedly between tick- and mosquito-borne
+diseases (Table 2). The most common actions cited for ticks included
+public information campaigns (22%) and targeted awareness of
+professionals (13%), with rare reports of monitoring (4% passive; 0%
+active) and vaccination advice (6%). In contrast, involvement in
+mosquito-related activities was broader and more diverse: 40% of
+respondents reported engaging in public relations and professional
+awareness efforts, while active and passive mosquito monitoring were
+cited by 36% and 33% of respondents, respectively. Nearly one-third
+(29%) mentioned verifying sightings at new locations, and around 15–18%
+reported involvement in mosquito control on public or private land.
+Information and training activities were mentioned by 20% of
+respondents. Topics covered in awareness materials included vaccination
+(65%), protection against bites (53%), and elimination of breeding sites
+(47%). Open-text responses further highlighted involvement in national
+vaccination campaigns (e.g., against tick-borne encephalitis or
+bluetongue disease), interdepartmental coordination, media engagement,
+and surveillance of animal diseases transmitted by ticks and mosquitoes
+as defined in the Animal Disease Ordinance. Participants reported using
+a wide range of channels to disseminate information, most commonly
+official websites, emails, flyers, and direct communication with
+veterinarians or animal owners. Additional methods included newsletters,
+social media, articles in agricultural media, information sessions, and
+training courses, often in collaboration with municipalities or other
+local actors.</p>
+<div id="cbgwdgpqvx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cbgwdgpqvx table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#znqxfjryjs thead, #znqxfjryjs tbody, #znqxfjryjs tfoot, #znqxfjryjs tr, #znqxfjryjs td, #znqxfjryjs th {
+#cbgwdgpqvx thead, #cbgwdgpqvx tbody, #cbgwdgpqvx tfoot, #cbgwdgpqvx tr, #cbgwdgpqvx td, #cbgwdgpqvx th {
 border-style: none;
 }
-#znqxfjryjs p {
+#cbgwdgpqvx p {
 margin: 0;
 padding: 0;
 }
-#znqxfjryjs .gt_table {
+#cbgwdgpqvx .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -2196,11 +2301,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#znqxfjryjs .gt_caption {
+#cbgwdgpqvx .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#znqxfjryjs .gt_title {
+#cbgwdgpqvx .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -2211,7 +2316,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#znqxfjryjs .gt_subtitle {
+#cbgwdgpqvx .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -2222,7 +2327,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#znqxfjryjs .gt_heading {
+#cbgwdgpqvx .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -2233,12 +2338,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#znqxfjryjs .gt_bottom_border {
+#cbgwdgpqvx .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#znqxfjryjs .gt_col_headings {
+#cbgwdgpqvx .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -2252,7 +2357,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#znqxfjryjs .gt_col_heading {
+#cbgwdgpqvx .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2271,7 +2376,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#znqxfjryjs .gt_column_spanner_outer {
+#cbgwdgpqvx .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2282,13 +2387,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#znqxfjryjs .gt_column_spanner_outer:first-child {
+#cbgwdgpqvx .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#znqxfjryjs .gt_column_spanner_outer:last-child {
+#cbgwdgpqvx .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#znqxfjryjs .gt_column_spanner {
+#cbgwdgpqvx .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -2299,10 +2404,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#znqxfjryjs .gt_spanner_row {
+#cbgwdgpqvx .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#znqxfjryjs .gt_group_heading {
+#cbgwdgpqvx .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2327,7 +2432,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#znqxfjryjs .gt_empty_group_heading {
+#cbgwdgpqvx .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -2341,13 +2446,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#znqxfjryjs .gt_from_md > :first-child {
+#cbgwdgpqvx .gt_from_md > :first-child {
 margin-top: 0;
 }
-#znqxfjryjs .gt_from_md > :last-child {
+#cbgwdgpqvx .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#znqxfjryjs .gt_row {
+#cbgwdgpqvx .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2365,7 +2470,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#znqxfjryjs .gt_stub {
+#cbgwdgpqvx .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2377,481 +2482,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#znqxfjryjs .gt_stub_row_group {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-vertical-align: top;
-}
-#znqxfjryjs .gt_row_group_first td {
-border-top-width: 2px;
-}
-#znqxfjryjs .gt_row_group_first th {
-border-top-width: 2px;
-}
-#znqxfjryjs .gt_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#znqxfjryjs .gt_first_summary_row {
-border-top-style: solid;
-border-top-color: #D3D3D3;
-}
-#znqxfjryjs .gt_first_summary_row.thick {
-border-top-width: 2px;
-}
-#znqxfjryjs .gt_last_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#znqxfjryjs .gt_grand_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#znqxfjryjs .gt_first_grand_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-style: double;
-border-top-width: 6px;
-border-top-color: #D3D3D3;
-}
-#znqxfjryjs .gt_last_grand_summary_row_top {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: double;
-border-bottom-width: 6px;
-border-bottom-color: #D3D3D3;
-}
-#znqxfjryjs .gt_striped {
-background-color: rgba(128, 128, 128, 0.05);
-}
-#znqxfjryjs .gt_table_body {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#znqxfjryjs .gt_footnotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#znqxfjryjs .gt_footnote {
-margin: 0px;
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#znqxfjryjs .gt_sourcenotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#znqxfjryjs .gt_sourcenote {
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#znqxfjryjs .gt_left {
-text-align: left;
-}
-#znqxfjryjs .gt_center {
-text-align: center;
-}
-#znqxfjryjs .gt_right {
-text-align: right;
-font-variant-numeric: tabular-nums;
-}
-#znqxfjryjs .gt_font_normal {
-font-weight: normal;
-}
-#znqxfjryjs .gt_font_bold {
-font-weight: bold;
-}
-#znqxfjryjs .gt_font_italic {
-font-style: italic;
-}
-#znqxfjryjs .gt_super {
-font-size: 65%;
-}
-#znqxfjryjs .gt_footnote_marks {
-font-size: 75%;
-vertical-align: 0.4em;
-position: initial;
-}
-#znqxfjryjs .gt_asterisk {
-font-size: 100%;
-vertical-align: 0;
-}
-#znqxfjryjs .gt_indent_1 {
-text-indent: 5px;
-}
-#znqxfjryjs .gt_indent_2 {
-text-indent: 10px;
-}
-#znqxfjryjs .gt_indent_3 {
-text-indent: 15px;
-}
-#znqxfjryjs .gt_indent_4 {
-text-indent: 20px;
-}
-#znqxfjryjs .gt_indent_5 {
-text-indent: 25px;
-}
-#znqxfjryjs .katex-display {
-display: inline-flex !important;
-margin-bottom: 0.75em !important;
-}
-#znqxfjryjs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-height: 0px !important;
-}
-</style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="stat_0"><span class="gt_from_md"><strong>N = 55</strong></span><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">What other activities is your authority currently (2024/2025) implementing in the field of mosquito-borne diseases?</td>
-<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Aufklärungs- und Informationskampagne BTV, Bekämpfungsmassnahmen BTV</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Bei durch Mücken übertragene Tierseuchen (Blauzungenkrankheit, West-Nile Virus, etc.) gemäss Tierseuchenverordnung: Seuchenmeldung und Anordnung von Massnahmen gemäss Tierseuchenverordnung.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Bitte bei der zuständigen Koordinationsstelle Neobiota nachfragen, welche Aktivitäten getätigt werden</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    BT: Impfempfehlungen, Informationen über Vektorbekämpfung</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Campagne nationale de vaccination langue bleue serotypes 3,4 et 8</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Communiqué de presse en début de saison, mise à disposition d&#39;un flyer, infos sur le site de l&#39;état de vaud</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Die (Tiger-)Mückenüberwachung erfolgt durch die Baudirektion. Wir vom Kantonsärztlichen Dienst sind für die meldepflichtigen Krankheiten zuständig, welche potenziell durch Tigermücken übertragen werden. Es erfolgt eine Abstimmung der Meldungen und der Mückenpopulationen.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Homologation de biocides, coopération avec autorisés de la santé pour prévention épidémies, veille au niveau international sur mesures de lutte, etc</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Medienanfragen beantworten</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Mesures OFE, principalement pour maladie de la langue bleue et EHD</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Mückenbekämpfung und Information bei positiven Befunden</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Organisation d&#39;une séance entre service de santé et service de la faune, à l&#39;attention de toutes les communes du canton sur le moustique tigre.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Passive Mückenüberwachung wurde dieses Jahr eingestellt, da die Tigermücke flächendeckend im Kanton vorkommt.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Tierseuchenbekämpfung Blauzungenkrankheit / EDH</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Überwachung übertragbare Krankheiten</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unterstützung der Gemeinden und Monitoringbei der Bekämpfung der Tigermücken</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Wir kontrollieren den Umgang mit Chemikalien, die für die Bekämpfung benutzt werden.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.9%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unknown</td>
-<td headers="stat_0" class="gt_row gt_center">38</td></tr>
-  </tbody>
-  
-  <tfoot class="gt_footnotes">
-    <tr>
-      <td class="gt_footnote" colspan="2"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> <span class="gt_from_md">n (%)</span></td>
-    </tr>
-  </tfoot>
-</table>
-</div>
-<p><strong>GPT-4 Turbo output: </strong> <em>Open-text responses
-describing additional activities implemented by cantonal authorities in
-the field of mosquito-borne diseases reveal a range of targeted
-measures, though reported by a minority of respondents (n = 16). Several
-authorities referenced activities linked to the control of animal
-diseases such as bluetongue and West Nile virus under the Animal Disease
-Ordinance, including vaccination campaigns and vector control. Others
-noted their role in media communication, chemical use oversight, and
-coordination with other cantonal services or the federal government.
-Examples of local engagement included public meetings on the tiger
-mosquito, support for municipalities in vector control, and surveillance
-of mosquito populations, although one respondent reported the
-discontinuation of passive monitoring due to widespread mosquito
-presence. A few responses indicated that specific responsibilities lay
-with other agencies, such as environmental or coordination offices.
-Overall, these activities illustrate a mix of animal health, public
-communication, and administrative coordination efforts, with most
-authorities (n = 38) not reporting additional mosquito-related
-measures.</em></p>
-</div>
-<div id="if-your-authority-develops-information-what-other-subjects-are-covered" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> If your authority
-develops information, what other subjects are covered?</h2>
-<div id="cbsimvkiea" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#cbsimvkiea table {
-font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-#cbsimvkiea thead, #cbsimvkiea tbody, #cbsimvkiea tfoot, #cbsimvkiea tr, #cbsimvkiea td, #cbsimvkiea th {
-border-style: none;
-}
-#cbsimvkiea p {
-margin: 0;
-padding: 0;
-}
-#cbsimvkiea .gt_table {
-display: table;
-border-collapse: collapse;
-line-height: normal;
-margin-left: auto;
-margin-right: auto;
-color: #333333;
-font-size: 16px;
-font-weight: normal;
-font-style: normal;
-background-color: #FFFFFF;
-width: auto;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #A8A8A8;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #A8A8A8;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-}
-#cbsimvkiea .gt_caption {
-padding-top: 4px;
-padding-bottom: 4px;
-}
-#cbsimvkiea .gt_title {
-color: #333333;
-font-size: 125%;
-font-weight: initial;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-color: #FFFFFF;
-border-bottom-width: 0;
-}
-#cbsimvkiea .gt_subtitle {
-color: #333333;
-font-size: 85%;
-font-weight: initial;
-padding-top: 3px;
-padding-bottom: 5px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-color: #FFFFFF;
-border-top-width: 0;
-}
-#cbsimvkiea .gt_heading {
-background-color: #FFFFFF;
-text-align: center;
-border-bottom-color: #FFFFFF;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#cbsimvkiea .gt_bottom_border {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#cbsimvkiea .gt_col_headings {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#cbsimvkiea .gt_col_heading {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 6px;
-padding-left: 5px;
-padding-right: 5px;
-overflow-x: hidden;
-}
-#cbsimvkiea .gt_column_spanner_outer {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-padding-top: 0;
-padding-bottom: 0;
-padding-left: 4px;
-padding-right: 4px;
-}
-#cbsimvkiea .gt_column_spanner_outer:first-child {
-padding-left: 0;
-}
-#cbsimvkiea .gt_column_spanner_outer:last-child {
-padding-right: 0;
-}
-#cbsimvkiea .gt_column_spanner {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 5px;
-overflow-x: hidden;
-display: inline-block;
-width: 100%;
-}
-#cbsimvkiea .gt_spanner_row {
-border-bottom-style: hidden;
-}
-#cbsimvkiea .gt_group_heading {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-text-align: left;
-}
-#cbsimvkiea .gt_empty_group_heading {
-padding: 0.5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: middle;
-}
-#cbsimvkiea .gt_from_md > :first-child {
-margin-top: 0;
-}
-#cbsimvkiea .gt_from_md > :last-child {
-margin-bottom: 0;
-}
-#cbsimvkiea .gt_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-margin: 10px;
-border-top-style: solid;
-border-top-width: 1px;
-border-top-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-overflow-x: hidden;
-}
-#cbsimvkiea .gt_stub {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-}
-#cbsimvkiea .gt_stub_row_group {
+#cbgwdgpqvx .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2864,13 +2495,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#cbsimvkiea .gt_row_group_first td {
+#cbgwdgpqvx .gt_row_group_first td {
 border-top-width: 2px;
 }
-#cbsimvkiea .gt_row_group_first th {
+#cbgwdgpqvx .gt_row_group_first th {
 border-top-width: 2px;
 }
-#cbsimvkiea .gt_summary_row {
+#cbgwdgpqvx .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -2879,14 +2510,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#cbsimvkiea .gt_first_summary_row {
+#cbgwdgpqvx .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#cbsimvkiea .gt_first_summary_row.thick {
+#cbgwdgpqvx .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#cbsimvkiea .gt_last_summary_row {
+#cbgwdgpqvx .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2895,7 +2526,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#cbsimvkiea .gt_grand_summary_row {
+#cbgwdgpqvx .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -2904,7 +2535,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#cbsimvkiea .gt_first_grand_summary_row {
+#cbgwdgpqvx .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2913,7 +2544,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#cbsimvkiea .gt_last_grand_summary_row_top {
+#cbgwdgpqvx .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2922,10 +2553,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#cbsimvkiea .gt_striped {
+#cbgwdgpqvx .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#cbsimvkiea .gt_table_body {
+#cbgwdgpqvx .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -2933,7 +2564,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#cbsimvkiea .gt_footnotes {
+#cbgwdgpqvx .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -2946,7 +2577,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#cbsimvkiea .gt_footnote {
+#cbgwdgpqvx .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -2954,7 +2585,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#cbsimvkiea .gt_sourcenotes {
+#cbgwdgpqvx .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -2967,68 +2598,73 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#cbsimvkiea .gt_sourcenote {
+#cbgwdgpqvx .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#cbsimvkiea .gt_left {
+#cbgwdgpqvx .gt_left {
 text-align: left;
 }
-#cbsimvkiea .gt_center {
+#cbgwdgpqvx .gt_center {
 text-align: center;
 }
-#cbsimvkiea .gt_right {
+#cbgwdgpqvx .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#cbsimvkiea .gt_font_normal {
+#cbgwdgpqvx .gt_font_normal {
 font-weight: normal;
 }
-#cbsimvkiea .gt_font_bold {
+#cbgwdgpqvx .gt_font_bold {
 font-weight: bold;
 }
-#cbsimvkiea .gt_font_italic {
+#cbgwdgpqvx .gt_font_italic {
 font-style: italic;
 }
-#cbsimvkiea .gt_super {
+#cbgwdgpqvx .gt_super {
 font-size: 65%;
 }
-#cbsimvkiea .gt_footnote_marks {
+#cbgwdgpqvx .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#cbsimvkiea .gt_asterisk {
+#cbgwdgpqvx .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#cbsimvkiea .gt_indent_1 {
+#cbgwdgpqvx .gt_indent_1 {
 text-indent: 5px;
 }
-#cbsimvkiea .gt_indent_2 {
+#cbgwdgpqvx .gt_indent_2 {
 text-indent: 10px;
 }
-#cbsimvkiea .gt_indent_3 {
+#cbgwdgpqvx .gt_indent_3 {
 text-indent: 15px;
 }
-#cbsimvkiea .gt_indent_4 {
+#cbgwdgpqvx .gt_indent_4 {
 text-indent: 20px;
 }
-#cbsimvkiea .gt_indent_5 {
+#cbgwdgpqvx .gt_indent_5 {
 text-indent: 25px;
 }
-#cbsimvkiea .katex-display {
+#cbgwdgpqvx .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#cbsimvkiea div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cbgwdgpqvx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table" style="table-layout:fixed;width:0px;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption>Table 2. Concrete measures and activities in the field of mosquito- and tick-borne diseases (part 1).</caption>
+  <colgroup>
+    <col style="width:600px;" />
+    <col style="width:100px;" />
+  </colgroup>
   <thead>
     <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
@@ -3036,1009 +2672,76 @@ height: 0px !important;
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">If your authority develops information, what other subjects are covered?</td>
+    <tr><td headers="label" class="gt_row gt_left">&gt; What activities is your authority currently 
+                    (2024/2025) implementing in the field of tick-borne diseases?</td>
 <td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Die Angaben beziehen sich auf die erwähnten Informationen zu Zeckenübertragenen Krankheiten auf unserer Homepage</td>
-<td headers="stat_0" class="gt_row gt_center">1 (50%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    protection des animaux</td>
-<td headers="stat_0" class="gt_row gt_center">1 (50%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unknown</td>
-<td headers="stat_0" class="gt_row gt_center">53</td></tr>
-  </tbody>
-  
-  <tfoot class="gt_footnotes">
-    <tr>
-      <td class="gt_footnote" colspan="2"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> <span class="gt_from_md">n (%)</span></td>
-    </tr>
-  </tfoot>
-</table>
-</div>
-<p><strong>GPT-4 Turbo output:</strong> <em>Only two respondents
-provided open-text answers regarding additional subjects covered by
-their authority in information materials. One referred to existing
-content on tick-borne diseases available on their official website,
-while the other mentioned animal protection as a covered topic. The vast
-majority of respondents (n = 52) did not specify any additional
-subjects, suggesting limited extension beyond the predefined categories
-or lack of relevant materials.</em></p>
-</div>
-<div id="how-do-you-disseminate-this-information-e.g.-websites-leaflets-information-sessions-training-courses" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> How do you
-disseminate this information (e.g. websites, leaflets, information
-sessions, training courses)?</h2>
-<div id="qthzounulz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qthzounulz table {
-font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-#qthzounulz thead, #qthzounulz tbody, #qthzounulz tfoot, #qthzounulz tr, #qthzounulz td, #qthzounulz th {
-border-style: none;
-}
-#qthzounulz p {
-margin: 0;
-padding: 0;
-}
-#qthzounulz .gt_table {
-display: table;
-border-collapse: collapse;
-line-height: normal;
-margin-left: auto;
-margin-right: auto;
-color: #333333;
-font-size: 16px;
-font-weight: normal;
-font-style: normal;
-background-color: #FFFFFF;
-width: auto;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #A8A8A8;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #A8A8A8;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-}
-#qthzounulz .gt_caption {
-padding-top: 4px;
-padding-bottom: 4px;
-}
-#qthzounulz .gt_title {
-color: #333333;
-font-size: 125%;
-font-weight: initial;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-color: #FFFFFF;
-border-bottom-width: 0;
-}
-#qthzounulz .gt_subtitle {
-color: #333333;
-font-size: 85%;
-font-weight: initial;
-padding-top: 3px;
-padding-bottom: 5px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-color: #FFFFFF;
-border-top-width: 0;
-}
-#qthzounulz .gt_heading {
-background-color: #FFFFFF;
-text-align: center;
-border-bottom-color: #FFFFFF;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#qthzounulz .gt_bottom_border {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#qthzounulz .gt_col_headings {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#qthzounulz .gt_col_heading {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 6px;
-padding-left: 5px;
-padding-right: 5px;
-overflow-x: hidden;
-}
-#qthzounulz .gt_column_spanner_outer {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-padding-top: 0;
-padding-bottom: 0;
-padding-left: 4px;
-padding-right: 4px;
-}
-#qthzounulz .gt_column_spanner_outer:first-child {
-padding-left: 0;
-}
-#qthzounulz .gt_column_spanner_outer:last-child {
-padding-right: 0;
-}
-#qthzounulz .gt_column_spanner {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 5px;
-overflow-x: hidden;
-display: inline-block;
-width: 100%;
-}
-#qthzounulz .gt_spanner_row {
-border-bottom-style: hidden;
-}
-#qthzounulz .gt_group_heading {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-text-align: left;
-}
-#qthzounulz .gt_empty_group_heading {
-padding: 0.5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: middle;
-}
-#qthzounulz .gt_from_md > :first-child {
-margin-top: 0;
-}
-#qthzounulz .gt_from_md > :last-child {
-margin-bottom: 0;
-}
-#qthzounulz .gt_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-margin: 10px;
-border-top-style: solid;
-border-top-width: 1px;
-border-top-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-overflow-x: hidden;
-}
-#qthzounulz .gt_stub {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qthzounulz .gt_stub_row_group {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-vertical-align: top;
-}
-#qthzounulz .gt_row_group_first td {
-border-top-width: 2px;
-}
-#qthzounulz .gt_row_group_first th {
-border-top-width: 2px;
-}
-#qthzounulz .gt_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qthzounulz .gt_first_summary_row {
-border-top-style: solid;
-border-top-color: #D3D3D3;
-}
-#qthzounulz .gt_first_summary_row.thick {
-border-top-width: 2px;
-}
-#qthzounulz .gt_last_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#qthzounulz .gt_grand_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qthzounulz .gt_first_grand_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-style: double;
-border-top-width: 6px;
-border-top-color: #D3D3D3;
-}
-#qthzounulz .gt_last_grand_summary_row_top {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: double;
-border-bottom-width: 6px;
-border-bottom-color: #D3D3D3;
-}
-#qthzounulz .gt_striped {
-background-color: rgba(128, 128, 128, 0.05);
-}
-#qthzounulz .gt_table_body {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#qthzounulz .gt_footnotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#qthzounulz .gt_footnote {
-margin: 0px;
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qthzounulz .gt_sourcenotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#qthzounulz .gt_sourcenote {
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qthzounulz .gt_left {
-text-align: left;
-}
-#qthzounulz .gt_center {
-text-align: center;
-}
-#qthzounulz .gt_right {
-text-align: right;
-font-variant-numeric: tabular-nums;
-}
-#qthzounulz .gt_font_normal {
-font-weight: normal;
-}
-#qthzounulz .gt_font_bold {
-font-weight: bold;
-}
-#qthzounulz .gt_font_italic {
-font-style: italic;
-}
-#qthzounulz .gt_super {
-font-size: 65%;
-}
-#qthzounulz .gt_footnote_marks {
-font-size: 75%;
-vertical-align: 0.4em;
-position: initial;
-}
-#qthzounulz .gt_asterisk {
-font-size: 100%;
-vertical-align: 0;
-}
-#qthzounulz .gt_indent_1 {
-text-indent: 5px;
-}
-#qthzounulz .gt_indent_2 {
-text-indent: 10px;
-}
-#qthzounulz .gt_indent_3 {
-text-indent: 15px;
-}
-#qthzounulz .gt_indent_4 {
-text-indent: 20px;
-}
-#qthzounulz .gt_indent_5 {
-text-indent: 25px;
-}
-#qthzounulz .katex-display {
-display: inline-flex !important;
-margin-bottom: 0.75em !important;
-}
-#qthzounulz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-height: 0px !important;
-}
-</style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="stat_0"><span class="gt_from_md"><strong>N = 55</strong></span><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">How do you disseminate this information (e.g. websites, leaflets, information sessions, training courses)?</td>
-<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    De manière ciblée auprès de l&#39;administré concerné</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Homepage, Artikel in Landw. Zeitungen, direkte Informationen an Tierhalter (per Telefon und EMail) und an Tierärzte (meist per Email)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Homepage, Referate, Medienmitteilungen (immer im Zusammenhang mit Tieren)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Site internet de l&#39;Etat / Implication des communes</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Site internet, flyer, séances d&#39;information aux communes pour la lutte contre le moustique tigre</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    site internet, formations, bulletins mensuels d&#39;information (Episcope), mail</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Site internet, réseaux sociaux, mailing, courrier</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Sites internets, flyer, articles dans les différents médias, formations des professionnels</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Telefonischer Kontakt mit betroffenen Tierhaltern, E-Mails, Website, Informationsveranstaltungen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Webseite</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Webseite und direkt mit Gemeinden</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Webseite, Flyer, Brief an Aerzte</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Website, Merkblätter, Infoblätter, Newsletter</td>
-<td headers="stat_0" class="gt_row gt_center">1 (7.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unknown</td>
-<td headers="stat_0" class="gt_row gt_center">42</td></tr>
-  </tbody>
-  
-  <tfoot class="gt_footnotes">
-    <tr>
-      <td class="gt_footnote" colspan="2"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> <span class="gt_from_md">n (%)</span></td>
-    </tr>
-  </tfoot>
-</table>
-</div>
-<p><strong>GPT-4 Turbo output:</strong> <em>Open-text responses
-regarding dissemination methods indicate that cantonal authorities use a
-variety of communication channels to share information on tick- and
-mosquito-borne diseases. Frequently mentioned approaches included
-official websites, email, and printed materials such as flyers and
-leaflets. Several respondents reported direct communication with
-professionals (e.g., veterinarians or farmers) via telephone or targeted
-mailings. Other dissemination formats included public presentations,
-newsletters, municipal-level engagement, professional training, and use
-of media outlets such as newspapers or social media. Despite this range
-of methods, only 12 respondents provided a detailed answer, suggesting
-that formal communication strategies may not be uniformly developed or
-consistently applied across cantons.</em></p>
-</div>
-<div id="what-guidelines-support-materials-or-reference-documents-e.g.-provided-by-the-confederation-other-cantons-or-national-or-international-organisations-do-you-or-the-authority-you-work-for-use-to-develop-and-implement-measures" class="section level2" number="1.5">
-<h2><span class="header-section-number">1.5</span> What guidelines,
-support materials or reference documents (e.g. provided by the
-Confederation, other cantons or national or international organisations)
-do you (or the authority you work for) use to develop and implement
-measures?</h2>
-<div id="qalvknhrwr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qalvknhrwr table {
-font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-#qalvknhrwr thead, #qalvknhrwr tbody, #qalvknhrwr tfoot, #qalvknhrwr tr, #qalvknhrwr td, #qalvknhrwr th {
-border-style: none;
-}
-#qalvknhrwr p {
-margin: 0;
-padding: 0;
-}
-#qalvknhrwr .gt_table {
-display: table;
-border-collapse: collapse;
-line-height: normal;
-margin-left: auto;
-margin-right: auto;
-color: #333333;
-font-size: 16px;
-font-weight: normal;
-font-style: normal;
-background-color: #FFFFFF;
-width: auto;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #A8A8A8;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #A8A8A8;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-}
-#qalvknhrwr .gt_caption {
-padding-top: 4px;
-padding-bottom: 4px;
-}
-#qalvknhrwr .gt_title {
-color: #333333;
-font-size: 125%;
-font-weight: initial;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-color: #FFFFFF;
-border-bottom-width: 0;
-}
-#qalvknhrwr .gt_subtitle {
-color: #333333;
-font-size: 85%;
-font-weight: initial;
-padding-top: 3px;
-padding-bottom: 5px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-color: #FFFFFF;
-border-top-width: 0;
-}
-#qalvknhrwr .gt_heading {
-background-color: #FFFFFF;
-text-align: center;
-border-bottom-color: #FFFFFF;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#qalvknhrwr .gt_bottom_border {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#qalvknhrwr .gt_col_headings {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#qalvknhrwr .gt_col_heading {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 6px;
-padding-left: 5px;
-padding-right: 5px;
-overflow-x: hidden;
-}
-#qalvknhrwr .gt_column_spanner_outer {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-padding-top: 0;
-padding-bottom: 0;
-padding-left: 4px;
-padding-right: 4px;
-}
-#qalvknhrwr .gt_column_spanner_outer:first-child {
-padding-left: 0;
-}
-#qalvknhrwr .gt_column_spanner_outer:last-child {
-padding-right: 0;
-}
-#qalvknhrwr .gt_column_spanner {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 5px;
-overflow-x: hidden;
-display: inline-block;
-width: 100%;
-}
-#qalvknhrwr .gt_spanner_row {
-border-bottom-style: hidden;
-}
-#qalvknhrwr .gt_group_heading {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-text-align: left;
-}
-#qalvknhrwr .gt_empty_group_heading {
-padding: 0.5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: middle;
-}
-#qalvknhrwr .gt_from_md > :first-child {
-margin-top: 0;
-}
-#qalvknhrwr .gt_from_md > :last-child {
-margin-bottom: 0;
-}
-#qalvknhrwr .gt_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-margin: 10px;
-border-top-style: solid;
-border-top-width: 1px;
-border-top-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-overflow-x: hidden;
-}
-#qalvknhrwr .gt_stub {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qalvknhrwr .gt_stub_row_group {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-vertical-align: top;
-}
-#qalvknhrwr .gt_row_group_first td {
-border-top-width: 2px;
-}
-#qalvknhrwr .gt_row_group_first th {
-border-top-width: 2px;
-}
-#qalvknhrwr .gt_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qalvknhrwr .gt_first_summary_row {
-border-top-style: solid;
-border-top-color: #D3D3D3;
-}
-#qalvknhrwr .gt_first_summary_row.thick {
-border-top-width: 2px;
-}
-#qalvknhrwr .gt_last_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#qalvknhrwr .gt_grand_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qalvknhrwr .gt_first_grand_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-style: double;
-border-top-width: 6px;
-border-top-color: #D3D3D3;
-}
-#qalvknhrwr .gt_last_grand_summary_row_top {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: double;
-border-bottom-width: 6px;
-border-bottom-color: #D3D3D3;
-}
-#qalvknhrwr .gt_striped {
-background-color: rgba(128, 128, 128, 0.05);
-}
-#qalvknhrwr .gt_table_body {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#qalvknhrwr .gt_footnotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#qalvknhrwr .gt_footnote {
-margin: 0px;
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qalvknhrwr .gt_sourcenotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#qalvknhrwr .gt_sourcenote {
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#qalvknhrwr .gt_left {
-text-align: left;
-}
-#qalvknhrwr .gt_center {
-text-align: center;
-}
-#qalvknhrwr .gt_right {
-text-align: right;
-font-variant-numeric: tabular-nums;
-}
-#qalvknhrwr .gt_font_normal {
-font-weight: normal;
-}
-#qalvknhrwr .gt_font_bold {
-font-weight: bold;
-}
-#qalvknhrwr .gt_font_italic {
-font-style: italic;
-}
-#qalvknhrwr .gt_super {
-font-size: 65%;
-}
-#qalvknhrwr .gt_footnote_marks {
-font-size: 75%;
-vertical-align: 0.4em;
-position: initial;
-}
-#qalvknhrwr .gt_asterisk {
-font-size: 100%;
-vertical-align: 0;
-}
-#qalvknhrwr .gt_indent_1 {
-text-indent: 5px;
-}
-#qalvknhrwr .gt_indent_2 {
-text-indent: 10px;
-}
-#qalvknhrwr .gt_indent_3 {
-text-indent: 15px;
-}
-#qalvknhrwr .gt_indent_4 {
-text-indent: 20px;
-}
-#qalvknhrwr .gt_indent_5 {
-text-indent: 25px;
-}
-#qalvknhrwr .katex-display {
-display: inline-flex !important;
-margin-bottom: 0.75em !important;
-}
-#qalvknhrwr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-height: 0px !important;
-}
-</style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="stat_0"><span class="gt_from_md"><strong>N = 55</strong></span><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">What guidelines, support materials or reference documents (e.g. provided by the Confederation, other cantons or national or international organisations) do you (or the authority you work for) use to develop and implement measures?</td>
-<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    -</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Anleitung zum Einsatz von Ovitraps des AWEL, Swiss TPH</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Anweisungen BLV, Gesetzestexte</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    aucun</td>
-<td headers="stat_0" class="gt_row gt_center">2 (3.6%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Aucune</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    BAG</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    BAG-Material, Suva</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    bag.admin.ch (Zeckenübertragene Krankheiten)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Concernant les moustiques tigre, nous utilisons beaucoup de document venant du canton du Tessin mais également  le plan de mesures &quot;Recommendtaions pour la réductions du risque de cas autochtones de dengue, de Chikungunya et de Zika&quot; émanant du sous organe &quot;One Health&quot; . Au niveau international nous interchnageons beaucoup avec nos collègues français et les ressources de l&#39;OMS sont essentielles. Concernant les tiques, nous utilisons les supports de l&#39;OFSP, Swissticks et la brochure du canton de Vaud.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Contenu créé par le canton, en reprenant certains documents émis par la Confédération</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Directives vaccinales</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    documents et site du réseau suisse moustique, documents et stratégie tessinoise, document de la confédération Coordination du contrôle et de la lutte contre le moustique tigre asiatique et d&#39;autres moustiques exotiques invasifs présents en Suisse</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Dokumente: BLV, BAG, OMS, WOAH</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    DT de l&#39;OSAV dans le cadre de la lutte contre la BT</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    eigenes Material (siehe www.anu.gr.ch/neobiota)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Eigenes Merkblatt zu Invasiven gebietsfremden Mücken</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Eine Orientierungshilfe mit Empfehlungen zuhanden des BAFU sowie der kantonalen und anderen betroffenen Behörden (2017)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Es wurden im Rahmen der Erarbeitung unseres Kantonalen Bereitschaftsplans betr. Tigermücken verschiedene Pläne von anderen Ländern angeschaut. Weiter haben wir beispielsweise an Austauschen mit Deutschland und Frankreich teilgenommen (EpiRhin). Ausserdem bietet die erste Version Empfehlungen zur Risikoreduktion von autochthonen Fällen von Dengue, Chikungunya und Zika des Bundes (inkl. Workshop) gute Inputs.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Fachinformationen und Technische Weisungen vom BLV</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Guidelines BAFU, SUPSI und Mückennetzwerk-Schweiz</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    https://doi.org/10.1016/j.tmaid.2020.101748</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    https://umwelt.tg.ch/public/upload/assets/119187/Asiatische-Tigermuecke_Erkennen-und-eindaemmen.pdf?fp=1</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    https://www.ag.ch/de/themen/neobiota/invasive-tierarten-(neozoen)/asiatische-tigermuecke</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Infomaterial vom SUPSI</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Informationen BLV</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Informationen von Seiten BLV und von anderen Kantonen (TI, BS)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Jene des BAFU und des SUPSI</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Keine</td>
+    <tr><td headers="label" class="gt_row gt_left">Public relations (distribution of educational material about tick-borne diseases to the general public)</td>
+<td headers="stat_0" class="gt_row gt_center">12 (22%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Targeted awareness of professionals (documents on tick-borne diseases)</td>
+<td headers="stat_0" class="gt_row gt_center">7 (13%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Vaccination advice for the population (by health personnel)</td>
 <td headers="stat_0" class="gt_row gt_center">3 (5.5%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Keine Angabe</td>
+    <tr><td headers="label" class="gt_row gt_left">Advice for homeowners on tick management on their property</td>
+<td headers="stat_0" class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Active tick monitoring (collecting ticks in the field for identification, examination, or analysis)</td>
+<td headers="stat_0" class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Passive tick monitoring (acceptance of tick samples submitted by the public, veterinarians, doctors, etc., for identification, examination, or analysis)</td>
+<td headers="stat_0" class="gt_row gt_center">2 (3.6%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Training and distribution of educational materials</td>
+<td headers="stat_0" class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Other: open answer</td>
+<td headers="stat_0" class="gt_row gt_center">10 (18%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">My authority does not conduct any activities for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">29 (53%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; What activities is your authority currently 
+                    (2024/2025) implementing in the field of mosquito-borne diseases?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Public relations (distribution of educational material about mosquito-borne diseases to the general public)</td>
+<td headers="stat_0" class="gt_row gt_center">22 (40%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Targeted awareness of professionals (documents on mosquito-borne diseases)</td>
+<td headers="stat_0" class="gt_row gt_center">22 (40%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Active mosquito monitoring (collecting mosquitoes using traps for identification and diagnostics, e.g., Ovitraps)</td>
+<td headers="stat_0" class="gt_row gt_center">20 (36%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Passive mosquito monitoring (acceptance of mosquito submissions and sightings directly from the public or via the Swiss Mosquito Network)</td>
+<td headers="stat_0" class="gt_row gt_center">18 (33%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Verification of mosquito sightings at new locations</td>
+<td headers="stat_0" class="gt_row gt_center">16 (29%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Mosquito control on public land</td>
+<td headers="stat_0" class="gt_row gt_center">10 (18%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Mosquito control on private properties</td>
+<td headers="stat_0" class="gt_row gt_center">8 (15%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Training and distribution of educational materials</td>
+<td headers="stat_0" class="gt_row gt_center">11 (20%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
 <td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine Angabe / weiss nicht</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine Entwicklung und Umsetzung von Massnahmen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Koordination der Überwachung und Bekämpfung der Asiatischen Tigermücke und anderer invasiver gebietsfremder Mücken in der Schweiz: Eine Orientierungshilfe mit Empfehlungen zuhanden des BAFU sowie der kantonalen und anderen betroffenen Behörden</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Leitfaden zur Meldepflicht übertragbarer Krankheiten und Erreger</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Mesures de prévention contre les moustiques dans le cadre de la lutte contre la langue bleue</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    nationaler Plan, Tessin / Austausch Genf und Zürich</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Notre politique se base sur l&#39;approche tessinoise</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    OFE et directives techniques OSAV</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Relais sur notre site des infos de la Confédération</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Sensibilisation des agriculteurs concernant les vecteurs de la fièvre catarrhale ovine. directives de l&#39;OSAV</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Sensibilisierung Fachpersonen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Siehe Webseite</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Technische Weisungen  über den  Schutz von Tieren vor Vektoren der  Blauzungenkrankheit und der epizootischen  hämorrhagischen Krankheit;  Strategie zur Bekämpfung der Blauzungenkrankheit in der Schweiz ab 2025</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Technische Weisungen des BLV über den Schutz von Tieren vor Vektoren der Blauzungenkrankheit und der epizootischen hämorrhagischen Krankheit</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Tierseuchengesetz, Tierseuchenverordnung, Technische Weisungen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    TSG, TSV, Technische Weisung BT / EHD</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    TW über den Schutz von Tieren vor Vektoren der BT und der EHD, Homepage von BLV, Austausch mit anderen Kantonen (virtuelle Meetings), aktive Suche nach Literatur in peer revewed Journals, Infos aus dem PAFF committee, ProMedMail, WOAH</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unterlagen BAG (auf offizieller Webseite)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unterlagen des Cercle Exotique</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unterlagen und Homepage BLV werden verlinkt und versendet</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Wir haben Expertenwissen durch Austausch mit den Fachexperten im In- und Ausland. Susanne Biebinger ist aktuell als Expertin an der Erstellung von Referenzdokumenten beteiligt.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Zusammenarbeit mit Tropeninstitut</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Other: open answer</td>
+<td headers="stat_0" class="gt_row gt_center">17 (31%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">My authority does not conduct any activities for mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">11 (20%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; If your authority develops information, what subjects are covered?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Correct removal of ticks</td>
+<td headers="stat_0" class="gt_row gt_center">5 (29%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Elimination of mosquito breeding sites</td>
+<td headers="stat_0" class="gt_row gt_center">8 (47%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Vaccinations</td>
+<td headers="stat_0" class="gt_row gt_center">11 (65%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Information on mosquito/tick sprays</td>
+<td headers="stat_0" class="gt_row gt_center">5 (29%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Protection against bites/stings</td>
+<td headers="stat_0" class="gt_row gt_center">9 (53%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Awareness for careful symptom monitoring</td>
+<td headers="stat_0" class="gt_row gt_center">9 (53%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Information on risk areas</td>
+<td headers="stat_0" class="gt_row gt_center">8 (47%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Information on the correct installation of mosquito nets</td>
+<td headers="stat_0" class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">2 (12%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Other: open answer</td>
+<td headers="stat_0" class="gt_row gt_center">2 (12%)</td></tr>
   </tbody>
   
   <tfoot class="gt_footnotes">
@@ -4048,42 +2751,57 @@ height: 0px !important;
   </tfoot>
 </table>
 </div>
-<p><strong>GPT-4 Turbo output:</strong> <em>Open-text responses show
-that cantonal authorities draw on a wide range of materials to support
-the development and implementation of measures related to tick- and
-mosquito-borne diseases. Frequently cited sources include technical
-guidelines and reference documents from federal bodies such as the
-Federal Office of Public Health (BAG/OFSP), the Federal Food Safety and
-Veterinary Office (BLV/OSAV), and the Federal Office for the Environment
-(BAFU/OFEV). Respondents also mentioned materials from specific
-cantons—particularly Ticino—as well as resources from academic
-institutions such as SUPSI and Swiss TPH. Several noted international
-exchanges with France and Germany, and the use of WHO or WOAH materials.
-In addition to official documents, some cantons developed their own
-materials or relied on scientific literature, peer-reviewed journals,
-and expert networks. However, a few respondents reported not using any
-specific documents or indicated a lack of engagement in developing
-measures.</em></p>
-</div>
-<div id="in-addition-to-the-mentioned-fields-of-action-where-is-the-greatest-need-for-information-or-the-greatest-lack-of-knowledge-about-tick-borne-diseases-in-the-authority-you-work-for" class="section level2" number="1.6">
-<h2><span class="header-section-number">1.6</span> In addition to the
-mentioned fields of action, where is the greatest need for information
-or the greatest lack of knowledge about tick-borne diseases in the
-authority you work for?</h2>
-<div id="twmudlvwli" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#twmudlvwli table {
+<p>Respondents reported using a wide variety of guidelines, support
+materials, and reference documents to inform the development and
+implementation of measures against vector-borne diseases. The most
+frequently cited sources included technical instructions and documents
+from the Federal Food Safety and Veterinary Office (OSAV/BLV), the
+Federal Office for the Environment (OFE/BAFU), and the Federal Office of
+Public Health (OFSP/BAG). Several participants also referred to cantonal
+materials (particularly from Ticino) as well as international resources
+such as those from the WHO, WOAH, or cross-border exchanges with France
+and Germany. Additionally, documents from academic or technical partners
+like SUPSI and Swiss TPH were mentioned. A few respondents reported
+using self-developed materials or relying on exchanges of expert
+knowledge, while others indicated they did not use any specific
+documents.</p>
+<p>Respondents identified a range of knowledge gaps within their
+authorities concerning both tick- and mosquito-borne diseases (Table 3).
+For tick-borne diseases, the most commonly cited areas of limited
+knowledge included disease management (20%), followed by detection and
+prevention (both 18%). Open-text responses often emphasized limited
+relevance or jurisdictional responsibility, especially within animal
+health services, while some highlighted a lack of resources or the need
+for clearer coordination and federally supported monitoring. For
+mosquito-borne diseases, the main knowledge gaps were in disease and
+vector management and control (36%), as well as prevention (22%) and
+detection (20%). Several respondents pointed to uncertainties around the
+appropriate use of adulticides, sharing of responsibilities among
+stakeholders, and long-term control strategies. Regarding actual control
+measures against mosquitoes, over half of participants (53%) reported
+that no active mosquito control measures are in place. Among those that
+did report activities, biological larvicides (25%) and elimination of
+breeding sites (20%) were the most common, while use of adulticides
+(11%) and non-chemical larvicides (7%) was less frequent. Open-text
+answers revealed a mix of pilot studies, public awareness campaigns, and
+experimental approaches like sterile insect techniques (SIT), often in
+collaboration with academic or federal partners. Some respondents
+indicated that control responsibilities lie with other agencies, such as
+municipalities or environmental offices.</p>
+<div id="xsobrhhspz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xsobrhhspz table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#twmudlvwli thead, #twmudlvwli tbody, #twmudlvwli tfoot, #twmudlvwli tr, #twmudlvwli td, #twmudlvwli th {
+#xsobrhhspz thead, #xsobrhhspz tbody, #xsobrhhspz tfoot, #xsobrhhspz tr, #xsobrhhspz td, #xsobrhhspz th {
 border-style: none;
 }
-#twmudlvwli p {
+#xsobrhhspz p {
 margin: 0;
 padding: 0;
 }
-#twmudlvwli .gt_table {
+#xsobrhhspz .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -4108,11 +2826,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#twmudlvwli .gt_caption {
+#xsobrhhspz .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#twmudlvwli .gt_title {
+#xsobrhhspz .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -4123,7 +2841,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#twmudlvwli .gt_subtitle {
+#xsobrhhspz .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -4134,7 +2852,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#twmudlvwli .gt_heading {
+#xsobrhhspz .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -4145,12 +2863,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#twmudlvwli .gt_bottom_border {
+#xsobrhhspz .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#twmudlvwli .gt_col_headings {
+#xsobrhhspz .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -4164,7 +2882,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#twmudlvwli .gt_col_heading {
+#xsobrhhspz .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -4183,7 +2901,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#twmudlvwli .gt_column_spanner_outer {
+#xsobrhhspz .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -4194,13 +2912,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#twmudlvwli .gt_column_spanner_outer:first-child {
+#xsobrhhspz .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#twmudlvwli .gt_column_spanner_outer:last-child {
+#xsobrhhspz .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#twmudlvwli .gt_column_spanner {
+#xsobrhhspz .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -4211,10 +2929,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#twmudlvwli .gt_spanner_row {
+#xsobrhhspz .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#twmudlvwli .gt_group_heading {
+#xsobrhhspz .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -4239,7 +2957,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#twmudlvwli .gt_empty_group_heading {
+#xsobrhhspz .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -4253,13 +2971,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#twmudlvwli .gt_from_md > :first-child {
+#xsobrhhspz .gt_from_md > :first-child {
 margin-top: 0;
 }
-#twmudlvwli .gt_from_md > :last-child {
+#xsobrhhspz .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#twmudlvwli .gt_row {
+#xsobrhhspz .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -4277,7 +2995,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#twmudlvwli .gt_stub {
+#xsobrhhspz .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -4289,7 +3007,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#twmudlvwli .gt_stub_row_group {
+#xsobrhhspz .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -4302,13 +3020,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#twmudlvwli .gt_row_group_first td {
+#xsobrhhspz .gt_row_group_first td {
 border-top-width: 2px;
 }
-#twmudlvwli .gt_row_group_first th {
+#xsobrhhspz .gt_row_group_first th {
 border-top-width: 2px;
 }
-#twmudlvwli .gt_summary_row {
+#xsobrhhspz .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -4317,14 +3035,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#twmudlvwli .gt_first_summary_row {
+#xsobrhhspz .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#twmudlvwli .gt_first_summary_row.thick {
+#xsobrhhspz .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#twmudlvwli .gt_last_summary_row {
+#xsobrhhspz .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -4333,7 +3051,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#twmudlvwli .gt_grand_summary_row {
+#xsobrhhspz .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -4342,7 +3060,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#twmudlvwli .gt_first_grand_summary_row {
+#xsobrhhspz .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -4351,7 +3069,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#twmudlvwli .gt_last_grand_summary_row_top {
+#xsobrhhspz .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -4360,10 +3078,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#twmudlvwli .gt_striped {
+#xsobrhhspz .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#twmudlvwli .gt_table_body {
+#xsobrhhspz .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -4371,7 +3089,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#twmudlvwli .gt_footnotes {
+#xsobrhhspz .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -4384,7 +3102,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#twmudlvwli .gt_footnote {
+#xsobrhhspz .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -4392,7 +3110,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#twmudlvwli .gt_sourcenotes {
+#xsobrhhspz .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -4405,68 +3123,73 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#twmudlvwli .gt_sourcenote {
+#xsobrhhspz .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#twmudlvwli .gt_left {
+#xsobrhhspz .gt_left {
 text-align: left;
 }
-#twmudlvwli .gt_center {
+#xsobrhhspz .gt_center {
 text-align: center;
 }
-#twmudlvwli .gt_right {
+#xsobrhhspz .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#twmudlvwli .gt_font_normal {
+#xsobrhhspz .gt_font_normal {
 font-weight: normal;
 }
-#twmudlvwli .gt_font_bold {
+#xsobrhhspz .gt_font_bold {
 font-weight: bold;
 }
-#twmudlvwli .gt_font_italic {
+#xsobrhhspz .gt_font_italic {
 font-style: italic;
 }
-#twmudlvwli .gt_super {
+#xsobrhhspz .gt_super {
 font-size: 65%;
 }
-#twmudlvwli .gt_footnote_marks {
+#xsobrhhspz .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#twmudlvwli .gt_asterisk {
+#xsobrhhspz .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#twmudlvwli .gt_indent_1 {
+#xsobrhhspz .gt_indent_1 {
 text-indent: 5px;
 }
-#twmudlvwli .gt_indent_2 {
+#xsobrhhspz .gt_indent_2 {
 text-indent: 10px;
 }
-#twmudlvwli .gt_indent_3 {
+#xsobrhhspz .gt_indent_3 {
 text-indent: 15px;
 }
-#twmudlvwli .gt_indent_4 {
+#xsobrhhspz .gt_indent_4 {
 text-indent: 20px;
 }
-#twmudlvwli .gt_indent_5 {
+#xsobrhhspz .gt_indent_5 {
 text-indent: 25px;
 }
-#twmudlvwli .katex-display {
+#xsobrhhspz .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#twmudlvwli div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xsobrhhspz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table" style="table-layout:fixed;width:0px;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption>Table 3. Concrete measures and activities in the field of mosquito- and tick-borne diseases (part 2).</caption>
+  <colgroup>
+    <col style="width:600px;" />
+    <col style="width:100px;" />
+  </colgroup>
   <thead>
     <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
@@ -4474,507 +3197,52 @@ height: 0px !important;
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">In addition to the mentioned fields of action, where is the greatest need for information 
+    <tr><td headers="label" class="gt_row gt_left">&gt; Among the following fields of action, where is the greatest need for information 
                     or the greatest lack of knowledge about tick-borne diseases in the authority you work for?</td>
 <td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    AFU ist nicht zuständig</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Aktuell keine zeckenübertragene Tierseuchen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Alle erwähnten Punkte bei Tieren</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Auch hier ist es schwierig, eine genaue Antwort zu geben. Das Problem (Wissenlücken) an sich liegt nicht in den Punkten, die als mögliche Antworten aufgeführt sind. Die Hauptfrage ist, ob wir die Situation überwachen möchten, bevor Krankheiten auftreten (z.B. neue Krankheiten, die durch Zecken oder Mücken übertragen werden, aber auch das Vorhandensein oder Nichtvorhandensein des FSME-Virus, das in der Schweiz vorkommt, aber im Tessin fast nicht (nicht) präsent ist). Und dies mit einem Monitoring bei Arthropoden, die als Vektoren fungieren, aber auch bei Haus- und Wildtieren. Ein solches Monitoring muss zwangsläufig teilweise von den Bundesämtern organisiert und finanziert werden.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    besoin limité</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Da wir uns nicht mit dem Thema befassen, ist es schwierig zu sagen, wo die Lücken sind.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Das Handlungsfeld ist hier angegeben aus Sicht der Abteillung Gesundheit.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Einfach keine Ressourcen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Im Bereich Zecken bei Tieren besteht aktuell kein zusätzlicher Informationsbedarf, wird sind jedoch immer an neuen Erkenntnissen interessiert. Eine Kanalisierung solcher Informationen wäre ideal</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Kein Bedarf. Spielt zur Zeit bei Tieren untergeordnete Rolle.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    kein spezifischer Bedarf</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine Beurteilung</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Liegt nicht in unserem Zuständigkeitsbereich</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Meine Behörde beschäftigt sich nicht mit Zecken.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unknown</td>
-<td headers="stat_0" class="gt_row gt_center">40</td></tr>
-  </tbody>
-  
-  <tfoot class="gt_footnotes">
-    <tr>
-      <td class="gt_footnote" colspan="2"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> <span class="gt_from_md">n (%)</span></td>
-    </tr>
-  </tfoot>
-</table>
-</div>
-<p><strong>GPT-4 Turbo output: </strong> <em>Open-text responses
-regarding additional information needs related to tick-borne diseases
-revealed a range of perspectives. Several respondents stated that their
-authority is not responsible for tick-related issues or currently sees
-no need for additional information, particularly in the context of
-animal health. Others emphasized a general lack of resources or
-indicated that tick-borne diseases are a low priority. Some participants
-highlighted the challenge of identifying precise knowledge gaps,
-pointing instead to the need for improved coordination and federally
-supported monitoring systems—especially for early detection of emerging
-diseases. A few responses noted that while current needs are limited,
-continued access to up-to-date information remains important.</em></p>
-</div>
-<div id="in-addition-to-the-mentioned-fields-of-action-where-is-the-greatest-need-for-information-or-the-greatest-lack-of-knowledge-about-mosquito-borne-diseases-in-the-authority-you-work-for" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> In addition to the
-mentioned fields of action, where is the greatest need for information
-or the greatest lack of knowledge about mosquito-borne diseases in the
-authority you work for?</h2>
-<div id="prsojaewhl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#prsojaewhl table {
-font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-#prsojaewhl thead, #prsojaewhl tbody, #prsojaewhl tfoot, #prsojaewhl tr, #prsojaewhl td, #prsojaewhl th {
-border-style: none;
-}
-#prsojaewhl p {
-margin: 0;
-padding: 0;
-}
-#prsojaewhl .gt_table {
-display: table;
-border-collapse: collapse;
-line-height: normal;
-margin-left: auto;
-margin-right: auto;
-color: #333333;
-font-size: 16px;
-font-weight: normal;
-font-style: normal;
-background-color: #FFFFFF;
-width: auto;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #A8A8A8;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #A8A8A8;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-}
-#prsojaewhl .gt_caption {
-padding-top: 4px;
-padding-bottom: 4px;
-}
-#prsojaewhl .gt_title {
-color: #333333;
-font-size: 125%;
-font-weight: initial;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-color: #FFFFFF;
-border-bottom-width: 0;
-}
-#prsojaewhl .gt_subtitle {
-color: #333333;
-font-size: 85%;
-font-weight: initial;
-padding-top: 3px;
-padding-bottom: 5px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-color: #FFFFFF;
-border-top-width: 0;
-}
-#prsojaewhl .gt_heading {
-background-color: #FFFFFF;
-text-align: center;
-border-bottom-color: #FFFFFF;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#prsojaewhl .gt_bottom_border {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#prsojaewhl .gt_col_headings {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#prsojaewhl .gt_col_heading {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 6px;
-padding-left: 5px;
-padding-right: 5px;
-overflow-x: hidden;
-}
-#prsojaewhl .gt_column_spanner_outer {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-padding-top: 0;
-padding-bottom: 0;
-padding-left: 4px;
-padding-right: 4px;
-}
-#prsojaewhl .gt_column_spanner_outer:first-child {
-padding-left: 0;
-}
-#prsojaewhl .gt_column_spanner_outer:last-child {
-padding-right: 0;
-}
-#prsojaewhl .gt_column_spanner {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 5px;
-overflow-x: hidden;
-display: inline-block;
-width: 100%;
-}
-#prsojaewhl .gt_spanner_row {
-border-bottom-style: hidden;
-}
-#prsojaewhl .gt_group_heading {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-text-align: left;
-}
-#prsojaewhl .gt_empty_group_heading {
-padding: 0.5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: middle;
-}
-#prsojaewhl .gt_from_md > :first-child {
-margin-top: 0;
-}
-#prsojaewhl .gt_from_md > :last-child {
-margin-bottom: 0;
-}
-#prsojaewhl .gt_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-margin: 10px;
-border-top-style: solid;
-border-top-width: 1px;
-border-top-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-overflow-x: hidden;
-}
-#prsojaewhl .gt_stub {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-}
-#prsojaewhl .gt_stub_row_group {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-vertical-align: top;
-}
-#prsojaewhl .gt_row_group_first td {
-border-top-width: 2px;
-}
-#prsojaewhl .gt_row_group_first th {
-border-top-width: 2px;
-}
-#prsojaewhl .gt_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#prsojaewhl .gt_first_summary_row {
-border-top-style: solid;
-border-top-color: #D3D3D3;
-}
-#prsojaewhl .gt_first_summary_row.thick {
-border-top-width: 2px;
-}
-#prsojaewhl .gt_last_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#prsojaewhl .gt_grand_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#prsojaewhl .gt_first_grand_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-style: double;
-border-top-width: 6px;
-border-top-color: #D3D3D3;
-}
-#prsojaewhl .gt_last_grand_summary_row_top {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: double;
-border-bottom-width: 6px;
-border-bottom-color: #D3D3D3;
-}
-#prsojaewhl .gt_striped {
-background-color: rgba(128, 128, 128, 0.05);
-}
-#prsojaewhl .gt_table_body {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#prsojaewhl .gt_footnotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#prsojaewhl .gt_footnote {
-margin: 0px;
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#prsojaewhl .gt_sourcenotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#prsojaewhl .gt_sourcenote {
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#prsojaewhl .gt_left {
-text-align: left;
-}
-#prsojaewhl .gt_center {
-text-align: center;
-}
-#prsojaewhl .gt_right {
-text-align: right;
-font-variant-numeric: tabular-nums;
-}
-#prsojaewhl .gt_font_normal {
-font-weight: normal;
-}
-#prsojaewhl .gt_font_bold {
-font-weight: bold;
-}
-#prsojaewhl .gt_font_italic {
-font-style: italic;
-}
-#prsojaewhl .gt_super {
-font-size: 65%;
-}
-#prsojaewhl .gt_footnote_marks {
-font-size: 75%;
-vertical-align: 0.4em;
-position: initial;
-}
-#prsojaewhl .gt_asterisk {
-font-size: 100%;
-vertical-align: 0;
-}
-#prsojaewhl .gt_indent_1 {
-text-indent: 5px;
-}
-#prsojaewhl .gt_indent_2 {
-text-indent: 10px;
-}
-#prsojaewhl .gt_indent_3 {
-text-indent: 15px;
-}
-#prsojaewhl .gt_indent_4 {
-text-indent: 20px;
-}
-#prsojaewhl .gt_indent_5 {
-text-indent: 25px;
-}
-#prsojaewhl .katex-display {
-display: inline-flex !important;
-margin-bottom: 0.75em !important;
-}
-#prsojaewhl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-height: 0px !important;
-}
-</style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="stat_0"><span class="gt_from_md"><strong>N = 55</strong></span><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">In addition to the mentioned fields of action, where is the greatest need for information 
+    <tr><td headers="label" class="gt_row gt_left">Prevention of tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">10 (18%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Detection of ticks and pathogens in ticks</td>
+<td headers="stat_0" class="gt_row gt_center">10 (18%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Diagnosis of tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">3 (5.5%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Management and control of tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">11 (20%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Therapy/treatment of tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">4 (7.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Other: open answer</td>
+<td headers="stat_0" class="gt_row gt_center">15 (27%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; Among the following fields of action, where is the greatest need for information 
                     or the greatest lack of knowledge about mosquito-borne diseases in the authority you work for?</td>
 <td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Alle erwähnten Punkte bei Tieren</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Die Zuständigkeiten und Rollen sind nicht alle geklärt (Bund, Kantone versch. Fachstellen, interkantonale Gremien, Gemeinden</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Dies aus Sicht der Abteilung Gesundheit</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Insbesondere in Bezug auf einen allfälligen Adultizideinsatz bestehen noch einige offene Fragen. (z.B. zu Kriterien für einen verhältnismässigen Entscheid bzgl. des Einsatzes, konkrete Umsetzungsmöglichkeiten und Zuständigkeiten)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    kein spezielles Informationsbedarf</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    kein spezifischer Bedarf</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    noch kein Bedarf für Prävention aber wenn Krankheiten auftreten sollten, wird grosser Informationsbedarf vorhanden sein</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Sensibilisation à une problématique nouvelle, gestes de prévention pour éviter l&#39;installation du moustique tigre dans le canton</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    siehe Antwort zu C.6</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    siehe C6</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unser Amt arbeitet mit anderen Ämtern im Kanton und mit verschiedenen Bundesämtern zusammen (u.a. in Arbeitsgruppen wie OneHealth oder GL-Vectors Working Group on Vectors UZ6). Auf kantonaler Ebene gibt es eine Arbeitsgruppe, die die Mückenbekämpfung plant und leitet (z.B. Tigermücken), aber auch Forschung und Monitoring zu Vektoren und zu Tierarten, die als Zwischenwirte fungieren, werden in Zusammenarbeit mit dem SUPSI durchgeführt.) Mein Amt befasst sich auch mit Zecken, falls erforderlich.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Verfahren zur Bestimmung der Mückendichte (zur Priorisierung der Bekämpfung), neue effiziente Bekämpfungsmethoden</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Wir sind als Behörde nicht für die Therapie zuständig. Individualmedizin.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Wissenslücken bzgl. langfristige alternative Möglichkeiten zu Adultizideinsätzen. Bzgl. Diagnostik und Therapie/Behandlung holen wir Expertise bei entsprechenden Fachpersonen. V.a. konkrete Angaben zu Therapie und Behandlung sehen wir v.a. bei den Fachverbänden nicht auf kantonaler Ebene.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (6.7%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unknown</td>
-<td headers="stat_0" class="gt_row gt_center">40</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Prevention of mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">12 (22%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Detection of invasive mosquitoes and pathogens in mosquitoes</td>
+<td headers="stat_0" class="gt_row gt_center">11 (20%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Diagnosis of mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Management and control of mosquitoes/mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">20 (36%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Therapy/treatment of mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Other: open answer</td>
+<td headers="stat_0" class="gt_row gt_center">15 (27%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; What measures is your authority implementing to control or combat invasive mosquitoes?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Adulticides (Pyrethroids)</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Non-chemical larvicides</td>
+<td headers="stat_0" class="gt_row gt_center">4 (7.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Biological larvicides</td>
+<td headers="stat_0" class="gt_row gt_center">14 (25%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Elimination of breeding sites</td>
+<td headers="stat_0" class="gt_row gt_center">11 (20%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Sterilization of mosquitoes</td>
+<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">None</td>
+<td headers="stat_0" class="gt_row gt_center">29 (53%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Other: open answer</td>
+<td headers="stat_0" class="gt_row gt_center">19 (35%)</td></tr>
   </tbody>
   
   <tfoot class="gt_footnotes">
@@ -4984,39 +3252,43 @@ height: 0px !important;
   </tfoot>
 </table>
 </div>
-<p><strong>GPT-4 Turbo output: </strong> <em>Open-text responses
-identified several areas where additional information or clarification
-is needed regarding mosquito-borne diseases. Key themes included unclear
-roles and responsibilities between federal, cantonal, and municipal
-authorities, particularly in relation to coordination and implementation
-of control measures. Respondents highlighted the need for clearer
-guidance on the use of adulticides, including criteria for deployment,
-responsibilities, and alternatives. Some noted a lack of immediate
-information needs but anticipated future demand should outbreaks occur.
-Others expressed interest in improved methods for mosquito density
-assessment, prevention strategies to avoid tiger mosquito establishment,
-and ongoing collaboration with research institutions. A few respondents
-indicated no specific needs or stated that such issues were outside
-their department’s scope.</em></p>
 </div>
-<div id="what-other-measures-is-your-authority-implementing-to-control-or-combat-invasive-mosquitoes" class="section level2" number="1.8">
-<h2><span class="header-section-number">1.8</span> What other measures
-is your authority implementing to control or combat invasive
-mosquitoes?</h2>
-<div id="xjmlkrihtr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xjmlkrihtr table {
+<div id="collaboration-and-coordination" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Collaboration and
+coordination</h2>
+<p>Collaboration and coordination emerged as important themes in
+participants’ responses regarding vector-borne disease control (Table
+4). While 60% of respondents reported active networks or exchanges with
+researchers and specialists for mosquito-borne diseases, only 20%
+indicated such collaborations for tick-borne diseases, and over a
+quarter (27%) reported no active exchange at all. Open-text responses
+highlighted needs for stronger inter-cantonal coordination, improved
+knowledge transfer, and harmonized federal guidelines, particularly for
+outbreak preparedness, surveillance, and the responsible use of control
+tools like biocides or adulticides. Several participants emphasized the
+importance of financial and human resource support, centralized
+information platforms, and a coordinated national monitoring strategy.
+Others cited challenges related to fragmented responsibilities across
+levels of government or lack of expertise and capacity. When asked about
+the integration of tick- and mosquito-borne disease issues into national
+and cantonal climate adaptation strategies, most respondents indicated
+limited awareness or engagement: 65% were unsure about national-level
+integration, and 53% did not know whether these issues were addressed in
+their own canton’s strategy.</p>
+<div id="mevrwglpal" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mevrwglpal table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#xjmlkrihtr thead, #xjmlkrihtr tbody, #xjmlkrihtr tfoot, #xjmlkrihtr tr, #xjmlkrihtr td, #xjmlkrihtr th {
+#mevrwglpal thead, #mevrwglpal tbody, #mevrwglpal tfoot, #mevrwglpal tr, #mevrwglpal td, #mevrwglpal th {
 border-style: none;
 }
-#xjmlkrihtr p {
+#mevrwglpal p {
 margin: 0;
 padding: 0;
 }
-#xjmlkrihtr .gt_table {
+#mevrwglpal .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -5041,11 +3313,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#xjmlkrihtr .gt_caption {
+#mevrwglpal .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#xjmlkrihtr .gt_title {
+#mevrwglpal .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -5056,7 +3328,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#xjmlkrihtr .gt_subtitle {
+#mevrwglpal .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -5067,7 +3339,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#xjmlkrihtr .gt_heading {
+#mevrwglpal .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -5078,12 +3350,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#xjmlkrihtr .gt_bottom_border {
+#mevrwglpal .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#xjmlkrihtr .gt_col_headings {
+#mevrwglpal .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -5097,7 +3369,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#xjmlkrihtr .gt_col_heading {
+#mevrwglpal .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -5116,7 +3388,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#xjmlkrihtr .gt_column_spanner_outer {
+#mevrwglpal .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -5127,13 +3399,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#xjmlkrihtr .gt_column_spanner_outer:first-child {
+#mevrwglpal .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#xjmlkrihtr .gt_column_spanner_outer:last-child {
+#mevrwglpal .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#xjmlkrihtr .gt_column_spanner {
+#mevrwglpal .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -5144,10 +3416,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#xjmlkrihtr .gt_spanner_row {
+#mevrwglpal .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#xjmlkrihtr .gt_group_heading {
+#mevrwglpal .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5172,7 +3444,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#xjmlkrihtr .gt_empty_group_heading {
+#mevrwglpal .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -5186,13 +3458,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#xjmlkrihtr .gt_from_md > :first-child {
+#mevrwglpal .gt_from_md > :first-child {
 margin-top: 0;
 }
-#xjmlkrihtr .gt_from_md > :last-child {
+#mevrwglpal .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#xjmlkrihtr .gt_row {
+#mevrwglpal .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5210,7 +3482,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#xjmlkrihtr .gt_stub {
+#mevrwglpal .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -5222,484 +3494,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xjmlkrihtr .gt_stub_row_group {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-vertical-align: top;
-}
-#xjmlkrihtr .gt_row_group_first td {
-border-top-width: 2px;
-}
-#xjmlkrihtr .gt_row_group_first th {
-border-top-width: 2px;
-}
-#xjmlkrihtr .gt_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#xjmlkrihtr .gt_first_summary_row {
-border-top-style: solid;
-border-top-color: #D3D3D3;
-}
-#xjmlkrihtr .gt_first_summary_row.thick {
-border-top-width: 2px;
-}
-#xjmlkrihtr .gt_last_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#xjmlkrihtr .gt_grand_summary_row {
-color: #333333;
-background-color: #FFFFFF;
-text-transform: inherit;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#xjmlkrihtr .gt_first_grand_summary_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-style: double;
-border-top-width: 6px;
-border-top-color: #D3D3D3;
-}
-#xjmlkrihtr .gt_last_grand_summary_row_top {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-style: double;
-border-bottom-width: 6px;
-border-bottom-color: #D3D3D3;
-}
-#xjmlkrihtr .gt_striped {
-background-color: rgba(128, 128, 128, 0.05);
-}
-#xjmlkrihtr .gt_table_body {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#xjmlkrihtr .gt_footnotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#xjmlkrihtr .gt_footnote {
-margin: 0px;
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#xjmlkrihtr .gt_sourcenotes {
-color: #333333;
-background-color: #FFFFFF;
-border-bottom-style: none;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-}
-#xjmlkrihtr .gt_sourcenote {
-font-size: 90%;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-}
-#xjmlkrihtr .gt_left {
-text-align: left;
-}
-#xjmlkrihtr .gt_center {
-text-align: center;
-}
-#xjmlkrihtr .gt_right {
-text-align: right;
-font-variant-numeric: tabular-nums;
-}
-#xjmlkrihtr .gt_font_normal {
-font-weight: normal;
-}
-#xjmlkrihtr .gt_font_bold {
-font-weight: bold;
-}
-#xjmlkrihtr .gt_font_italic {
-font-style: italic;
-}
-#xjmlkrihtr .gt_super {
-font-size: 65%;
-}
-#xjmlkrihtr .gt_footnote_marks {
-font-size: 75%;
-vertical-align: 0.4em;
-position: initial;
-}
-#xjmlkrihtr .gt_asterisk {
-font-size: 100%;
-vertical-align: 0;
-}
-#xjmlkrihtr .gt_indent_1 {
-text-indent: 5px;
-}
-#xjmlkrihtr .gt_indent_2 {
-text-indent: 10px;
-}
-#xjmlkrihtr .gt_indent_3 {
-text-indent: 15px;
-}
-#xjmlkrihtr .gt_indent_4 {
-text-indent: 20px;
-}
-#xjmlkrihtr .gt_indent_5 {
-text-indent: 25px;
-}
-#xjmlkrihtr .katex-display {
-display: inline-flex !important;
-margin-bottom: 0.75em !important;
-}
-#xjmlkrihtr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-height: 0px !important;
-}
-</style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="stat_0"><span class="gt_from_md"><strong>N = 55</strong></span><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">What other measures is your authority implementing to control or combat invasive mosquitoes?</td>
-<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Analog nationalem Plan sollen Adultizide und nicht-chemische Larvizide (Aquatain) nur eingesetzt werden, wenn es wirklich nötig scheint.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Bitte bei zuständiger Stelle anfragen: Koordinationsstelle Neobiota</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Die Bekämpfungsmassnahmen der Tigermücken erfolgen durch die Baudirektion (AWEL, Sektion Biosicherheit) bzw. durch die Gemeinden. Sie umfassen bspw. den Einsatz von Larviziden.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Die gemäss Tierseuchenverordnung anzuordnenden Massnahmen unterscheiden nicht zwischen invasiven und nicht invasiven Mücken.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Empfehlung Prävention an Tierhaltende (TW BT/EHD)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Empfehlungen an Tierhalter um die Übertragung von BT-Viren durch Vektoren zu reduzieren</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Im Kanton Thurgau wurde noch keine etablierte Tigermücken-Population im Rahmen des Monitorings nachgewiesen.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Impfempfehlung, Empfehlung der obig erwähnten Massnahmen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    In bestimmten Fällen sind Adultizide vorgesehen. Beim Monitoring benutzt der Kt VectoBac in den Fallen (Bti). Der Kt. stellt den betroffenen Gemeinden VectoBac zur Verfügung</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine direkten Massnahmen, aber Empfehlungen an Tierhalter / Tierärzte</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    noch keine Nachweise im Kanton</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Nur Anweisungen an Tierhalter. Keine eigenen Ativitäten.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Pilotstudie im 3 Jahr Sterilisierung der Mücke durch die SUPSI</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Sensibilisierung mit TW vom Bund</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Test de piégeage imagos femelles. Dés que possible: lâcher de mâles stériles. A développer, transformation de la gestion de l&#39;eau de surface pour limiter les sites de ponte à traiter.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unser Amt arbeitet mit anderen Ämtern im Kanton und mit verschiedenen Bundesämtern zusammen (u.a. in Arbeitsgruppen wie OneHealth oder GL-Vectors Working Group on Vectors UZ6). Auf kantonaler Ebene gibt es eine Arbeitsgruppe, die die Mückenbekämpfung plant und leitet (z.B. Tigermücken), aber auch Forschung und Monitoring zu Vektoren und zu Tierarten, die als Zwischenwirte fungieren, werden in Zusammenarbeit mit dem SUPSI durchgeführt.) Mein Amt befasst sich auch mit Zecken, falls erforderlich.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Vaccination</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Wir sind eher für die Kontrolle zuständig</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Wir unterstützen finanziell Versuche des Kt. Tessin zur SIT</td>
-<td headers="stat_0" class="gt_row gt_center">1 (5.3%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Unknown</td>
-<td headers="stat_0" class="gt_row gt_center">36</td></tr>
-  </tbody>
-  
-  <tfoot class="gt_footnotes">
-    <tr>
-      <td class="gt_footnote" colspan="2"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> <span class="gt_from_md">n (%)</span></td>
-    </tr>
-  </tfoot>
-</table>
-</div>
-<p><strong>GPT-4 Turbo output: </strong> <em>Open-text responses
-revealed a variety of additional measures implemented by cantonal
-authorities to control or combat invasive mosquitoes. Several
-respondents reported coordination with specialized cantonal units or
-municipalities, which are responsible for operational activities such as
-larvicide application (e.g., Bti or Aquatain). Some authorities follow
-national guidelines, using adulticides or non-chemical larvicides only
-when necessary. Preventive recommendations for animal holders were also
-mentioned, particularly concerning vector-borne animal diseases like
-bluetongue. Pilot studies exploring sterile insect techniques (SIT) and
-the release of sterilized male mosquitoes were noted in collaboration
-with research institutions such as SUPSI. Some cantons reported no
-established populations of invasive mosquitoes and thus no active
-control measures, while others indicated their role was limited to
-oversight, awareness, or financial support. A few respondents also
-referenced interdisciplinary collaborations through working groups or
-national platforms.</em></p>
-</div>
-<div id="in-what-areas-of-tick--and-mosquito-borne-diseases-do-you-think-the-cantons-need-support-from-the-confederation" class="section level2" number="1.9">
-<h2><span class="header-section-number">1.9</span> In what areas of
-tick- and mosquito-borne diseases do you think the cantons need support
-from the Confederation?</h2>
-<div id="pdrycawdyr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#pdrycawdyr table {
-font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-#pdrycawdyr thead, #pdrycawdyr tbody, #pdrycawdyr tfoot, #pdrycawdyr tr, #pdrycawdyr td, #pdrycawdyr th {
-border-style: none;
-}
-#pdrycawdyr p {
-margin: 0;
-padding: 0;
-}
-#pdrycawdyr .gt_table {
-display: table;
-border-collapse: collapse;
-line-height: normal;
-margin-left: auto;
-margin-right: auto;
-color: #333333;
-font-size: 16px;
-font-weight: normal;
-font-style: normal;
-background-color: #FFFFFF;
-width: auto;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #A8A8A8;
-border-right-style: none;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #A8A8A8;
-border-left-style: none;
-border-left-width: 2px;
-border-left-color: #D3D3D3;
-}
-#pdrycawdyr .gt_caption {
-padding-top: 4px;
-padding-bottom: 4px;
-}
-#pdrycawdyr .gt_title {
-color: #333333;
-font-size: 125%;
-font-weight: initial;
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 5px;
-padding-right: 5px;
-border-bottom-color: #FFFFFF;
-border-bottom-width: 0;
-}
-#pdrycawdyr .gt_subtitle {
-color: #333333;
-font-size: 85%;
-font-weight: initial;
-padding-top: 3px;
-padding-bottom: 5px;
-padding-left: 5px;
-padding-right: 5px;
-border-top-color: #FFFFFF;
-border-top-width: 0;
-}
-#pdrycawdyr .gt_heading {
-background-color: #FFFFFF;
-text-align: center;
-border-bottom-color: #FFFFFF;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#pdrycawdyr .gt_bottom_border {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-}
-#pdrycawdyr .gt_col_headings {
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-}
-#pdrycawdyr .gt_col_heading {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 6px;
-padding-left: 5px;
-padding-right: 5px;
-overflow-x: hidden;
-}
-#pdrycawdyr .gt_column_spanner_outer {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: normal;
-text-transform: inherit;
-padding-top: 0;
-padding-bottom: 0;
-padding-left: 4px;
-padding-right: 4px;
-}
-#pdrycawdyr .gt_column_spanner_outer:first-child {
-padding-left: 0;
-}
-#pdrycawdyr .gt_column_spanner_outer:last-child {
-padding-right: 0;
-}
-#pdrycawdyr .gt_column_spanner {
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: bottom;
-padding-top: 5px;
-padding-bottom: 5px;
-overflow-x: hidden;
-display: inline-block;
-width: 100%;
-}
-#pdrycawdyr .gt_spanner_row {
-border-bottom-style: hidden;
-}
-#pdrycawdyr .gt_group_heading {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-text-align: left;
-}
-#pdrycawdyr .gt_empty_group_heading {
-padding: 0.5px;
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-border-top-style: solid;
-border-top-width: 2px;
-border-top-color: #D3D3D3;
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-bottom-color: #D3D3D3;
-vertical-align: middle;
-}
-#pdrycawdyr .gt_from_md > :first-child {
-margin-top: 0;
-}
-#pdrycawdyr .gt_from_md > :last-child {
-margin-bottom: 0;
-}
-#pdrycawdyr .gt_row {
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 5px;
-padding-right: 5px;
-margin: 10px;
-border-top-style: solid;
-border-top-width: 1px;
-border-top-color: #D3D3D3;
-border-left-style: none;
-border-left-width: 1px;
-border-left-color: #D3D3D3;
-border-right-style: none;
-border-right-width: 1px;
-border-right-color: #D3D3D3;
-vertical-align: middle;
-overflow-x: hidden;
-}
-#pdrycawdyr .gt_stub {
-color: #333333;
-background-color: #FFFFFF;
-font-size: 100%;
-font-weight: initial;
-text-transform: inherit;
-border-right-style: solid;
-border-right-width: 2px;
-border-right-color: #D3D3D3;
-padding-left: 5px;
-padding-right: 5px;
-}
-#pdrycawdyr .gt_stub_row_group {
+#mevrwglpal .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -5712,13 +3507,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#pdrycawdyr .gt_row_group_first td {
+#mevrwglpal .gt_row_group_first td {
 border-top-width: 2px;
 }
-#pdrycawdyr .gt_row_group_first th {
+#mevrwglpal .gt_row_group_first th {
 border-top-width: 2px;
 }
-#pdrycawdyr .gt_summary_row {
+#mevrwglpal .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -5727,14 +3522,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#pdrycawdyr .gt_first_summary_row {
+#mevrwglpal .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#pdrycawdyr .gt_first_summary_row.thick {
+#mevrwglpal .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#pdrycawdyr .gt_last_summary_row {
+#mevrwglpal .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5743,7 +3538,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#pdrycawdyr .gt_grand_summary_row {
+#mevrwglpal .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -5752,7 +3547,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#pdrycawdyr .gt_first_grand_summary_row {
+#mevrwglpal .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5761,7 +3556,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#pdrycawdyr .gt_last_grand_summary_row_top {
+#mevrwglpal .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5770,10 +3565,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#pdrycawdyr .gt_striped {
+#mevrwglpal .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#pdrycawdyr .gt_table_body {
+#mevrwglpal .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -5781,7 +3576,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#pdrycawdyr .gt_footnotes {
+#mevrwglpal .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -5794,7 +3589,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#pdrycawdyr .gt_footnote {
+#mevrwglpal .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -5802,7 +3597,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#pdrycawdyr .gt_sourcenotes {
+#mevrwglpal .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -5815,68 +3610,73 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#pdrycawdyr .gt_sourcenote {
+#mevrwglpal .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#pdrycawdyr .gt_left {
+#mevrwglpal .gt_left {
 text-align: left;
 }
-#pdrycawdyr .gt_center {
+#mevrwglpal .gt_center {
 text-align: center;
 }
-#pdrycawdyr .gt_right {
+#mevrwglpal .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#pdrycawdyr .gt_font_normal {
+#mevrwglpal .gt_font_normal {
 font-weight: normal;
 }
-#pdrycawdyr .gt_font_bold {
+#mevrwglpal .gt_font_bold {
 font-weight: bold;
 }
-#pdrycawdyr .gt_font_italic {
+#mevrwglpal .gt_font_italic {
 font-style: italic;
 }
-#pdrycawdyr .gt_super {
+#mevrwglpal .gt_super {
 font-size: 65%;
 }
-#pdrycawdyr .gt_footnote_marks {
+#mevrwglpal .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#pdrycawdyr .gt_asterisk {
+#mevrwglpal .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#pdrycawdyr .gt_indent_1 {
+#mevrwglpal .gt_indent_1 {
 text-indent: 5px;
 }
-#pdrycawdyr .gt_indent_2 {
+#mevrwglpal .gt_indent_2 {
 text-indent: 10px;
 }
-#pdrycawdyr .gt_indent_3 {
+#mevrwglpal .gt_indent_3 {
 text-indent: 15px;
 }
-#pdrycawdyr .gt_indent_4 {
+#mevrwglpal .gt_indent_4 {
 text-indent: 20px;
 }
-#pdrycawdyr .gt_indent_5 {
+#mevrwglpal .gt_indent_5 {
 text-indent: 25px;
 }
-#pdrycawdyr .katex-display {
+#mevrwglpal .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#pdrycawdyr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mevrwglpal div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table" style="table-layout:fixed;width:0px;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption>Table 4. Collaboration and coordination in the field of mosquito- and tick-borne diseases.</caption>
+  <colgroup>
+    <col style="width:600px;" />
+    <col style="width:100px;" />
+  </colgroup>
   <thead>
     <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="label"><span class="gt_from_md"><strong>Question</strong></span></th>
@@ -5884,114 +3684,45 @@ height: 0px !important;
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">In what areas of tick- and mosquito-borne diseases do you think the cantons need support from the Confederation?</td>
+    <tr><td headers="label" class="gt_row gt_left">&gt; Does your authority maintain an active network or exchanges with 
+                    researchers and specialists in the field?</td>
 <td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    -</td>
+    <tr><td headers="label" class="gt_row gt_left">Yes, for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">11 (20%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, for mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">33 (60%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No, neither for tick-borne nor mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">15 (27%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">7 (13%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; Is the issue of tick- and mosquito-borne diseases sufficiently or inadequately addressed in the implementation of the national climate change adaptation strategy?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, sufficient for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">9 (16%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, sufficient for mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">11 (20%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Insufficient for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">4 (7.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Insufficient for mosquito-borne diseases</td>
 <td headers="stat_0" class="gt_row gt_center">3 (5.5%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    best practice Massnahmen, Schaffung verbindlicher Rechtsnormen für diese Massnahmen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Communication, prévention et lutte</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Concernant les moustiques, un soutien au niveau de l&#39;uniformisation de certain aspect (durée de la virémie par exemple), au niveau des tiques, une meilleure connaissance des zones avec davantage de tiques, des facteurs favorisant la transmission et des données de couverture vaccinale TBE chez les adultes</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Dans tous les domaines, afin d&#39;assurer une cohésion entre tous les cantons de la Suisse</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Derzeit gibt es mehrere Arbeitsgruppen, die sowohl in den Bereichen &quot;Mücken&quot; &#39; und &quot;Zecken&quot; &#39; als auch ganz allgemein unter dem Dach von &quot;OneHealth&quot; tätig sind. Wir sollten die Ergebnisse dieser Arbeitsgruppen abwarten, um beurteilen zu können, in welchen Bereichen Bundesunterstützung erforderlich ist.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Einheitliche Handlungsempfehlungen (Massnahmenpläne); national gesteuertes Monitoring für das Erregervorkommen in Mücken und Zecken für eine gesamtschweizerische Risikoabschätzung / Blick</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Erarbeitung von Empfehlungen zur Überwachung von mückenübertragbaren Krankheiten</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Fachbereichsübergreifende Koordination und Priorisierung von Massnahmen.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Finanzielle Unterstützung bei Monitoring und Bekämpfung der gebietsfremden Mücken</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Finazielle Unterstützung für Studien z. B. im Bereich von Erregerbachweis in Zecken im Kanton</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Grundsätzlich wäre im Bereich Ausbruchbekämpfung ein möglichst harmonisiertes Vorgehen wünschenswert. Hierfür müssten möglichst einheitliche, klare Empfehlungen und Beurteilungskriterien vorliegen.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Handlungsempfehlungen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Handlungsempfehlungen für Kantone im Fall von positiven Nachweisen von invasive Mücken</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Homologation pour le grand public des bons biocides (Vecotobac et Vectomax)</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Im Mücken-Monitoring</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    im Veterinärbereich gesetzlich geregelt, kein weiterer Bedarf</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Impfstoffbereitstellung</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Impfung</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Information au public. Relevés statistiques. Garantir une cohérence des mesures entre les régions</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Informationen über Auftreten von Vektoren und potentiellen Krankheitserregern</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Informationskampagnen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Je ne sais pas</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Kanalisierung von Information, z.B. spezifische Website für diese Themen, die regelmässig aktualisiert wird, allenfalls separat für die Öffentlichkeit und Fachpersonen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine Angabe</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Keine Angabe</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    keine Angabe / weiss nicht</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Keine Angaben</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Kommunikation, Sensibilisierung</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Koordination unter den betroffenen Kantonen. Kanton Basel-Stadt ist in der Region bestens vernetzt. Es gab aber bisher kaum gesamtschweizerische Treffen, um sich unter den Kantonen abzustimmen und gegenseitig zu unterstützen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Koordination Vektorelimination</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Koordinteres Vorgehen/interkantonale Austauschplattformen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Leitfaden zum Vorgehen bei Krankheitsausbrüchen durch invasive Stechmücken</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    maladie de la langue bleue</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Maladies humaines et animales transmises par le moustique-tigre</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    mise à disposition de ressources financière et humaine</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Monitoring von Viren in Zecken und Mücken, Unterstützung in Prevention und Prepardeness, Wissenstransfer</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Mückenmonitoring</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    ohne Ressourcen können nur Links auf der Homepage zur Verfügung gestellt werden, welche bereits vom Bund erarbeitete Informationen vernetzen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    pas de besoin</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Prävention</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Prévention</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Prévention et information de la population</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Schweizweit harmonisierte Massnahmen</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Sensibilisierung dass solche Krankheiten auch in der CH auftauchen könnten z.B. West Nil Fever</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Sensibilisierungs- und Informationsmaterialien, Überwachung der Krankheitserreger</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Sobald sich Populationen etabliert haben, fehlen in meiner Behörde aktuell sowohl die finanziellen als auch personellen Mittel für eine zielführende Bekämpfung/Eindämmung der Tigermücken.</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Un centre dédié qui coordinne les différents instituts de recherche. Nous travaillons avec l IVI; par contre le suivi des vecteurs est une tâche de l OFEV</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Vermehrte aktive Kommunikation betreffend die Gesundheitsaspekte der nationalen Strategie Anpassung an den Klimawandel</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Weiss ich nicht</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Wissenstransfer, Koordination und Geld</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Wissensvermittlung - Priorisierung bei knappen finanziellen Mitteln</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">    Zivilschutz bei der Reduktion der Brutplätze für Mücken auf privaten Grundstücken</td>
-<td headers="stat_0" class="gt_row gt_center">1 (1.8%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No, neither for tick-borne nor mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">36 (65%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&gt; Is the issue of diseases transmitted by ticks and mosquitoes sufficiently or insufficiently taken into account in the implementation of your canton&#39;s climate change adaptation strategy (if any)?</td>
+<td headers="stat_0" class="gt_row gt_center"><br /></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, sufficient for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">10 (18%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Yes, sufficient for mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">19 (35%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Insufficient for tick-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">6 (11%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">Insufficient for mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">3 (5.5%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No, neither for tick-borne nor mosquito-borne diseases</td>
+<td headers="stat_0" class="gt_row gt_center">4 (7.3%)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">No information / don&#39;t know</td>
+<td headers="stat_0" class="gt_row gt_center">29 (53%)</td></tr>
   </tbody>
   
   <tfoot class="gt_footnotes">
@@ -6001,26 +3732,50 @@ height: 0px !important;
   </tfoot>
 </table>
 </div>
-<p><strong>GPT-4 Turbo output: </strong> <em>Cantonal authorities
-identified a broad range of areas where support from the Confederation
-would be beneficial for managing tick- and mosquito-borne diseases.
-Commonly mentioned needs included harmonized national guidelines,
-standardized action plans, and legal frameworks to ensure consistent
-responses across cantons. Respondents emphasized the importance of
-coordination—both inter-cantonal and with federal agencies—and requested
-dedicated platforms for information exchange and communication. Many
-highlighted the need for financial and human resource support,
-particularly for surveillance, monitoring, and control of invasive
-mosquito species. Additional areas of support included improved public
-communication, access to vaccines, authorization of effective biocides,
-and enhanced knowledge transfer. Some participants called for clearer
-delineation of roles and responsibilities, especially concerning
-outbreak preparedness, while others stressed the need for technical
-guidance on specific topics such as vector monitoring, disease risk
-assessment, and prevention strategies. A few respondents indicated no
-current need or were awaiting the results of ongoing federal working
-groups to assess future requirements.</em></p>
 </div>
+</div>
+<div id="conclusion" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Conclusion</h1>
+<p>This national survey provides a first detailed overview of how
+cantonal authorities in Switzerland and Liechtenstein are engaged in the
+monitoring, prevention, and control of diseases transmitted by ticks and
+mosquitoes. While most respondents (77%) reported some level of
+involvement in related activities, findings reveal notable disparities
+in resources, actions, and strategic alignment across cantons and
+sectors.</p>
+<p>Efforts appear more advanced for mosquito-borne diseases, with a
+broader range of implemented activities such as public awareness
+campaigns, professional training, and both active and passive
+monitoring. In contrast, tick-related activities were reported far less
+frequently, with more than half of respondents stating that their
+authority does not currently engage in any tick-related measures. Access
+to dedicated human or financial resources remains limited overall,
+particularly for tick-borne disease interventions.</p>
+<p>The survey highlights important knowledge gaps reported by cantonal
+authorities, particularly in the areas of disease management and
+pathogen detection. These gaps were reported more frequently for
+mosquito-borne than tick-borne diseases, reflecting the growing public
+health importance of invasive mosquito species. Despite these
+challenges, several authorities reported innovative or pilot measures,
+such as the use of biological larvicides and participation in sterile
+insect technique studies.</p>
+<p>Collaborative networks are more commonly established around
+mosquito-related issues, with 60% of respondents indicating active
+exchanges with researchers and specialists in that domain, compared to
+only 20% for tick-related issues. Many participants called for stronger
+coordination across cantons, improved knowledge transfer, and clearer
+federal leadership, especially regarding outbreak preparedness,
+standardized intervention strategies, and resource sharing.</p>
+<p>Finally, the survey underscores a general lack of integration of
+vector-borne diseases into climate adaptation strategies, both at the
+national and cantonal levels. Most respondents were unaware of whether
+these health issues are considered in existing climate strategies,
+suggesting a need to strengthen the connection between climate and
+vector-borne disease planning. Together, these findings point to the
+importance of reinforcing institutional capacity, inter-cantonal
+collaboration, and federal support in order to build a more coherent and
+effective response to the rising threat of vector-borne diseases under
+changing climatic conditions.</p>
 </div>
 
 

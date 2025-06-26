@@ -529,7 +529,7 @@ sh_002_labels = function(dat_in, lang){
       # value labels
       labelled::set_value_labels(
         type= c("Human health"="M","Animal health"="T","Environment"="U"),
-        b_1 = c("Yes" = 1, "No" = 2, "No information / don't know" = 3),
+        b_1 = c("Yes" = 1, "No" = 2, "No information / don't know" = 3, "Missing" = NA),
         b_1_1___1 = c("Yes" = 1, "No" = 0),
         b_1_1___2 = c("Yes" = 1, "No" = 0),
         b_1_1___3 = c("Yes" = 1, "No" = 0),

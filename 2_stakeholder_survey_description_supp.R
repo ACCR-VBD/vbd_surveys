@@ -17,7 +17,7 @@
 #' ---
 
 #+ results="hide", warnings="false", echo="false"
-analysis_date = "2025-06-10"
+analysis_date = "2025-06-26"
 load(paste0("savepoints/savepoint_",analysis_date,"/shs_3.Rdata"))
 source("R/setup.R")
 knitr::opts_chunk$set(echo = FALSE)
