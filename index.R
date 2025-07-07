@@ -9,7 +9,7 @@
 
 controls = list(
   analysis_date = "2025-06-26",
-  data_path = file.path("../data/"),
+  data_path = file.path("data/"),
   run_dm = TRUE,
   run_analysis = TRUE
 )
@@ -33,6 +33,8 @@ if(controls$run_dm) {
 rmarkdown::render("1_stakeholder_survey_description.R", output_dir=controls$savepoint)
 rmarkdown::render("2_stakeholder_survey_description_supp.R", output_dir=controls$savepoint)
 
+browseURL(paste0(controls$savepoint,"/1_stakeholder_survey_description.html"))
+browseURL(paste0(controls$savepoint,"/2_stakeholder_survey_description_supp.html"))
 
 #' # Block 2 - BEready ----------------------------------------------------
 

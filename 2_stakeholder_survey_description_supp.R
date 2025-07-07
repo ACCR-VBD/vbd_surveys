@@ -1,7 +1,7 @@
 #' ---
 #' title: Cantonal Engagement in the Prevention and Control of Vector-Borne Diseases in Switzerland and Liechtenstein
 #' subtitle: Supplement
-#' author: Julien Riou, Lilian Goepp, ... (TO ADD)
+#' author: Lilian Goepp, Nina Huber, Arlette Szelecsenyi, Julien Riou
 #' date: "`r Sys.Date()`"
 #' output:
 #'   html_document:

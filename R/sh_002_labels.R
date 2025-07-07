@@ -423,7 +423,7 @@ sh_002_labels = function(dat_in, lang){
       # variable labels
       labelled::set_variable_labels(
         type = "Department",
-        b_1 = "> Is your authority currently involved in the implementation of measures or activities (e.g., public relations, monitoring, or control) in the area of diseases transmitted by ticks and mosquitoes?",
+        b_1 = "Is your authority currently involved in the implementation of measures or activities (e.g., public relations, monitoring, or control) in the area of diseases transmitted by ticks and mosquitoes?",
         b_1_1___1 = "The introduction of measures/activities in the area of diseases transmitted by ticks and mosquitoes is currently being reviewed/planned.",
         b_1_1___2 = "Diseases transmitted by ticks and mosquitoes are not considered part of the responsibilities of your authority.",
         b_1_1___3 = "Diseases transmitted by ticks and mosquitoes are not a high priority for your authority.",

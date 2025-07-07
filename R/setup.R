@@ -11,7 +11,9 @@
 library(pacman)
 pacman::p_load(tidyverse,
                gtsummary,
-               labelled)
+               labelled,
+               readxl,
+               gt)
 
 # set paths ---------------------------------------------------------------
 
