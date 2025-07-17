@@ -213,11 +213,9 @@ shs_3 %>% select(starts_with("d_1___"),starts_with("d_3___"),starts_with("d_4___
   tbl_summary(missing = "always", 
               missing_text = "(Missing)") %>% 
   
-  sh_100_add_question_header("Among the following fields of action, where is the greatest need for information 
-                    or the greatest lack of knowledge about tick-borne diseases in the authority you work for?","d_1___1") %>% 
-  sh_100_add_question_header("Among the following fields of action, where is the greatest need for information 
-                    or the greatest lack of knowledge about mosquito-borne diseases in the authority you work for?","d_3___1") %>% 
-  sh_100_add_question_header("What measures is your authority implementing to control or combat invasive mosquitoes?","d_4___1") %>%
+  sh_100_add_question_header("Does your authority maintain an active network or exchanges with researchers and specialists in the field?","d_1___1") %>% 
+  sh_100_add_question_header("Is the issue of tick- and mosquito-borne diseases sufficiently or inadequately addressed in the implementation of the national climate change adaptation strategy?","d_3___1") %>% 
+  sh_100_add_question_header("Is the issue of diseases transmitted by ticks and mosquitoes sufficiently or insufficiently taken into account in the implementation of your canton's climate change adaptation strategy (if any)?","d_4___1") %>%
   
   sh_100_add_missing(c("d_1___","d_3___","d_4___")) %>% 
   
