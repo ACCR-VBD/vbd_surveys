@@ -8,7 +8,7 @@
 br_001_load = function(){
 
   # Load BeReady
-  dat_out = read.csv(file.path(controls$data_path,"1951BEreadyHauptstud-VectorborneDiseases_DATA_2025-06-12_1515.csv"))
+  dat_out = read.csv(file.path(controls$data_path,"1951BEreadyHauptstud-VectorborneDiseases_DATA_2025-08-12_1144.csv"),sep=";")
   
   return(dat_out)
 }

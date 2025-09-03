@@ -367,7 +367,7 @@ br_002_labels = function(dat_in, lang){
         bl_ppre_challenge___6      = "Combating misinformation about pandemic threats",
         bl_ppre_challenge___7      = "Installing adequate ventilation in workplaces and homes",
         eq5d5l_vas2_swi_ger         = "How good or bad is your health TODAY? This scale runs from 0 (worst health imaginable) to 100 (best health imaginable). Please click on the scale to indicate your health TODAY.",
-        eq5d_mb_5l_swi_ger         = "Please click ONE box that best describes your health TODAY: Mobility",
+        eq5d_mb_5l_swi_ger         = "Please select what best describes your mobility today ",
         bl_abroad_yn               = "Have you ever stayed abroad for more than two days?",
         bl_continent               = "On which continent?",
         bl_continent___1           = "Europe",
@@ -377,7 +377,11 @@ br_002_labels = function(dat_in, lang){
         bl_continent___5           = "Africa",
         bl_continent___6           = "Asia",
         bl_continent___7           = "Oceania",
-        bl_vbd_tick_yn             = "Would you classify it as a vector-borne disease?",
+        bl_vbd_tick_yn             = "Please read the following text carefully before answering the questions:
+        
+        A vector is an organism that can transmit a pathogen (virus, bacterium, or parasite), primarily by feeding on an infected host (human or animal), and then transmitting it to other hosts. 
+        
+        Tick-borne encephalitis is a disease transmitted by tick bites. Would you classify it as a vector-borne disease?",
         bl_vbd_diseases            = "Have you heard of the following diseases?",
         bl_vbd_diseases___1        = "West Nile fever",
         bl_vbd_diseases___2        = "Dengue",
@@ -455,10 +459,10 @@ br_002_labels = function(dat_in, lang){
         bl_vbd_meas_mosq_eff___4   = "Apply larvicides",
         bl_vbd_meas_mosq_eff___5   = "Install repellent sprayers",
         bl_vbd_meas_mosq_eff___6   = "Install mosquito traps",
-        bl_vbd_meas_mosq_eff___7   = "Release irradiated or GM mosquitoes",
+        bl_vbd_meas_mosq_eff___7   = "Release irradiated or genetically modified mosquitoes",
         bl_vbd_meas_mosq_eff___8   = "Promote personal protective measures",
         bl_vbd_meas_mosq_eff___0   = "None of these",
-        bl_vbd_dis_problem         = "Do you consider the following a current health problem in Switzerland?",
+        bl_vbd_dis_problem         = "Do you consider the following disease as a current health problem in Switzerland?",
         bl_vbd_dis_problem___1     = "Tick-borne encephalitis",
         bl_vbd_dis_problem___2     = "West Nile fever",
         bl_vbd_dis_problem___3     = "Dengue",
@@ -466,12 +470,12 @@ br_002_labels = function(dat_in, lang){
         bl_vbd_dis_problem___5     = "Chikungunya",
         bl_vbd_dis_problem___6     = "Lyme disease",
         bl_vbd_meth_yn             = "Do you think vector control measures are necessary in Switzerland?",
-        isco_lvl1                  = "Industry according to CH-ISCO 2019"
+        isco_lvl1                  = "Occupation according to CH-ISCO 2019"
       ) %>%
       # value labels
       labelled::set_value_labels(
         bl_sex                    = c("Female"=2, "Male"=1, "Intersex"=3),
-        bl_gender_def             = c("Female"=2, "Male"=1, "Other, please specify..."=3),
+        bl_gender_def             = c("Female"=2, "Male"=1, "Other"=3),
         bl_commune                = value_commune,
         bl_live_ch_since          = c("Since birth"=1, "Born in Switzerland but also lived abroad"=2, "Born abroad"=3),
         bl_education              = c(
@@ -489,6 +493,11 @@ br_002_labels = function(dat_in, lang){
           "Divorced"=7, "Widowed"=8
         ),
         bl_vacc_yn                = c("Yes"=1, "No"=0),
+        eq5d_mb_5l_swi_ger       = c("I have no problems walking around"=1,
+                                      "I have slight problems walking around"=2,
+                                      "I have moderate problems walking around"=3,
+                                      "I have severe problems walking around"=4,
+                                      "I am unable to walk around"=5),
         bl_ppre_challenge___1     = c("Yes"=1, "No"=0),
         bl_ppre_challenge___2     = c("Yes"=1, "No"=0),
         bl_ppre_challenge___3     = c("Yes"=1, "No"=0),
@@ -504,7 +513,7 @@ br_002_labels = function(dat_in, lang){
         bl_continent___5          = c("Yes"=1, "No"=0),
         bl_continent___6          = c("Yes"=1, "No"=0),
         bl_continent___7          = c("Yes"=1, "No"=0),
-        bl_vbd_tick_yn            = c("Yes"=1, "No"=0),
+        bl_vbd_tick_yn            = c("Yes"=1, "No"=0,"I don't know"=99),
         bl_vbd_diseases___1       = c("Yes"=1, "No"=0),
         bl_vbd_diseases___2       = c("Yes"=1, "No"=0),
         bl_vbd_diseases___3       = c("Yes"=1, "No"=0),
@@ -622,6 +631,14 @@ br_002_labels = function(dat_in, lang){
       bl_education             = labelled::to_factor(bl_education),
       bl_scg_marital_status    = labelled::to_factor(bl_scg_marital_status),
       bl_vacc_yn               = labelled::to_factor(bl_vacc_yn),
+      eq5d_mb_5l_swi_ger       = labelled::to_factor(eq5d_mb_5l_swi_ger),
+      bl_ppre_challenge___1    = labelled::to_factor(bl_ppre_challenge___1),
+      bl_ppre_challenge___2    = labelled::to_factor(bl_ppre_challenge___2),
+      bl_ppre_challenge___3    = labelled::to_factor(bl_ppre_challenge___3),
+      bl_ppre_challenge___4    = labelled::to_factor(bl_ppre_challenge___4),
+      bl_ppre_challenge___5    = labelled::to_factor(bl_ppre_challenge___5),
+      bl_ppre_challenge___6    = labelled::to_factor(bl_ppre_challenge___6),
+      bl_ppre_challenge___7    = labelled::to_factor(bl_ppre_challenge___7),
       bl_abroad_yn             = labelled::to_factor(bl_abroad_yn),
       bl_continent___1         = labelled::to_factor(bl_continent___1),
       bl_continent___2         = labelled::to_factor(bl_continent___2),

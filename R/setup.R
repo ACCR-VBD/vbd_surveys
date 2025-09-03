@@ -13,7 +13,8 @@ pacman::p_load(tidyverse,
                gtsummary,
                labelled,
                readxl,
-               gt)
+               gt,
+               gridExtra)
 
 # set paths ---------------------------------------------------------------
 
@@ -23,7 +24,7 @@ path_script =
 # source functions --------------------------------------------------------
 
 all_fns = 
-  dir("R/", pattern="sh|be", full.names = TRUE) %>% 
+  dir("R/", pattern="sh|br", full.names = TRUE) %>% 
   file.path()
 lapply(all_fns, function(x) source(x, echo=FALSE))
 
