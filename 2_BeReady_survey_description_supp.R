@@ -17,7 +17,7 @@
 #' ---
 
 #+ results="hide", warnings="false", echo="false"
-analysis_date = "2025-06-26"
+analysis_date = "2025-09-03"
 load(paste0("savepoints/savepoint_",analysis_date,"/brs_3.Rdata"))
 source("R/setup.R")
 knitr::opts_chunk$set(echo = FALSE)
@@ -31,7 +31,7 @@ set_gtsummary_theme(list(
 
 brs_3 %>%
   select(bl_sex, bl_gender_def, bl_education, bl_live_ch_since,bl_scg_marital_status,isco_lvl1) %>%
-  tbl_summary(missing = "always",
+  tbl_summary(missing = "ifany",
               missing_text = "(Missing)") %>%
   modify_bold(rows=(variable=="bl_sex"&row_type=="label"),columns=label) %>% 
   modify_bold(rows=(variable=="bl_gender_def"&row_type=="label"),columns=label) %>% 
@@ -58,7 +58,7 @@ hist(brs_3$age_incl, main="Figure 1: Age at inclusion",xlab="Age (years)",breaks
 
 brs_3 %>%
   select(bl_vacc_yn,eq5d_mb_5l_swi_ger,bl_abroad_yn, starts_with("bl_continent___"), starts_with("bl_ppre_challenge___")) %>%
-  tbl_summary(missing = "always",
+  tbl_summary(missing = "ifany",
               missing_text = "(Missing)",
               type         = list(bl_vacc_yn ~ "categorical",
                                   bl_abroad_yn ~ "categorical")) %>%
@@ -104,7 +104,7 @@ suppressWarnings(create_respondent_map())
 brs_3 %>% 
   select(bl_vbd_tick_yn) %>% 
   tbl_summary(
-    missing      = "always",
+    missing      = "ifany",
     missing_text = "(Missing)"
   ) %>% 
   modify_bold(rows=(variable=="bl_vbd_tick_yn"&row_type=="label"),columns=label) %>%
@@ -114,7 +114,7 @@ brs_3 %>%
 brs_3 %>% 
   select(starts_with("bl_vbd_diseases___"),starts_with("bl_vbd_organism___")) %>% 
   tbl_summary(
-    missing      = "always",
+    missing      = "ifany",
     missing_text = "(Missing)"
   ) %>% 
   br_100_add_question_header(
@@ -147,7 +147,7 @@ brs_3 %>%
 #+ contradictions-table
 brs_3 %>%
   select(contrad_ticks, contrad_mosq, contrad_any) %>%
-  tbl_summary(missing = "always",
+  tbl_summary(missing = "ifany",
               missing_text = "(Missing)") %>%
   modify_bold(rows=(variable=="contrad_ticks"&row_type=="label"),columns=label) %>%
   modify_bold(rows=(variable=="contrad_mosq"&row_type=="label"),columns=label) %>%
@@ -169,7 +169,7 @@ brs_3 %>%
 brs_3 %>%
   filter(filtering_var$filtering_var) %>% 
   select(starts_with("kn_cls_"),-kn_cls_n,-kn_cls_prop) %>%
-  tbl_summary(missing = "always",
+  tbl_summary(missing = "ifany",
               missing_text = "(Missing)") %>%
   modify_table_body(~ {
     dplyr::add_row(
@@ -205,7 +205,7 @@ brs_3 %>%
 brs_3 %>%
   filter(filtering_var$filtering_var) %>% 
   select(starts_with("kn_org_"),-kn_org_n,-kn_org_prop) %>%
-  tbl_summary(missing = "always",
+  tbl_summary(missing = "ifany",
               missing_text = "(Missing)") %>%
   modify_table_body(~ {
     dplyr::add_row(
@@ -242,7 +242,7 @@ brs_3 %>%
   filter(filtering_var$filtering_var) %>% 
   select(starts_with("kn_mat_"), -kn_mat_n, -kn_mat_prop) %>% 
   tbl_summary(
-    missing      = "always",
+    missing      = "ifany",
     missing_text = "(Missing)"
   ) %>% 
   modify_table_body(~ dplyr::add_row(
