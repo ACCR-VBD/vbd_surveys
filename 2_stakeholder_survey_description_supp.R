@@ -17,10 +17,134 @@
 #' ---
 
 #+ results="hide", warnings="false", echo="false"
-analysis_date = "2025-06-26"
+analysis_date = "2025-09-03"
 load(paste0("savepoints/savepoint_",analysis_date,"/shs_3.Rdata"))
 source("R/setup.R")
 knitr::opts_chunk$set(echo = FALSE)
+
+#' 
+#' # Involvement and resources
+#' 
+
+shs_3 %>% select(starts_with("b_1"), -b_1_2,starts_with("b_2___"),
+                 starts_with("b_3___"),
+                 starts_with("b_4___"),type) %>% 
+  
+  tbl_summary(missing = "always",
+              by=type,
+              missing_text = "(Missing)",
+              digits=everything()~0) %>%
+  
+  add_overall(last=FALSE) %>%
+  
+  modify_bold(rows=(variable=="b_1"&row_type=="label"),columns=label) %>% 
+  
+  sh_100_add_question_header("If you answered no, what are the reasons?","b_1_1___1") %>% 
+  sh_100_add_question_header("Do you know of any strategy or action plan in your canton regarding
+                      diseases transmitted by ticks and mosquitoes?","b_2___1") %>% 
+  sh_100_add_question_header("Does your authority have human resources to develop and implement 
+                    activities related to diseases transmitted by ticks and mosquitoes?","b_3___1") %>% 
+  sh_100_add_question_header("Does your authority have a budget for the development and implementation 
+                    of activities in the field of diseases transmitted by ticks and mosquitoes?","b_4___1") %>% 
+  sh_100_add_missing(c("b_2___","b_3___","b_4___")) %>% 
+  
+  
+  modify_table_body(
+    ~ dplyr::filter(.x, !(grepl("___",variable) & row_type == "missing"))) %>%
+  modify_header(label ~ "**Question**") %>% 
+  
+  sh_100_add_caption("Involvement and resources in the field of mosquito- and tick-borne diseases",1) %>% 
+  tab_style(
+    style = "padding-left:20px;",
+    locations = cells_body(
+      columns = "label",
+      rows    = row_type == "label" & grepl("___",variable)
+    )
+  )
+
+# # Concrete measures and activities
+
+shs_3 %>% select(starts_with("c_1___"),starts_with("c_2___"),starts_with("c_3___"),type) %>% 
+  
+  tbl_summary(missing = "always",
+              by =type,
+              missing_text = "(Missing)",
+              digits=everything()~0) %>% 
+  add_overall(last=FALSE) %>% 
+  sh_100_add_question_header("What activities is your authority currently 
+                    (2024/2025) implementing in the field of tick-borne diseases?","c_1___1") %>% 
+  sh_100_add_question_header("What activities is your authority currently 
+                    (2024/2025) implementing in the field of mosquito-borne diseases?","c_2___1") %>% 
+  sh_100_add_question_header("If your authority develops information, what subjects are covered?","c_3___1") %>%
+  
+  sh_100_add_missing(c("c_1___","c_2___","c_3___")) %>% 
+  
+  modify_table_body(
+    ~ dplyr::filter(.x, !(grepl("___",variable) & row_type == "missing"))) %>%
+  modify_header(label ~ "**Question**") %>% 
+  
+  sh_100_add_caption("Concrete measures and activities in the field of mosquito- and tick-borne diseases (part 1)",2) %>% 
+  tab_style(
+    style = "padding-left:20px;",
+    locations = cells_body(
+      columns = "label",
+      rows    = row_type == "label" & grepl("___",variable)
+    )
+  )
+
+shs_3 %>% select(starts_with("c_6___"),starts_with("c_7___"),starts_with("c_8___")) %>% 
+  
+  tbl_summary(missing = "always", 
+              missing_text = "(Missing)",
+              digits=everything()~0) %>% 
+  
+  sh_100_add_question_header("Among the following fields of action, where is the greatest need for information 
+                    or the greatest lack of knowledge about tick-borne diseases in the authority you work for?","c_6___1") %>% 
+  sh_100_add_question_header("Among the following fields of action, where is the greatest need for information 
+                    or the greatest lack of knowledge about mosquito-borne diseases in the authority you work for?","c_7___1") %>% 
+  sh_100_add_question_header("What measures is your authority implementing to control or combat invasive mosquitoes?","c_8___1") %>%
+  
+  sh_100_add_missing(c("c_6___","c_7___","c_8___")) %>% 
+  
+  modify_table_body(
+    ~ dplyr::filter(.x, !(grepl("___",variable) & row_type == "missing"))) %>%
+  modify_header(label ~ "**Question**") %>% 
+  
+  sh_100_add_caption("Concrete measures and activities in the field of mosquito- and tick-borne diseases (part 2)",3) %>% 
+  tab_style(
+    style = "padding-left:20px;",
+    locations = cells_body(
+      columns = "label",
+      rows    = row_type == "label" & grepl("___",variable)
+    )
+  )
+
+# # Collaboration and coordination
+
+shs_3 %>% select(starts_with("d_1___"),starts_with("d_3___"),starts_with("d_4___")) %>% 
+  
+  tbl_summary(missing = "always", 
+              missing_text = "(Missing)",
+              digits=everything()~0) %>% 
+  
+  sh_100_add_question_header("Does your authority maintain an active network or exchanges with researchers and specialists in the field?","d_1___1") %>% 
+  sh_100_add_question_header("Is the issue of tick- and mosquito-borne diseases sufficiently or inadequately addressed in the implementation of the national climate change adaptation strategy?","d_3___1") %>% 
+  sh_100_add_question_header("Is the issue of diseases transmitted by ticks and mosquitoes sufficiently or insufficiently taken into account in the implementation of your canton's climate change adaptation strategy (if any)?","d_4___1") %>%
+  
+  sh_100_add_missing(c("d_1___","d_3___","d_4___")) %>% 
+  
+  modify_table_body(
+    ~ dplyr::filter(.x, !(grepl("___",variable) & row_type == "missing"))) %>%
+  modify_header(label ~ "**Question**") %>% 
+  
+  sh_100_add_caption("Collaboration and coordination in the field of mosquito- and tick-borne diseases",4) %>% 
+  tab_style(
+    style = "padding-left:20px;",
+    locations = cells_body(
+      columns = "label",
+      rows    = row_type == "label" & grepl("___",variable)
+    )
+  )
 
 #' 
 #' # Open text answers

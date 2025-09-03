@@ -8,10 +8,10 @@
 #' # Block 0 - set-up --------------------------------------------------------
 
 controls = list(
-  analysis_date = "2025-06-26",
+  analysis_date = "2025-09-03",
   data_path = file.path("data/"),
-  run_dm_shs = FALSE,
-  run_analysis_shs = FALSE,
+  run_dm_shs = TRUE,
+  run_analysis_shs = TRUE,
   run_dm_brs = TRUE,
   run_analysis_brs = TRUE
 )

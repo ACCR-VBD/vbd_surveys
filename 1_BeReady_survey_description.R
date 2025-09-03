@@ -30,13 +30,13 @@ set_gtsummary_theme(list(
 #' (“Decision Support for Dealing with Climate Change in Switzerland: a cross-sectoral approach”), 
 #' which develops climate-related services for the environment, the economy, and society. Within this 
 #' framework, the health project jointly led by the Federal Office of Public Health (FOPH) and the 
-#' Federal Food Safety and Veterinary Office (FSVO) addresses heat, mycotoxins, and vector-borne diseases 
+#' Federal Food Safety and Veterinary Office (FSVO) addresses heat, mycotoxins, and vector-borne diseases in humans and animals. 
 #' (VBDs).
 #' 
 #' A comprehensive risk assessment of current and future VBD threats to humans and animals in Switzerland is 
 #' being carried out as part of this effort. It includes documenting both the implementation of measures by 
 #' cantonal authorities and the knowledge, attitude and practice (KAP) concerning vector-borne diseases among the Bernese population. 
-#' The general population survey survey was embedded in the BEready cohort study at the University of Bern. 
+#' The general population survey was embedded in the BEready cohort study at the University of Bern. 
 #' BEready is a long-term study involving households across the canton of Bern, designed to generate data on 
 #' infectious diseases and improve preparedness for future health threats. In this context, the survey 
 #' investigates how Bernese residents perceive VBD risks and protective measures, while complementing 

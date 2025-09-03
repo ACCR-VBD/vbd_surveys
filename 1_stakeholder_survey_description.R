@@ -16,7 +16,7 @@
 #' ---
 
 #+ results="hide", warnings="false", echo="false"
-analysis_date = "2025-08-11"
+analysis_date = "2025-09-03"
 load(paste0("savepoints/savepoint_",analysis_date,"/shs_3.Rdata"))
 source("R/setup.R")
 knitr::opts_chunk$set(echo = FALSE)
@@ -35,7 +35,7 @@ knitr::opts_chunk$set(echo = FALSE)
 #' Regarding vector-borne diseases, a comprehensive risk assessment of 
 #' current and future threats to humans and animals in Switzerland is 
 #' being carried out. As part of this risk assessment, the project documents 
-#' (1) the implementation of measures at the national level and 
+#' (1) the implementation of measures at the cantonal level in Switzerland and in Liechtenstein and 
 #' (2) the state of knowledge about vector-borne diseases among the Bernese population.
 #' The national survey of departments of health, veterinary services, 
 #' and the environment aims to gather information on engagement, 
@@ -59,7 +59,7 @@ knitr::opts_chunk$set(echo = FALSE)
 #' A reminder was sent on May 16. The questionnaire included structured 
 #' multiple-choice and checkbox items, as well as a small number of open-ended questions, covering 
 #' topics such as awareness of vector-borne diseases, existing preventive measures, interdepartmental 
-#' collaboration, and perceived needs or challenges.
+#' collaboration, and perceived needs or challenges. Respondents were ensured not to be identified.
 #' 
 #' The full questionnaire is available online: https://redcap.unisante.ch/surveys/?s=YKERXDNR4KAMWYP9.
 #' Data were anonymised, exported securely from REDCap and described using R (version 4.4.2).
@@ -89,58 +89,24 @@ n_dep = shs_3 %>%
 #' ## Involvement and resources
 #' 
 #' Most participants (77%) reported that their authority is currently involved in the implementation of measures or 
-#' activities related to diseases transmitted by ticks and mosquitoes, such as public relations, monitoring, or control (Table 1). 
-#' Among the 12 respondents who indicated no current involvement, the most frequently cited reasons included a lack of financial or 
+#' activities related to diseases transmitted by ticks and mosquitoes, such as public relations, monitoring, or control (Supplementary table 1). 
+#' This was especially true in animal health departments (94%).
+#' Among 12 of 55 respondents who indicated no current involvement, the most frequently cited reasons included a lack of financial or 
 #' human resources (50%) and a perception that such diseases are outside the authority's responsibilities (42%). 
 #' Regarding the existence of cantonal strategies or action plans, 49% of respondents were aware of a plan for mosquito-borne diseases 
 #' and 11% for tick-borne diseases, while 33% reported that no strategy exists in their canton. Around half of the respondents
-#' reported lack of human (49%) and financial (55%) ressources. 
+#' reported lack of human (49%) and financial (55%) resources 
 #' 
-
-shs_3 %>% select(starts_with("b_1"), -b_1_2,starts_with("b_2___"),
-                 starts_with("b_3___"),
-                 starts_with("b_4___")) %>% 
-  
-  tbl_summary(missing = "always", 
-              missing_text = "(Missing)") %>% 
-  
-  modify_bold(rows=(variable=="b_1"&row_type=="label"),columns=label) %>% 
-  
-  sh_100_add_question_header("If you answered no, what are the reasons?","b_1_1___1") %>% 
-  sh_100_add_question_header("Do you know of any strategy or action plan in your canton regarding
-                      diseases transmitted by ticks and mosquitoes?","b_2___1") %>% 
-  sh_100_add_question_header("Does your authority have human resources to develop and implement 
-                    activities related to diseases transmitted by ticks and mosquitoes?","b_3___1") %>% 
-  sh_100_add_question_header("Does your authority have a budget for the development and implementation 
-                    of activities in the field of diseases transmitted by ticks and mosquitoes?","b_4___1") %>% 
-  sh_100_add_missing(c("b_2___","b_3___","b_4___")) %>% 
-  
-  
-  modify_table_body(
-    ~ dplyr::filter(.x, !(grepl("___",variable) & row_type == "missing"))) %>%
-    modify_header(label ~ "**Question**") %>% 
-  
-  sh_100_add_caption("Involvement and resources in the field of mosquito- and tick-borne diseases",1) %>% 
-  tab_style(
-    style = "padding-left:20px;",
-    locations = cells_body(
-      columns = "label",
-      rows    = row_type == "label" & grepl("___",variable)
-    )
-  )
-
-# knitr::include_graphics(paste0("savepoints/savepoint_",analysis_date,"/Pie_plot.png"),dpi=10)
-
 #' 
 #' ## Concrete measures and activities
 #' 
-#' Reported concrete measures and activities in the field of vector-borne diseases varied markedly between tick- and mosquito-borne diseases (Table 2). 
+#' Reported concrete measures and activities in the field of vector-borne diseases varied markedly between tick- and mosquito-borne diseases (Supplementary table 2). 
 #' The most common actions cited for ticks included public information campaigns (22%) and targeted awareness of professionals (13%), 
 #' with rare reports of monitoring (4% passive; 0% active) and vaccination advice (6%). In contrast, 
 #' involvement in mosquito-related activities was broader and more diverse: 40% of respondents reported engaging in public relations 
 #' and professional awareness efforts, while active and passive mosquito monitoring were cited by 36% and 33% of respondents, respectively. 
 #' Nearly one-third (29%) mentioned verifying sightings at new locations, and around 15–18% reported involvement in mosquito control on public or private land.
-#'  Information and training activities were mentioned by 20% of respondents. Topics covered in awareness materials included vaccination (65%), 
+#'  Information and training activities were mentioned by 20% of respondents. If the authority develops information, topics covered included vaccination (65%), 
 #'  protection against bites (53%), and elimination of breeding sites (47%). Open-text responses further highlighted involvement 
 #'  in national vaccination campaigns (e.g., against tick-borne encephalitis for humans or bluetongue disease for ruminants and camelids), interdepartmental coordination, 
 #'  media engagement, and surveillance of animal diseases transmitted by ticks and mosquitoes as defined in the Animal Disease Ordinance.
@@ -148,32 +114,6 @@ shs_3 %>% select(starts_with("b_1"), -b_1_2,starts_with("b_2___"),
 #'   and direct communication with veterinarians or animal owners. Additional methods included newsletters, social media, articles in agricultural media,
 #'    information sessions, and training courses, often in collaboration with municipalities or other local actors.
 #' 
-
-shs_3 %>% select(starts_with("c_1___"),starts_with("c_2___"),starts_with("c_3___")) %>% 
-  
-  tbl_summary(missing = "always", 
-              missing_text = "(Missing)") %>% 
-  
-  sh_100_add_question_header("What activities is your authority currently 
-                    (2024/2025) implementing in the field of tick-borne diseases?","c_1___1") %>% 
-  sh_100_add_question_header("What activities is your authority currently 
-                    (2024/2025) implementing in the field of mosquito-borne diseases?","c_2___1") %>% 
-  sh_100_add_question_header("If your authority develops information, what subjects are covered?","c_3___1") %>%
-  
-  sh_100_add_missing(c("c_1___","c_2___","c_3___")) %>% 
-  
-  modify_table_body(
-    ~ dplyr::filter(.x, !(grepl("___",variable) & row_type == "missing"))) %>%
-  modify_header(label ~ "**Question**") %>% 
-  
-  sh_100_add_caption("Concrete measures and activities in the field of mosquito- and tick-borne diseases (part 1)",2) %>% 
-  tab_style(
-    style = "padding-left:20px;",
-    locations = cells_body(
-      columns = "label",
-      rows    = row_type == "label" & grepl("___",variable)
-    )
-  )
 
 if(FALSE){
   shs_3 %>% filter(!is.na(c_1_1)) %>% pull(c_1_1)
@@ -194,7 +134,7 @@ if(FALSE) {
 #' documents from academic or technical partners like SUPSI and Swiss TPH were mentioned. A few respondents reported using self-developed 
 #' materials or relying on exchanges of expert knowledge, while others indicated they did not use any specific documents.
 #' 
-#' Respondents identified a range of knowledge gaps within their authorities concerning both tick- and mosquito-borne diseases (Table 3). 
+#' Respondents identified a range of knowledge gaps within their authorities concerning both tick- and mosquito-borne diseases (Supplementary table 3). 
 #' For tick-borne diseases, the most commonly cited areas of limited knowledge included disease management (20%), followed by detection 
 #' and prevention (both 18%). Open-text responses often emphasized limited relevance or jurisdictional responsibility,  while some highlighted
 #'  a lack of resources or the need for clearer coordination and federally supported monitoring. For mosquito-borne diseases, the main
@@ -208,32 +148,6 @@ if(FALSE) {
 #'     such as municipalities or environmental offices. 
 #' 
 
-shs_3 %>% select(starts_with("c_6___"),starts_with("c_7___"),starts_with("c_8___")) %>% 
-  
-  tbl_summary(missing = "always", 
-              missing_text = "(Missing)") %>% 
-  
-  sh_100_add_question_header("Among the following fields of action, where is the greatest need for information 
-                    or the greatest lack of knowledge about tick-borne diseases in the authority you work for?","c_6___1") %>% 
-  sh_100_add_question_header("Among the following fields of action, where is the greatest need for information 
-                    or the greatest lack of knowledge about mosquito-borne diseases in the authority you work for?","c_7___1") %>% 
-  sh_100_add_question_header("What measures is your authority implementing to control or combat invasive mosquitoes?","c_8___1") %>%
-  
-  sh_100_add_missing(c("c_6___","c_7___","c_8___")) %>% 
-  
-  modify_table_body(
-    ~ dplyr::filter(.x, !(grepl("___",variable) & row_type == "missing"))) %>%
-  modify_header(label ~ "**Question**") %>% 
-  
-  sh_100_add_caption("Concrete measures and activities in the field of mosquito- and tick-borne diseases (part 2)",3) %>% 
-  tab_style(
-    style = "padding-left:20px;",
-    locations = cells_body(
-      columns = "label",
-      rows    = row_type == "label" & grepl("___",variable)
-    )
-  )
-
 if(FALSE){
   shs_3 %>% filter(!is.na(c_6_1)) %>% pull(c_6_1)
   shs_3 %>% filter(!is.na(c_7_1)) %>% pull(c_7_1)
@@ -243,7 +157,7 @@ if(FALSE){
 #' 
 #' ## Collaboration and coordination
 #' 
-#' Collaboration and coordination emerged as important themes in participants’ responses regarding vector-borne disease control (Table 4). 
+#' Collaboration and coordination emerged as important themes in participants’ responses regarding vector-borne disease control (Supplementary table 4). 
 #' While 60% of respondents reported active networks or exchanges with researchers and specialists for mosquito-borne diseases, only 20% 
 #' indicated such collaborations for tick-borne diseases, and over a quarter (27%) reported no active exchange at all. Open-text responses
 #'  highlighted needs for stronger inter-cantonal coordination, improved knowledge transfer, and harmonized federal guidelines, particularly 
@@ -254,30 +168,6 @@ if(FALSE){
 #'     most respondents indicated limited awareness or engagement: 65% were unsure about national-level integration, and 53% did not know whether
 #'      these issues were addressed in their own canton’s strategy. 
 #' 
-
-shs_3 %>% select(starts_with("d_1___"),starts_with("d_3___"),starts_with("d_4___")) %>% 
-  
-  tbl_summary(missing = "always", 
-              missing_text = "(Missing)") %>% 
-  
-  sh_100_add_question_header("Does your authority maintain an active network or exchanges with researchers and specialists in the field?","d_1___1") %>% 
-  sh_100_add_question_header("Is the issue of tick- and mosquito-borne diseases sufficiently or inadequately addressed in the implementation of the national climate change adaptation strategy?","d_3___1") %>% 
-  sh_100_add_question_header("Is the issue of diseases transmitted by ticks and mosquitoes sufficiently or insufficiently taken into account in the implementation of your canton's climate change adaptation strategy (if any)?","d_4___1") %>%
-  
-  sh_100_add_missing(c("d_1___","d_3___","d_4___")) %>% 
-  
-  modify_table_body(
-    ~ dplyr::filter(.x, !(grepl("___",variable) & row_type == "missing"))) %>%
-  modify_header(label ~ "**Question**") %>% 
-  
-  sh_100_add_caption("Collaboration and coordination in the field of mosquito- and tick-borne diseases",4) %>% 
-  tab_style(
-    style = "padding-left:20px;",
-    locations = cells_body(
-      columns = "label",
-      rows    = row_type == "label" & grepl("___",variable)
-    )
-  )
 
 if(FALSE){
   shs_3 %>% filter(!is.na(d_2)) %>% pull(d_2)
