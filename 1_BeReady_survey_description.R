@@ -68,7 +68,7 @@ set_gtsummary_theme(list(
 #' including adults, children and pets and follow them for several decades. 
 #' The study population comes a random selection of households in Bern using the cantonal residents' register and
 #' from volunteer households. The study started with a pilot phase of 100 households in May 2023. Recruitment for the main 
-#' phase started in 2024. An additional module on VBD was added on our request to the 1-year questionnaire of participants
+#' phase started in April 2024. An additional module on VBD was added on our request to the 1-year questionnaire of participants
 #' to the pilot phase, and to the baseline questionnaire of participants to the main phase. We obtained data on all participants
 #' until May 2025.
 #' 
@@ -144,23 +144,16 @@ set_gtsummary_theme(list(
 filtering_var = brs_3 %>% mutate(filtering_var=bl_vbd_tick_yn=="Yes"&contrad_any=="Consistent") %>% select(filtering_var)
 filtering_var[is.na(filtering_var)]=F
 
+#'
+#'
+#' To further explore disease classification, analyses were restricted to participants who demonstrated both a basic understanding of VBD concepts and provided logically consistent responses (n=709, Supplementary Material 2.1.1). Within this group, correct classification was highest for dengue (86%), Lyme disease (83%), measles (83%, correctly identified as non–vector-borne), and influenza (80%, non–vector-borne). Recognition was lower for Zika (69%) and especially for West Nile fever (41%) and chikungunya (32%).
+#'
+#' These participants also showed strong accuracy in identifying disease-transmitting species. Ticks were universally identified as vectors, and nearly all recognized mosquitoes (99%). The most common misconception involved bed bugs, with 23% mistakenly believing they transmit diseases. Wasps were misclassified less frequently, with 7% incorrectly identified as vectors. Overall, knowledge about major vectors was strong, though confusion persisted about insects with nuisance potential but no role in pathogen transmission.
 #' 
-#' When asked to classify specific diseases as vector-borne or not, knowledge levels differed by disease. 
-#' Among participants with basic understanding of the concept of VBD and logically consistent answers (n=709, Supplementary material 2.1.1), correct classification was highest for dengue (86%), Lyme disease (83%), measles (83%, as not vector-borne), 
-#' and influenza (80%, as not vector-borne). Recognition was lower for Zika (69%) and especially for West
-#' Nile fever (41%) and chikungunya (32%).
-#' 
-#' Respondents showed high accuracy when asked about species transmitting diseases. 
-#' Among participants with basic understanding of the concept of VBD and logically consistent answers (n=709, Supplementary material 2.1.1) correctly identified ticks as vectors, and nearly all recognized mosquitoes (99%). 
-#' The most common misconception involved bed bugs, where 23% mistakenly believed they transmit diseases.
-#' Wasps were less often misclassified, with 7% incorrectly identifying them as disease vectors. 
-#' Overall, while knowledge about major vectors was strong, confusion persisted about insects with 
-#' nuisance potential but no role in pathogen transmission.
-#' 
-#' Accuracy in matching diseases with their correct vectors was mixed. 
+#' Accuracy in matching diseases with their correct vectors was more variable. 
 #' TBE was almost universally matched to ticks (99.6%), and dengue (89%), Zika (72%), 
 #' and Lyme disease (88%) were also correctly identified by most respondents. However, 
-#' fewer than half correctly matched West Nile fever to mosquitoes (57%), and fewer than half 
+#' only 57% correctly matched West Nile fever to mosquitoes, and fewer than half 
 #' recognized chikungunya as mosquito-borne (42%). Influenza and measles were mostly correctly 
 #' classified as having no vector (93% and 92%, respectively). These findings suggest that while some pairings are familiar, 
 #' knowledge of mosquito-borne diseases remains incomplete, particularly for those less prominent in Swiss 

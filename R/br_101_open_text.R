@@ -5,7 +5,7 @@
 #' date: 2025-06-16
 #' ---
 
-sh_101_open_text <- function(dat, var_, lab_) {
+br_101_open_text <- function(dat, var_, lab_) {
   
   tbl = dat %>% 
     dplyr::select(var_) %>% 

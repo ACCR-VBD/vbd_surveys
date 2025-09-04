@@ -168,7 +168,7 @@ brs_3 %>%
 
 #' ### Filtering
 
-#' To ensure data quality and consistency, we used Supplementary table 3 and Supplementary table 5 to exclude respondents who either lacked a basic understanding of vector-borne disease diseases or provided logically inconsistent answers throughout the questionnaire. This process ensures that responses reflect a reliable snapshot of participants’ knowledge and that the respondents don't adapt their answers during the completion of the questionnaire. In total, 282 individuals were excluded based on these criteria, leaving a final sample of 709 participants for analyzing the results of the knowledge follow-up questions.
+#' To ensure data quality and consistency, we used Supplementary table 3 and Supplementary table 5 to exclude respondents who either lacked a basic understanding of vector-borne disease diseases or provided logically inconsistent answers throughout the questionnaire. This process ensures that responses reflect a reliable snapshot of participants’ knowledge and that the respondents don't adapt their answers during the completion of the questionnaire. In total, 282 individuals were excluded based on these criteria, leaving a final sample of 709 participants for analyzing the results of follow-up questions concerning knowledge on vector-borne diseases.
 #' 
 
 #' ## Item-level accuracy
@@ -288,9 +288,10 @@ brs_3 %>%
 hist_results=create_hist(brs_3)
 
 hist_results[[2]]+ggtitle("Figure 3: Decomposition of knowledge score by vectors within overall score bins")
-hist_results[[3]]+ggtitle("Figure 3: Decomposition of knowledge score by test items within overall score bins")
+hist_results[[3]]+ggtitle("Figure 4: Decomposition of knowledge score by test items within overall score bins")
 
 #' # Individual exposure : open-ended answers
+#' 
 #' 
 #' Most respondents reported vaccination against tick-borne encephalitis (FSME/TBE) as 
 #' their main preventive measure, often mentioning it explicitly for themselves or their children. 
@@ -308,10 +309,15 @@ hist_results[[3]]+ggtitle("Figure 3: Decomposition of knowledge score by test it
 #' or curtains, and others emphasized behavioral measures, including keeping lights off in the evening, 
 #' ventilating rooms during the day, and avoiding open windows at night. Some mentioned directly eliminating 
 #' mosquitoes indoors through catching, swatting, or using electric devices. Additional approaches included 
-#' reducing breeding sites by covering or regularly changing standing water, maintaining bat-friendly gardens, 
-#' or applying larvicides. A few respondents also referred to vaccination or the use of vitamin supplements as 
+#' reducing breeding sites by covering or regularly changing standing water, maintaining bat-friendly gardens,
+#' or applying larvicides. A few respondents also referred to vaccination or the use of vitamin supplements as
 #' protective measures.
 #' 
+br_101_open_text(brs_3,"bl_vbd_oth_meas", "In the last 12 months, what have you done to protect yourself/family against tick bites or tick-borne diseases?")
+
+br_101_open_text(brs_3,"bl_vbd_oth_meas_2", "In the last 12 months, what have you done to protect yourself/family against mosquito bites?")
+
 #' 
+#' # References
 #' 
 #' 
