@@ -2,6 +2,8 @@
 #' title:  Knowledge, Attitudes and Practices on Vector-Borne Diseases in Switzerland – 2025
 #' author: Lilian Goepp, Nina Huber, Arlette Szelecsenyi, Julien Riou
 #' date: "`r Sys.Date()`"
+#' bibliography: data/Bibliography/Surveys_biblio.bib
+#' link-citations: true
 #' output:
 #'   html_document:
 #'     toc: true
@@ -16,7 +18,7 @@
 #' ---
 
 #+ results="hide", warnings="false", echo="false"
-analysis_date = "2025-09-03"
+analysis_date = "2025-09-04"
 load(paste0("savepoints/savepoint_",analysis_date,"/brs_3.Rdata"))
 source("R/setup.R")
 knitr::opts_chunk$set(echo = FALSE)
@@ -65,7 +67,7 @@ set_gtsummary_theme(list(
 #' cohort in the Canton of Bern under a One-Health framework. BEready plans to enroll approximately 1,500 households, 
 #' including adults, children and pets and follow them for several decades. 
 #' The study population comes a random selection of households in Bern using the cantonal residents' register and
-#' from volunteer households. The study started with a pilot phase of 100 households in 2023. Recruitment for the main 
+#' from volunteer households. The study started with a pilot phase of 100 households in May 2023. Recruitment for the main 
 #' phase started in 2024. An additional module on VBD was added on our request to the 1-year questionnaire of participants
 #' to the pilot phase, and to the baseline questionnaire of participants to the main phase. We obtained data on all participants
 #' until May 2025.
@@ -130,8 +132,7 @@ set_gtsummary_theme(list(
 #' ## General knowledge
 #'
 #' When asked to classify TBE, which is transmitted through tick bites, 
-#' 78% of respondents correctly recognized it as a vector-borne disease, 11% incorrectly applied the  
-#' classification, and 11% stated they did not know. This indicates a generally strong but not 
+#' 78% of respondents correctly recognized it as a vector-borne disease, 11% incorrectly applied the classification, and 11% stated they did not know. This indicates a generally strong but not 
 #' universal grasp of the basic definition of vector-borne diseases among the surveyed population. 
 #' Awareness of diseases varied considerably. Measles (95%), influenza (94%), and dengue (88%) 
 #' were the most widely recognized. Zika (62%) and Lyme disease (76%) were moderately well-known while West 
@@ -145,12 +146,12 @@ filtering_var[is.na(filtering_var)]=F
 
 #' 
 #' When asked to classify specific diseases as vector-borne or not, knowledge levels differed by disease. 
-#' Among participants familiar with these diseases (n=709), correct classification was highest for dengue (86%), Lyme disease (83%), measles (83%, as not vector-borne), 
-#' and influenza (80%, as not vector-borne). Recognition was lower for Zika (69%) and especially for West 
+#' Among participants with basic understanding of the concept of VBD and logically consistent answers (n=709, Supplementary material 2.1.1), correct classification was highest for dengue (86%), Lyme disease (83%), measles (83%, as not vector-borne), 
+#' and influenza (80%, as not vector-borne). Recognition was lower for Zika (69%) and especially for West
 #' Nile fever (41%) and chikungunya (32%).
 #' 
 #' Respondents showed high accuracy when asked about species transmitting diseases. 
-#' All participants with awareness about species (n=709) correctly identified ticks as vectors, and nearly all recognized mosquitoes (99%). 
+#' Among participants with basic understanding of the concept of VBD and logically consistent answers (n=709, Supplementary material 2.1.1) correctly identified ticks as vectors, and nearly all recognized mosquitoes (99%). 
 #' The most common misconception involved bed bugs, where 23% mistakenly believed they transmit diseases.
 #' Wasps were less often misclassified, with 7% incorrectly identifying them as disease vectors. 
 #' Overall, while knowledge about major vectors was strong, confusion persisted about insects with 
@@ -353,10 +354,10 @@ brs_3 %>% select(starts_with("bl_vbd_dis_problem___"),bl_vbd_meth_yn) %>%
 #' the educational profile observed among respondents deviated from national benchmarks. Specifically, 
 #' the sample includes a higher proportion of individuals with tertiary education (notably Master's and Doctorate degrees) 
 #' and a lower proportion of respondents with apprenticeship or upper-secondary education, 
-#' compared to the nationwide distribution from the Swiss Federal Statistical Office (cite: BFS). 
+#' compared to the nationwide distribution from the Swiss Federal Statistical Office [@HighestCompletedEducation2025]. 
 #' This form of participation bias where individuals with higher education are more likely to engage in voluntary-based studies
 #' is a well-documented phenomenon in population-based surveys. Higher female participation has also been reported in such study designs which might explained the observed sex bias.
-#' (cite : https://doi.org/10.1093/eurpub/ckx151, https://doi.org/10.1093/eurpub/ckx151). The web-based design and the observed sociodemographic 
+#' [@cheungImpactNonresponseBias2017, @reinikainenParticipationRatesEducational2018]. The web-based design and the observed sociodemographic 
 #' profile may limit generalizability to the general population. Some items had missing 
 #' data, and a subset of analyses relied on reduced denominators (e.g., N=709 for test items, N=556 for 
 #' the composite score), which could introduce selection effects if completion correlated with knowledge. 
@@ -364,7 +365,7 @@ brs_3 %>% select(starts_with("bl_vbd_dis_problem___"),bl_vbd_meth_yn) %>%
 #' cantonal population prevents from exploring regional variations in the Swiss population with regard to their
 #' knowledge, attitude and practice concerning vector-borne disease.
 #' 
-#' This study is globally consistent with previous results. A study conducted in 2015 in Neuchâtel (cite https://doi.org/10.1186/s12889-015-1539-2) 
+#' This study is globally consistent with previous results. A study conducted in 2015 in Neuchâtel [@aenishaenslinFactorsAssociatedPreventive2015a] 
 #' investigating the adoption of preventive behavior regarding ticks reported high uptake of personal protection: 57% of the 
 #' total population reported performing tick checks after outdoor activities, 53% reported wearing protective clothing, 
 #' and 29% reported using tick repellents. These levels are lower than those observed in our survey of the Bernese 
@@ -372,7 +373,7 @@ brs_3 %>% select(starts_with("bl_vbd_dis_problem___"),bl_vbd_meth_yn) %>%
 #' The discrepancy might reflect regional discrepancy or an evolution in the interest in tick preventive 
 #' measures over the last ten years. Interestingly, when authors restricted their analysis to individuals aware of Lyme disease,
 #' reported adoption of tick checks and protective clothing became higher than in the present survey. 
-#' For mosquitoes, a French survey (cite https://doi.org/10.1093/eurpub/ckae144.1926) reported frequent use of repellents (36%), 
+#' For mosquitoes, a French survey [@ocampo-alvaradoFactorsAssociatedMosquitoborne2024] reported frequent use of repellents (36%), 
 #' mosquito candles/coils (35%), and window nets (25%) as well as community-level practices such as removing standing 
 #' water (37%). In comparison, our results show higher uptake of individual preventive behaviors, 
 #' with 65% of Bernese respondents using repellents and 42% installing window screens, but lower uptake of 
@@ -400,5 +401,9 @@ brs_3 %>% select(starts_with("bl_vbd_dis_problem___"),bl_vbd_meth_yn) %>%
 #' around the rationale, benefits, and trade-offs of more complex control strategies. These steps can 
 #' strengthen readiness for both current tick-borne risks and evolving mosquito-borne threats in a warming climate.
 #' 
+#' 
+#' # References
+#' 
+
 
 

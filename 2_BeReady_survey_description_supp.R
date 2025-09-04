@@ -3,6 +3,8 @@
 #' subtitle: Supplement
 #' author: Lilian Goepp, Nina Huber, Arlette Szelecsenyi, Julien Riou
 #' date: "`r Sys.Date()`"
+#' bibliography: data/Bibliography/Surveys_biblio.bib
+#' link-citations: true
 #' output:
 #'   html_document:
 #'     toc: true
@@ -17,7 +19,7 @@
 #' ---
 
 #+ results="hide", warnings="false", echo="false"
-analysis_date = "2025-09-03"
+analysis_date = "2025-09-04"
 load(paste0("savepoints/savepoint_",analysis_date,"/brs_3.Rdata"))
 source("R/setup.R")
 knitr::opts_chunk$set(echo = FALSE)
@@ -83,9 +85,9 @@ brs_3 %>%
 #' are labelled ‘The best health you can imagine’ and ‘The worst health you can imagine’. 
 #' The VAS can be used as a quantitative measure of health outcome that reflects the patient’s own judgement.
 #' We observe an average of 83 (SD 12.8), consistent with a representative survey in 
-#' French-speaking Switzerland reporting a mean EQ-VAS of 81.7 (SD 15.5). (cite https://doi.org/10.1111/j.1524-4733.2010.00727.x)
+#' French-speaking Switzerland reporting a mean EQ-VAS of 81.7 (SD 15.5) [@pernegerGeneralPopulationReference2010].
 
-hist(brs_3$eq5d5l_vas2_swi_ger, main = "EQ-VAS scale",breaks = 30)
+hist(brs_3$eq5d5l_vas2_swi_ger, main = "Figure 2: EQ-VAS scale",breaks = 30,xlab="Visual analogue scale (0 to 100)")
 
 #' ## Municipality of residence
 #' 
@@ -101,6 +103,7 @@ suppressWarnings(create_respondent_map())
 #' ## Baseline control variables
 #' 
 
+#+ vbd_base
 brs_3 %>% 
   select(bl_vbd_tick_yn) %>% 
   tbl_summary(
@@ -110,6 +113,7 @@ brs_3 %>%
   modify_bold(rows=(variable=="bl_vbd_tick_yn"&row_type=="label"),columns=label) %>%
   modify_header(label ~ "**Introductory text**") %>% 
   br_100_add_caption("Understanding check up", 3)
+
 
 brs_3 %>% 
   select(starts_with("bl_vbd_diseases___"),starts_with("bl_vbd_organism___")) %>% 
@@ -161,6 +165,11 @@ brs_3 %>%
       rows    = row_type == "label" & grepl("___",variable)
     )
   )
+
+#' ### Filtering
+
+#' To ensure data quality and consistency, we used Supplementary table 3 and Supplementary table 5 to exclude respondents who either lacked a basic understanding of vector-borne disease diseases or provided logically inconsistent answers throughout the questionnaire. This process ensures that responses reflect a reliable snapshot of participants’ knowledge and that the respondents don't adapt their answers during the completion of the questionnaire. In total, 282 individuals were excluded based on these criteria, leaving a final sample of 709 participants for analyzing the results of the knowledge follow-up questions.
+#' 
 
 #' ## Item-level accuracy
 #' 
@@ -278,8 +287,8 @@ brs_3 %>%
 #' 
 hist_results=create_hist(brs_3)
 
-hist_results[[2]]
-hist_results[[3]]
+hist_results[[2]]+ggtitle("Figure 3: Decomposition of knowledge score by vectors within overall score bins")
+hist_results[[3]]+ggtitle("Figure 3: Decomposition of knowledge score by test items within overall score bins")
 
 #' # Individual exposure : open-ended answers
 #' 

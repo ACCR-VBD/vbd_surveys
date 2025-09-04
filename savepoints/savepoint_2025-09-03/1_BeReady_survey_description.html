@@ -11,7 +11,7 @@
 
 <meta name="author" content="Lilian Goepp, Nina Huber, Arlette Szelecsenyi, Julien Riou" />
 
-<meta name="date" content="2025-09-03" />
+<meta name="date" content="2025-09-04" />
 
 <title>Knowledge, Attitudes and Practices on Vector-Borne Diseases in Switzerland – 2025</title>
 
@@ -1497,6 +1497,29 @@ margin-right: -30px;
 
 
 
+<style type="text/css">
+
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+}
+</style>
 
 
 
@@ -1670,12 +1693,12 @@ border-radius: 0px;
 Vector-Borne Diseases in Switzerland – 2025</h1>
 <h4 class="author">Lilian Goepp, Nina Huber, Arlette Szelecsenyi, Julien
 Riou</h4>
-<h4 class="date">2025-09-03</h4>
+<h4 class="date">2025-09-04</h4>
 
 </div>
 
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>analysis_date <span class="ot">=</span> <span class="st">&quot;2025-06-26&quot;</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>analysis_date <span class="ot">=</span> <span class="st">&quot;2025-09-03&quot;</span></span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">load</span>(<span class="fu">paste0</span>(<span class="st">&quot;savepoints/savepoint_&quot;</span>,analysis_date,<span class="st">&quot;/brs_3.Rdata&quot;</span>))</span>
 <span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;R/setup.R&quot;</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">FALSE</span>)</span>
@@ -1698,20 +1721,21 @@ effort. It includes documenting both the implementation of measures by
 cantonal authorities and the knowledge, attitude and practice (KAP)
 concerning vector-borne diseases among the Bernese population. The
 general population survey was embedded in the BEready cohort study at
-the University of Bern. BEready is a long-term study involving
-households across the canton of Bern, designed to generate data on
-infectious diseases and improve preparedness for future health threats.
-In this context, the survey investigates how Bernese residents perceive
-VBD risks and protective measures, while complementing the national
-survey of cantonal health, veterinary, and environmental departments on
-institutional engagement and prevention strategies.</p>
-<p>Vector-borne diseases are a growing public-health concern in
-Switzerland. Tick-borne infections—most notably Lyme borreliosis and
-tick-borne encephalitis (TBE)—remain the dominant domestic threat, while
-mosquito-borne diseases such as dengue, West Nile fever, and chikungunya
-are emerging in neighboring countries. Warmer conditions lengthen vector
-activity seasons and expand suitable habitats, increasing opportunities
-for human–vector contact.</p>
+the University of Bern. BEready is a long-term study started in 2021
+involving households across the canton of Bern, designed to generate
+data on infectious diseases and improve preparedness for future health
+threats. In this context, the survey investigates how Bernese residents
+perceive VBD risks and protective measures, while complementing the
+national survey of cantonal health, veterinary, and environmental
+departments on institutional engagement and prevention strategies.</p>
+<p>VBDs are a growing public-health concern in Switzerland. Tick-borne
+infections, most notably Lyme borreliosis and tick-borne encephalitis
+(TBE), remain the dominant domestic threat, while mosquito-borne
+diseases such as dengue, West Nile fever, and chikungunya are emerging
+in neighboring countries. Warmer conditions linked to climate change may
+lengthen vector activity seasons and expand suitable habitats,
+increasing opportunities for human–vector contacts and thus epidemic
+risk.</p>
 <p>Individual preventive measures are essential to limit the
 transmission of these diseases. Public awareness and knowledge are
 therefore important factors in planning and implementing public health
@@ -1729,23 +1753,16 @@ years) residing in Switzerland in 2025. The survey was implemented
 within the BEready platform (University of Bern/MCID), which is
 registered on ClinicalTrials.gov (ID: NCT06739499) and operates as a
 general population population prospective cohort in the Canton of Bern
-under a One-Health framework. BEready plans to enrol approximately 1,500
-households, including adults, children and pets. A private household is
-defined as a person living alone or group of persons living in the same
-dwelling.</p>
-<p>Eligible participants were adults (≥18 years) and children who
-provided informed consent (with parental/legal-guardian consent for
-minors) and who resided, on average, more than three days per week in a
-private household in the canton of Bern where at least one household
-member aged 18 years had agreed to participate. For adults, adolescents
-aged ≥14 years, and parents/legal guardians, access to the internet
-(Wi-Fi, fixed, or mobile) and a personal email address was required. For
-adults, children aged ≥11 years, and parents/legal guardians, sufficient
-language proficiency to understand, speak, read, and write in German,
-French, and/or English was required. Individuals were excluded if they
-had a planned move outside the canton of Bern during the study period.
-As the vector-borne disease module of the questionnaire was only
-provided to adults, childrens were not included in this report.</p>
+under a One-Health framework. BEready plans to enroll approximately
+1,500 households, including adults, children and pets and follow them
+for several decades. The study population comes a random selection of
+households in Bern using the cantonal residents’ register and from
+volunteer households. The study started with a pilot phase of 100
+households in May 2023. Recruitment for the main phase started in 2024.
+An additional module on VBD was added on our request to the 1-year
+questionnaire of participants to the pilot phase, and to the baseline
+questionnaire of participants to the main phase. We obtained data on all
+participants until May 2025.</p>
 <p>Eligible participants were adults (≥18 years) who provided informed
 consent and who resided, on average, more than three days per week in a
 private household in the canton of Bern. Access to the internet (Wi-Fi,
@@ -1753,81 +1770,37 @@ fixed, or mobile) and a personal email address was required. Sufficient
 language proficiency to understand, speak, read, and write in German,
 French, and/or English was required. Individuals were excluded if they
 had a planned move outside the canton of Bern during the study period.
-As the vector-borne disease module of the questionnaire was only
-provided to adults, childrens were not included in this report.</p>
-<p>The study population for the BEready cohort is being enrolled from
-different sources in the source population of the canton of Bern.
-BEready aims to enrol around 1,500 households (approx. 2500 individuals)
-in total from:</p>
-<ul>
-<li>Households already participating in the BEready pilot study</li>
-<li>A random selection of households in Bern using the cantonal
-residents’ register</li>
-<li>Volunteer households from the general public</li>
-</ul>
-<p>At the start of the study, participants have a brief physical checkup
-and give a blood sample. Immediately after the initial visit and
-annually thereafter, participants complete an online questionnaire about
-their current state of health and factors that may make them more
-susceptible to infections or protect against them, including their
-knowledge, attitude and practice concerning vector-borne diseases. This
-report presents preliminary results from the questionnaire filled at
-enrollement.</p>
-<p>Participation in BEready is always voluntary. Participants may leave
-the study at any time, and BEready complies with Swiss legislation and
-applicable international guidelines. The study was reviewed and approved
-by the responsible Ethics Committee. All collected data are processed
-under strict data-protection standards.</p>
-<p>The online survey was implemented using REDCap and description of the
-data was performed in R (version 4.2.0).</p>
-</div>
-<div id="results" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Results</h1>
-<div id="sociodemographic-variables" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Sociodemographic
-variables</h2>
-<p>The survey sample included 991 respondents, with a sex distribution
-biased toward females (56.2% female and 43.8% male, p-val &lt;0.001).
-Gender identification largely mirrored sex assigned at birth, with only
-0.4% reporting another gender. Educational attainment was diverse,
-though skewed toward higher education: 22.7% held a master’s degree,
-14.6% a bachelor’s degree, and 8.9% a doctorate. Apprenticeship or
-vocational training was also common (19.2%). Most respondents (74.9%)
-had lived in Switzerland since birth, while 19% were born abroad. The
-majority were married and living with a spouse (55.5%), but single,
-divorced, or widowed individuals collectively made up nearly 43%.
-Occupations were varied, with the largest group working in intermediate
-occupations (39.2%) or administrative support (31.7%), while only 0.5%
-reported being in senior executive roles. The complete table as well as
-further details on exposure-related items from the enrollment
-questionnaire and the geographic distribution of respondents are
-provided in the Supplementary Material.</p>
-</div>
-<div id="general-knowledge" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> General
-Knowledge</h2>
-<p>The survey design followed a structured, multi-stage approach to
-assess public knowledge of vector-borne diseases and their transmission,
-incorporating both awareness and comprehension measures.</p>
-<p>In the first stage, respondents were presented with three items to
+As the VBD module of the questionnaire was only provided to adults,
+children were not included in this report.</p>
+<p>At inclusion, participants have a brief physical checkup and give a
+blood sample. Immediately after the initial visit and annually
+thereafter, participants complete an online questionnaire about their
+current state of health and factors that may make them more susceptible
+to infections or protect against them, including their knowledge,
+attitude and practice concerning vector-borne diseases. Participation in
+BEready is always voluntary. Participants may leave the study at any
+time, and BEready complies with Swiss legislation and applicable
+international guidelines. The study was reviewed and approved by the
+responsible Ethics Committee. All collected data are processed under
+strict data-protection standards.</p>
+<p>The questionnaire design followed a structured, multi-stage approach
+to assess public knowledge of vector-borne diseases and their
+transmission, incorporating both awareness and comprehension measures.
+In the first stage, respondents were presented with three items to
 determine whether they had previously encountered the relevant concepts
-or understood the underlying concepts:</p>
-<ul>
-<li>An introductory text provided respondents with a definition of
-vector-borne diseases and the fact that tick-borne encephalitis is a
-disease transmitted by ticks. Respondents were subsequently asked to
-classify tick-borne encephalitis as vector-borne or not, serving as an
-initial measure of their conceptual understanding before advancing to
-more detailed assessments.</li>
-<li>A disease awareness component, capturing whether respondents
-reported prior exposure to the names of particular diseases</li>
-<li>A vector awareness component, capturing whether they reported prior
-exposure to the names of specified organisms.</li>
-</ul>
-<p>In the second stage, participants completed classification exercises
-in which they were required to identify, from structured lists, which
-diseases they believed were vector-borne and which organisms functioned
-as vectors.</p>
+or understood the underlying concepts as follows. 1) An introductory
+text provided respondents with a definition of vector-borne diseases and
+the fact that tick-borne encephalitis is a disease transmitted by ticks.
+Respondents were subsequently asked to classify tick-borne encephalitis
+as vector-borne or not, serving as an initial measure of their
+conceptual understanding. 2) A disease awareness component, capturing
+whether respondents reported prior exposure to the names of particular
+diseases. 3) A vector awareness component, capturing whether they
+reported prior exposure to the names of specified organisms. In the
+second stage, participants completed classification exercises in which
+they were required to identify, from structured lists, which diseases
+they believed were vector-borne and which organisms functioned as
+vectors.</p>
 <p>Establishing the first stage baseline was essential to distinguish
 between lack of knowledge and misunderstanding in subsequent tasks. To
 evaluate the robustness of conceptual understanding and to detect
@@ -1838,85 +1811,116 @@ fall within the epidemiological definition of vector-borne diseases or
 recognized disease vectors, and thus provided a validity check. Results
 from the first stage as well as logical contradiction in the second
 stage were used to filter out unreliable answers.</p>
-<p>When asked to classify tick-borne encephalitis (TBE), which is
-transmitted through tick bites, 78.4% of respondents correctly
-recognized it as a vector-borne disease. However, 11% incorrectly denied
-this classification, while 10.6% stated they did not know. This
-indicates a generally strong but not universal grasp of the basic
-definition of vector-borne diseases among the surveyed population.
-Awareness of diseases varied considerably. Measles (95.4%), influenza
-(93.7%), and dengue (88.4%) were the most widely recognized. Zika
-(62.2%) and Lyme disease (75.8%) were moderately well known while West
-Nile fever (29.3%) and chikungunya (19.7%) were far less familiar.
-Awareness of potential vectors was consistently high, with ticks (96%),
-mosquitoes (95.8%), wasps (92.8%), and bed bugs (91.9%) all recognized
-by most respondents. The corresponding table is provided in the
-Supplementary Materials.</p>
-<p>When asked to classify specific diseases as vector-borne, knowledge
-levels differed by disease. Correct identification was highest for
-dengue (86.2%), Lyme disease (82.9%), measles (82.7%, as not
-vector-borne), and influenza (80.0%, as not vector-borne). Recognition
-was lower for Zika (68.7%) and especially for West Nile fever (40.6%)
-and chikungunya (32.3%).</p>
-<p>Respondents showed high accuracy when asked about organisms
-transmitting diseases. All participants correctly identified ticks as
-vectors, and nearly all recognized mosquitoes (98.7%). The most common
-misconception involved bed bugs, where 23% mistakenly believed they
-transmit diseases. Wasps were less often misclassified, with 6.5%
-incorrectly identifying them as vectors. Overall, while knowledge about
-major vectors was strong, confusion persisted about insects with
-nuisance potential but no role in pathogen transmission. Accuracy in
-matching diseases with their correct vectors was mixed. TBE was almost
-universally matched to ticks (99.6%), and dengue (88.9%), Zika (72.3%),
-and Lyme disease (87.6%) were also correctly identified by most
-respondents. However, fewer than half correctly matched West Nile fever
-to mosquitoes (56.6%), and fewer than half recognized chikungunya as
-mosquito-borne (41.8%). Influenza and measles were mostly correctly
-classified as having no vector. These findings suggest that while some
-pairings are well understood, knowledge of mosquito-borne diseases
-remains incomplete, particularly for those less prominent in Swiss
-public health discourse. The corresponding tables are reported in
-Supplementary Material.</p>
+<p>The online survey was implemented using REDCap and description of the
+data was performed in R (version 4.2.0).</p>
+</div>
+<div id="results" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Results</h1>
+<div id="sociodemographic-variables" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Sociodemographic
+variables</h2>
+<p>The survey sample included 991 participants, with a sex distribution
+biased toward females (56% female and 44% male, p-val &lt;0.001). Gender
+identification largely mirrored sex assigned at birth, with only 0.4%
+reporting another gender. Educational attainment was diverse, though
+skewed toward higher education: 23% held a master’s degree, 15% a
+bachelor’s degree, and 9% a doctorate. Apprenticeship or vocational
+training was also common (19%). Most respondents (75%) had lived in
+Switzerland since birth, while 19% were born abroad. The majority were
+married and living with a spouse (56%), but single, divorced, or widowed
+individuals collectively made up nearly 43%. Occupations were varied,
+with the largest group working in intermediate occupations (39%) or
+administrative support (32%), while only 0.5% reported being in senior
+executive roles. The complete table as well as further details on
+exposure-related items from the enrollment questionnaire and the
+geographic distribution of respondents are provided in the Supplementary
+Material.</p>
+</div>
+<div id="general-knowledge" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> General
+knowledge</h2>
+<p>When asked to classify TBE, which is transmitted through tick bites,
+78% of respondents correctly recognized it as a vector-borne disease,
+11% incorrectly applied the classification, and 11% stated they did not
+know. This indicates a generally strong but not universal grasp of the
+basic definition of vector-borne diseases among the surveyed population.
+Awareness of diseases varied considerably. Measles (95%), influenza
+(94%), and dengue (88%) were the most widely recognized. Zika (62%) and
+Lyme disease (76%) were moderately well-known while West Nile fever
+(29%) and chikungunya (20%) were far less familiar. Awareness of
+potential vectors was consistently high, with ticks (96%), mosquitoes
+(96%), wasps (93%), and bed bugs (92%) all classified correctly by most
+respondents. The corresponding table is provided in the Supplementary
+Materials.</p>
+<p>When asked to classify specific diseases as vector-borne or not,
+knowledge levels differed by disease. Among participants with basic
+understanding of the concept of VBD and logically consistent answers
+(n=709, Supplementary material 2.1.1), correct classification was
+highest for dengue (86%), Lyme disease (83%), measles (83%, as not
+vector-borne), and influenza (80%, as not vector-borne). Recognition was
+lower for Zika (69%) and especially for West Nile fever (41%) and
+chikungunya (32%).</p>
+<p>Respondents showed high accuracy when asked about species
+transmitting diseases. Among participants with basic understanding of
+the concept of VBD and logically consistent answers (n=709,
+Supplementary material 2.1.1) correctly identified ticks as vectors, and
+nearly all recognized mosquitoes (99%). The most common misconception
+involved bed bugs, where 23% mistakenly believed they transmit diseases.
+Wasps were less often misclassified, with 7% incorrectly identifying
+them as disease vectors. Overall, while knowledge about major vectors
+was strong, confusion persisted about insects with nuisance potential
+but no role in pathogen transmission.</p>
+<p>Accuracy in matching diseases with their correct vectors was mixed.
+TBE was almost universally matched to ticks (99.6%), and dengue (89%),
+Zika (72%), and Lyme disease (88%) were also correctly identified by
+most respondents. However, fewer than half correctly matched West Nile
+fever to mosquitoes (57%), and fewer than half recognized chikungunya as
+mosquito-borne (42%). Influenza and measles were mostly correctly
+classified as having no vector (93% and 92%, respectively). These
+findings suggest that while some pairings are familiar, knowledge of
+mosquito-borne diseases remains incomplete, particularly for those less
+prominent in Swiss public health discourse. The corresponding tables are
+reported in Supplementary Material.</p>
 <p>The knowledge score, defined as the proportion of correct answers
 across three test items assessing recognition of vector-borne diseases,
 identification of vectors, and disease–vector matching, showed clear
 variation within the sample. Among the 556 respondents with complete
-answers to all items, 39 individuals (7.0%) scored below 0.5, indicating
+answers to all items, 39 individuals (7%) scored below 50%, indicating
 low overall knowledge. At the other end of the spectrum, 80 respondents
-(14.4%) achieved a perfect score of 1, demonstrating complete accuracy
+(14%) achieved a perfect score of 100%, demonstrating complete accuracy
 across all items. The majority of participants fell between these two
-extremes: 210 (37.8%) had scores between 0.5 and 0.75, and 227 (40.8%)
-between 0.75 and 1.0, reflecting moderate to high knowledge with
-occasional gaps. The distribution of the score suggests that most
-respondents possess a solid baseline of knowledge concerning ticks,
-while the biggest knowledge gap concerns mosquito-related items
-(Supplementary material 2.2)</p>
+extremes: 210 (38%) had scores between 50 and 75%, and 227 (41%) between
+75 and 100%, reflecting moderate to high knowledge with occasional gaps.
+The distribution of the score suggests that most respondents possess a
+solid baseline of knowledge concerning ticks, while the biggest
+knowledge gap concerns mosquito-related items (Supplementary
+material).</p>
 <p><img role="img" src="data:image/png;base64,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" width="960" /></p>
 </div>
 <div id="individual-risk-exposure" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Individual risk
 exposure</h2>
-<p>Tick exposure is less frequent than mosquito exposure. 60.6% reported
-never receiving tick bites in a typical year, 33.3% experienced 1–3
-bites, and fewer than 5% reported ≥4 bites (4–6: 3.34%; 7–9: 1.15%; ≥10:
-1.57%). Mosquito bites during summer are a widespread and routine
-occurrence in the population, with 8.6% bitten daily, 43.4% at least
-weekly, and 29.5% at least monthly. Only 1.4% claimed never to be
-bitten, while 5.8% were uncertain.</p>
-<div id="jbrtpchfub" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jbrtpchfub table {
+<p>Tick exposure was less frequent than mosquito exposure. Among 991
+participants, 61% reported never receiving tick bites in a typical year,
+33% experienced 1–3 bites, and fewer than 5% reported ≥4 bites (4–6: 3%;
+7–9: 1%; ≥10: 2%). Mosquito bites during summer were a widespread and
+routine occurrence in the population, with 9% bitten daily, 43% at least
+weekly, and 30% at least monthly. Only 1% claimed never to be bitten,
+while 6% were uncertain.</p>
+<div id="xerpwnqnvy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xerpwnqnvy table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#jbrtpchfub thead, #jbrtpchfub tbody, #jbrtpchfub tfoot, #jbrtpchfub tr, #jbrtpchfub td, #jbrtpchfub th {
+#xerpwnqnvy thead, #xerpwnqnvy tbody, #xerpwnqnvy tfoot, #xerpwnqnvy tr, #xerpwnqnvy td, #xerpwnqnvy th {
 border-style: none;
 }
-#jbrtpchfub p {
+#xerpwnqnvy p {
 margin: 0;
 padding: 0;
 }
-#jbrtpchfub .gt_table {
+#xerpwnqnvy .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -1941,11 +1945,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#jbrtpchfub .gt_caption {
+#xerpwnqnvy .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#jbrtpchfub .gt_title {
+#xerpwnqnvy .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -1956,7 +1960,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#jbrtpchfub .gt_subtitle {
+#xerpwnqnvy .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -1967,7 +1971,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#jbrtpchfub .gt_heading {
+#xerpwnqnvy .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -1978,12 +1982,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#jbrtpchfub .gt_bottom_border {
+#xerpwnqnvy .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#jbrtpchfub .gt_col_headings {
+#xerpwnqnvy .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -1997,7 +2001,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#jbrtpchfub .gt_col_heading {
+#xerpwnqnvy .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2016,7 +2020,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#jbrtpchfub .gt_column_spanner_outer {
+#xerpwnqnvy .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2027,13 +2031,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#jbrtpchfub .gt_column_spanner_outer:first-child {
+#xerpwnqnvy .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#jbrtpchfub .gt_column_spanner_outer:last-child {
+#xerpwnqnvy .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#jbrtpchfub .gt_column_spanner {
+#xerpwnqnvy .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -2044,10 +2048,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#jbrtpchfub .gt_spanner_row {
+#xerpwnqnvy .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#jbrtpchfub .gt_group_heading {
+#xerpwnqnvy .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2072,7 +2076,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#jbrtpchfub .gt_empty_group_heading {
+#xerpwnqnvy .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -2086,13 +2090,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#jbrtpchfub .gt_from_md > :first-child {
+#xerpwnqnvy .gt_from_md > :first-child {
 margin-top: 0;
 }
-#jbrtpchfub .gt_from_md > :last-child {
+#xerpwnqnvy .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#jbrtpchfub .gt_row {
+#xerpwnqnvy .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2110,7 +2114,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#jbrtpchfub .gt_stub {
+#xerpwnqnvy .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2122,7 +2126,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#jbrtpchfub .gt_stub_row_group {
+#xerpwnqnvy .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2135,13 +2139,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#jbrtpchfub .gt_row_group_first td {
+#xerpwnqnvy .gt_row_group_first td {
 border-top-width: 2px;
 }
-#jbrtpchfub .gt_row_group_first th {
+#xerpwnqnvy .gt_row_group_first th {
 border-top-width: 2px;
 }
-#jbrtpchfub .gt_summary_row {
+#xerpwnqnvy .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -2150,14 +2154,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#jbrtpchfub .gt_first_summary_row {
+#xerpwnqnvy .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#jbrtpchfub .gt_first_summary_row.thick {
+#xerpwnqnvy .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#jbrtpchfub .gt_last_summary_row {
+#xerpwnqnvy .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2166,7 +2170,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#jbrtpchfub .gt_grand_summary_row {
+#xerpwnqnvy .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -2175,7 +2179,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#jbrtpchfub .gt_first_grand_summary_row {
+#xerpwnqnvy .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2184,7 +2188,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#jbrtpchfub .gt_last_grand_summary_row_top {
+#xerpwnqnvy .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2193,10 +2197,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#jbrtpchfub .gt_striped {
+#xerpwnqnvy .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#jbrtpchfub .gt_table_body {
+#xerpwnqnvy .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -2204,7 +2208,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#jbrtpchfub .gt_footnotes {
+#xerpwnqnvy .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -2217,7 +2221,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#jbrtpchfub .gt_footnote {
+#xerpwnqnvy .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -2225,7 +2229,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#jbrtpchfub .gt_sourcenotes {
+#xerpwnqnvy .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -2238,64 +2242,64 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#jbrtpchfub .gt_sourcenote {
+#xerpwnqnvy .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#jbrtpchfub .gt_left {
+#xerpwnqnvy .gt_left {
 text-align: left;
 }
-#jbrtpchfub .gt_center {
+#xerpwnqnvy .gt_center {
 text-align: center;
 }
-#jbrtpchfub .gt_right {
+#xerpwnqnvy .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#jbrtpchfub .gt_font_normal {
+#xerpwnqnvy .gt_font_normal {
 font-weight: normal;
 }
-#jbrtpchfub .gt_font_bold {
+#xerpwnqnvy .gt_font_bold {
 font-weight: bold;
 }
-#jbrtpchfub .gt_font_italic {
+#xerpwnqnvy .gt_font_italic {
 font-style: italic;
 }
-#jbrtpchfub .gt_super {
+#xerpwnqnvy .gt_super {
 font-size: 65%;
 }
-#jbrtpchfub .gt_footnote_marks {
+#xerpwnqnvy .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#jbrtpchfub .gt_asterisk {
+#xerpwnqnvy .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#jbrtpchfub .gt_indent_1 {
+#xerpwnqnvy .gt_indent_1 {
 text-indent: 5px;
 }
-#jbrtpchfub .gt_indent_2 {
+#xerpwnqnvy .gt_indent_2 {
 text-indent: 10px;
 }
-#jbrtpchfub .gt_indent_3 {
+#xerpwnqnvy .gt_indent_3 {
 text-indent: 15px;
 }
-#jbrtpchfub .gt_indent_4 {
+#xerpwnqnvy .gt_indent_4 {
 text-indent: 20px;
 }
-#jbrtpchfub .gt_indent_5 {
+#xerpwnqnvy .gt_indent_5 {
 text-indent: 25px;
 }
-#jbrtpchfub .katex-display {
+#xerpwnqnvy .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#jbrtpchfub div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xerpwnqnvy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
@@ -2357,29 +2361,29 @@ height: 0px !important;
 <div id="individual-prevention" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Individual
 prevention</h2>
-<p>Most respondents reported adopting at least one measure against tick
-bites, particularly checking for and removing ticks (74%) and wearing
-protective clothing (67%). The use of insect repellent is also commonly
-reported (48%). Against mosquito bites, the most common strategies were
-using repellents (65%), wearing protective clothing (44%), and
-installing window screens (42%). Only 28% of respondents report removing
-containers of standing water as a personal preventive measure. Around
-11% reported taking no measures against mosquitoes, compared to 8% for
-ticks.</p>
-<div id="dfdlbyiljh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dfdlbyiljh table {
+<p>Most respondents reported adopting at least one protective measure
+against tick bites, particularly checking for and removing ticks after
+outdoor activities (74%) and wearing protective clothing (67%). The use
+of insect repellent was also commonly reported (48%). Against mosquito
+bites, the most common strategies were using repellents (65%), wearing
+protective clothing (44%), and installing window screens (42%). Only 28%
+of respondents reported removing containers of standing water as a
+personal preventive measure. Around 11% reported taking no measures
+against mosquitoes, compared to 8% for ticks.</p>
+<div id="ikujviqihb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ikujviqihb table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#dfdlbyiljh thead, #dfdlbyiljh tbody, #dfdlbyiljh tfoot, #dfdlbyiljh tr, #dfdlbyiljh td, #dfdlbyiljh th {
+#ikujviqihb thead, #ikujviqihb tbody, #ikujviqihb tfoot, #ikujviqihb tr, #ikujviqihb td, #ikujviqihb th {
 border-style: none;
 }
-#dfdlbyiljh p {
+#ikujviqihb p {
 margin: 0;
 padding: 0;
 }
-#dfdlbyiljh .gt_table {
+#ikujviqihb .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -2404,11 +2408,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_caption {
+#ikujviqihb .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#dfdlbyiljh .gt_title {
+#ikujviqihb .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -2419,7 +2423,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#dfdlbyiljh .gt_subtitle {
+#ikujviqihb .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -2430,7 +2434,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#dfdlbyiljh .gt_heading {
+#ikujviqihb .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -2441,12 +2445,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_bottom_border {
+#ikujviqihb .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_col_headings {
+#ikujviqihb .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -2460,7 +2464,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_col_heading {
+#ikujviqihb .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2479,7 +2483,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#dfdlbyiljh .gt_column_spanner_outer {
+#ikujviqihb .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2490,13 +2494,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#dfdlbyiljh .gt_column_spanner_outer:first-child {
+#ikujviqihb .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#dfdlbyiljh .gt_column_spanner_outer:last-child {
+#ikujviqihb .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#dfdlbyiljh .gt_column_spanner {
+#ikujviqihb .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -2507,10 +2511,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#dfdlbyiljh .gt_spanner_row {
+#ikujviqihb .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#dfdlbyiljh .gt_group_heading {
+#ikujviqihb .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2535,7 +2539,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#dfdlbyiljh .gt_empty_group_heading {
+#ikujviqihb .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -2549,13 +2553,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#dfdlbyiljh .gt_from_md > :first-child {
+#ikujviqihb .gt_from_md > :first-child {
 margin-top: 0;
 }
-#dfdlbyiljh .gt_from_md > :last-child {
+#ikujviqihb .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#dfdlbyiljh .gt_row {
+#ikujviqihb .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2573,7 +2577,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#dfdlbyiljh .gt_stub {
+#ikujviqihb .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2585,7 +2589,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#dfdlbyiljh .gt_stub_row_group {
+#ikujviqihb .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2598,13 +2602,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#dfdlbyiljh .gt_row_group_first td {
+#ikujviqihb .gt_row_group_first td {
 border-top-width: 2px;
 }
-#dfdlbyiljh .gt_row_group_first th {
+#ikujviqihb .gt_row_group_first th {
 border-top-width: 2px;
 }
-#dfdlbyiljh .gt_summary_row {
+#ikujviqihb .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -2613,14 +2617,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#dfdlbyiljh .gt_first_summary_row {
+#ikujviqihb .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_first_summary_row.thick {
+#ikujviqihb .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#dfdlbyiljh .gt_last_summary_row {
+#ikujviqihb .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2629,7 +2633,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_grand_summary_row {
+#ikujviqihb .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -2638,7 +2642,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#dfdlbyiljh .gt_first_grand_summary_row {
+#ikujviqihb .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2647,7 +2651,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_last_grand_summary_row_top {
+#ikujviqihb .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -2656,10 +2660,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_striped {
+#ikujviqihb .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#dfdlbyiljh .gt_table_body {
+#ikujviqihb .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -2667,7 +2671,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_footnotes {
+#ikujviqihb .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -2680,7 +2684,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_footnote {
+#ikujviqihb .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -2688,7 +2692,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#dfdlbyiljh .gt_sourcenotes {
+#ikujviqihb .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -2701,64 +2705,64 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#dfdlbyiljh .gt_sourcenote {
+#ikujviqihb .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#dfdlbyiljh .gt_left {
+#ikujviqihb .gt_left {
 text-align: left;
 }
-#dfdlbyiljh .gt_center {
+#ikujviqihb .gt_center {
 text-align: center;
 }
-#dfdlbyiljh .gt_right {
+#ikujviqihb .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#dfdlbyiljh .gt_font_normal {
+#ikujviqihb .gt_font_normal {
 font-weight: normal;
 }
-#dfdlbyiljh .gt_font_bold {
+#ikujviqihb .gt_font_bold {
 font-weight: bold;
 }
-#dfdlbyiljh .gt_font_italic {
+#ikujviqihb .gt_font_italic {
 font-style: italic;
 }
-#dfdlbyiljh .gt_super {
+#ikujviqihb .gt_super {
 font-size: 65%;
 }
-#dfdlbyiljh .gt_footnote_marks {
+#ikujviqihb .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#dfdlbyiljh .gt_asterisk {
+#ikujviqihb .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#dfdlbyiljh .gt_indent_1 {
+#ikujviqihb .gt_indent_1 {
 text-indent: 5px;
 }
-#dfdlbyiljh .gt_indent_2 {
+#ikujviqihb .gt_indent_2 {
 text-indent: 10px;
 }
-#dfdlbyiljh .gt_indent_3 {
+#ikujviqihb .gt_indent_3 {
 text-indent: 15px;
 }
-#dfdlbyiljh .gt_indent_4 {
+#ikujviqihb .gt_indent_4 {
 text-indent: 20px;
 }
-#dfdlbyiljh .gt_indent_5 {
+#ikujviqihb .gt_indent_5 {
 text-indent: 25px;
 }
-#dfdlbyiljh .katex-display {
+#ikujviqihb .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#dfdlbyiljh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ikujviqihb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
@@ -2832,30 +2836,29 @@ height: 0px !important;
 and vector control</h2>
 <p>When asked about effective public-level interventions, respondents
 placed greater confidence in personal protective measures than in
-environmental or ecological strategies. For ticks, 78.9% endorsed
-promoting personal protection, while biological control (38.1%) was the
+environmental or ecological strategies. For ticks, 79% endorsed
+promoting personal protection, while biological control (38%) was the
 next most supported. Measures targeting wildlife or habitat management
 received little support (&lt;6%). For mosquitoes, personal protection
-(75.5%) and elimination of standing water (58.8%) were most often cited,
-followed by biological control (40.9%) and traps (35.9%). Genetically
-modified mosquitoes gained support from 17.7%. Overall, confidence
-leaned strongly toward individual-level protection and simple
-environmental measures over systemic ecological or technological
-interventions.</p>
-<div id="naglmwcsrj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#naglmwcsrj table {
+(76%) and elimination of standing water (59%) were most often cited,
+followed by biological control (41%) and traps (36%). Genetically
+modified mosquitoes gained support from 18%. Overall, confidence leaned
+strongly toward individual-level protection and simple environmental
+measures over systemic ecological or technological interventions.</p>
+<div id="vswupcxggv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vswupcxggv table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#naglmwcsrj thead, #naglmwcsrj tbody, #naglmwcsrj tfoot, #naglmwcsrj tr, #naglmwcsrj td, #naglmwcsrj th {
+#vswupcxggv thead, #vswupcxggv tbody, #vswupcxggv tfoot, #vswupcxggv tr, #vswupcxggv td, #vswupcxggv th {
 border-style: none;
 }
-#naglmwcsrj p {
+#vswupcxggv p {
 margin: 0;
 padding: 0;
 }
-#naglmwcsrj .gt_table {
+#vswupcxggv .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -2880,11 +2883,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#naglmwcsrj .gt_caption {
+#vswupcxggv .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#naglmwcsrj .gt_title {
+#vswupcxggv .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -2895,7 +2898,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#naglmwcsrj .gt_subtitle {
+#vswupcxggv .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -2906,7 +2909,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#naglmwcsrj .gt_heading {
+#vswupcxggv .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -2917,12 +2920,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#naglmwcsrj .gt_bottom_border {
+#vswupcxggv .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#naglmwcsrj .gt_col_headings {
+#vswupcxggv .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -2936,7 +2939,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#naglmwcsrj .gt_col_heading {
+#vswupcxggv .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2955,7 +2958,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#naglmwcsrj .gt_column_spanner_outer {
+#vswupcxggv .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -2966,13 +2969,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#naglmwcsrj .gt_column_spanner_outer:first-child {
+#vswupcxggv .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#naglmwcsrj .gt_column_spanner_outer:last-child {
+#vswupcxggv .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#naglmwcsrj .gt_column_spanner {
+#vswupcxggv .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -2983,10 +2986,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#naglmwcsrj .gt_spanner_row {
+#vswupcxggv .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#naglmwcsrj .gt_group_heading {
+#vswupcxggv .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3011,7 +3014,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#naglmwcsrj .gt_empty_group_heading {
+#vswupcxggv .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -3025,13 +3028,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#naglmwcsrj .gt_from_md > :first-child {
+#vswupcxggv .gt_from_md > :first-child {
 margin-top: 0;
 }
-#naglmwcsrj .gt_from_md > :last-child {
+#vswupcxggv .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#naglmwcsrj .gt_row {
+#vswupcxggv .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3049,7 +3052,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#naglmwcsrj .gt_stub {
+#vswupcxggv .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3061,7 +3064,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#naglmwcsrj .gt_stub_row_group {
+#vswupcxggv .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3074,13 +3077,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#naglmwcsrj .gt_row_group_first td {
+#vswupcxggv .gt_row_group_first td {
 border-top-width: 2px;
 }
-#naglmwcsrj .gt_row_group_first th {
+#vswupcxggv .gt_row_group_first th {
 border-top-width: 2px;
 }
-#naglmwcsrj .gt_summary_row {
+#vswupcxggv .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -3089,14 +3092,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#naglmwcsrj .gt_first_summary_row {
+#vswupcxggv .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#naglmwcsrj .gt_first_summary_row.thick {
+#vswupcxggv .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#naglmwcsrj .gt_last_summary_row {
+#vswupcxggv .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3105,7 +3108,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#naglmwcsrj .gt_grand_summary_row {
+#vswupcxggv .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -3114,7 +3117,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#naglmwcsrj .gt_first_grand_summary_row {
+#vswupcxggv .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3123,7 +3126,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#naglmwcsrj .gt_last_grand_summary_row_top {
+#vswupcxggv .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3132,10 +3135,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#naglmwcsrj .gt_striped {
+#vswupcxggv .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#naglmwcsrj .gt_table_body {
+#vswupcxggv .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -3143,7 +3146,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#naglmwcsrj .gt_footnotes {
+#vswupcxggv .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -3156,7 +3159,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#naglmwcsrj .gt_footnote {
+#vswupcxggv .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -3164,7 +3167,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#naglmwcsrj .gt_sourcenotes {
+#vswupcxggv .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -3177,64 +3180,64 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#naglmwcsrj .gt_sourcenote {
+#vswupcxggv .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#naglmwcsrj .gt_left {
+#vswupcxggv .gt_left {
 text-align: left;
 }
-#naglmwcsrj .gt_center {
+#vswupcxggv .gt_center {
 text-align: center;
 }
-#naglmwcsrj .gt_right {
+#vswupcxggv .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#naglmwcsrj .gt_font_normal {
+#vswupcxggv .gt_font_normal {
 font-weight: normal;
 }
-#naglmwcsrj .gt_font_bold {
+#vswupcxggv .gt_font_bold {
 font-weight: bold;
 }
-#naglmwcsrj .gt_font_italic {
+#vswupcxggv .gt_font_italic {
 font-style: italic;
 }
-#naglmwcsrj .gt_super {
+#vswupcxggv .gt_super {
 font-size: 65%;
 }
-#naglmwcsrj .gt_footnote_marks {
+#vswupcxggv .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#naglmwcsrj .gt_asterisk {
+#vswupcxggv .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#naglmwcsrj .gt_indent_1 {
+#vswupcxggv .gt_indent_1 {
 text-indent: 5px;
 }
-#naglmwcsrj .gt_indent_2 {
+#vswupcxggv .gt_indent_2 {
 text-indent: 10px;
 }
-#naglmwcsrj .gt_indent_3 {
+#vswupcxggv .gt_indent_3 {
 text-indent: 15px;
 }
-#naglmwcsrj .gt_indent_4 {
+#vswupcxggv .gt_indent_4 {
 text-indent: 20px;
 }
-#naglmwcsrj .gt_indent_5 {
+#vswupcxggv .gt_indent_5 {
 text-indent: 25px;
 }
-#naglmwcsrj .katex-display {
+#vswupcxggv .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#naglmwcsrj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vswupcxggv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
@@ -3305,8 +3308,9 @@ height: 0px !important;
 </table>
 </div>
 </div>
-<div id="perception" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> Perception</h2>
+<div id="perception-of-risk" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Perception of
+risk</h2>
 <p>Most respondents considered tick-borne encephalitis (72%) and Lyme
 disease (61%) to be current health problems in Switzerland, whereas few
 perceived West Nile fever (2%), chikungunya (2%), Zika (6%), or dengue
@@ -3314,20 +3318,20 @@ perceived West Nile fever (2%), chikungunya (2%), Zika (6%), or dengue
 measures in Switzerland, 48% answered “yes” 20% “no” and 31% “don’t
 know” indicating substantial perceived relevance but also considerable
 uncertainty.</p>
-<div id="xjjstucsjb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xjjstucsjb table {
+<div id="jhxhaaqzjw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jhxhaaqzjw table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#xjjstucsjb thead, #xjjstucsjb tbody, #xjjstucsjb tfoot, #xjjstucsjb tr, #xjjstucsjb td, #xjjstucsjb th {
+#jhxhaaqzjw thead, #jhxhaaqzjw tbody, #jhxhaaqzjw tfoot, #jhxhaaqzjw tr, #jhxhaaqzjw td, #jhxhaaqzjw th {
 border-style: none;
 }
-#xjjstucsjb p {
+#jhxhaaqzjw p {
 margin: 0;
 padding: 0;
 }
-#xjjstucsjb .gt_table {
+#jhxhaaqzjw .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -3352,11 +3356,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#xjjstucsjb .gt_caption {
+#jhxhaaqzjw .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#xjjstucsjb .gt_title {
+#jhxhaaqzjw .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -3367,7 +3371,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#xjjstucsjb .gt_subtitle {
+#jhxhaaqzjw .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -3378,7 +3382,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#xjjstucsjb .gt_heading {
+#jhxhaaqzjw .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -3389,12 +3393,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#xjjstucsjb .gt_bottom_border {
+#jhxhaaqzjw .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#xjjstucsjb .gt_col_headings {
+#jhxhaaqzjw .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -3408,7 +3412,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#xjjstucsjb .gt_col_heading {
+#jhxhaaqzjw .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3427,7 +3431,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#xjjstucsjb .gt_column_spanner_outer {
+#jhxhaaqzjw .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3438,13 +3442,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#xjjstucsjb .gt_column_spanner_outer:first-child {
+#jhxhaaqzjw .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#xjjstucsjb .gt_column_spanner_outer:last-child {
+#jhxhaaqzjw .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#xjjstucsjb .gt_column_spanner {
+#jhxhaaqzjw .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -3455,10 +3459,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#xjjstucsjb .gt_spanner_row {
+#jhxhaaqzjw .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#xjjstucsjb .gt_group_heading {
+#jhxhaaqzjw .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3483,7 +3487,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#xjjstucsjb .gt_empty_group_heading {
+#jhxhaaqzjw .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -3497,13 +3501,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#xjjstucsjb .gt_from_md > :first-child {
+#jhxhaaqzjw .gt_from_md > :first-child {
 margin-top: 0;
 }
-#xjjstucsjb .gt_from_md > :last-child {
+#jhxhaaqzjw .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#xjjstucsjb .gt_row {
+#jhxhaaqzjw .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3521,7 +3525,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#xjjstucsjb .gt_stub {
+#jhxhaaqzjw .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3533,7 +3537,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xjjstucsjb .gt_stub_row_group {
+#jhxhaaqzjw .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3546,13 +3550,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#xjjstucsjb .gt_row_group_first td {
+#jhxhaaqzjw .gt_row_group_first td {
 border-top-width: 2px;
 }
-#xjjstucsjb .gt_row_group_first th {
+#jhxhaaqzjw .gt_row_group_first th {
 border-top-width: 2px;
 }
-#xjjstucsjb .gt_summary_row {
+#jhxhaaqzjw .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -3561,14 +3565,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xjjstucsjb .gt_first_summary_row {
+#jhxhaaqzjw .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#xjjstucsjb .gt_first_summary_row.thick {
+#jhxhaaqzjw .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#xjjstucsjb .gt_last_summary_row {
+#jhxhaaqzjw .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3577,7 +3581,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#xjjstucsjb .gt_grand_summary_row {
+#jhxhaaqzjw .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -3586,7 +3590,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xjjstucsjb .gt_first_grand_summary_row {
+#jhxhaaqzjw .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3595,7 +3599,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#xjjstucsjb .gt_last_grand_summary_row_top {
+#jhxhaaqzjw .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3604,10 +3608,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#xjjstucsjb .gt_striped {
+#jhxhaaqzjw .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#xjjstucsjb .gt_table_body {
+#jhxhaaqzjw .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -3615,7 +3619,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#xjjstucsjb .gt_footnotes {
+#jhxhaaqzjw .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -3628,7 +3632,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#xjjstucsjb .gt_footnote {
+#jhxhaaqzjw .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -3636,7 +3640,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xjjstucsjb .gt_sourcenotes {
+#jhxhaaqzjw .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -3649,64 +3653,64 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#xjjstucsjb .gt_sourcenote {
+#jhxhaaqzjw .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xjjstucsjb .gt_left {
+#jhxhaaqzjw .gt_left {
 text-align: left;
 }
-#xjjstucsjb .gt_center {
+#jhxhaaqzjw .gt_center {
 text-align: center;
 }
-#xjjstucsjb .gt_right {
+#jhxhaaqzjw .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#xjjstucsjb .gt_font_normal {
+#jhxhaaqzjw .gt_font_normal {
 font-weight: normal;
 }
-#xjjstucsjb .gt_font_bold {
+#jhxhaaqzjw .gt_font_bold {
 font-weight: bold;
 }
-#xjjstucsjb .gt_font_italic {
+#jhxhaaqzjw .gt_font_italic {
 font-style: italic;
 }
-#xjjstucsjb .gt_super {
+#jhxhaaqzjw .gt_super {
 font-size: 65%;
 }
-#xjjstucsjb .gt_footnote_marks {
+#jhxhaaqzjw .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#xjjstucsjb .gt_asterisk {
+#jhxhaaqzjw .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#xjjstucsjb .gt_indent_1 {
+#jhxhaaqzjw .gt_indent_1 {
 text-indent: 5px;
 }
-#xjjstucsjb .gt_indent_2 {
+#jhxhaaqzjw .gt_indent_2 {
 text-indent: 10px;
 }
-#xjjstucsjb .gt_indent_3 {
+#jhxhaaqzjw .gt_indent_3 {
 text-indent: 15px;
 }
-#xjjstucsjb .gt_indent_4 {
+#jhxhaaqzjw .gt_indent_4 {
 text-indent: 20px;
 }
-#xjjstucsjb .gt_indent_5 {
+#jhxhaaqzjw .gt_indent_5 {
 text-indent: 25px;
 }
-#xjjstucsjb .katex-display {
+#jhxhaaqzjw .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#xjjstucsjb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jhxhaaqzjw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
@@ -3759,19 +3763,24 @@ height: 0px !important;
 </table>
 </div>
 </div>
+<div id="preparedness" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> Preparedness</h2>
+<p>From a preparedness perspective, respondents identified combating
+misinformation and maintaining public awareness as the top challenges
+for the next pandemic, followed by sustaining political commitment.</p>
+</div>
 </div>
 <div id="discussion" class="section level1" number="4">
 <h1><span class="header-section-number">4</span> Discussion</h1>
-<p>This population-based survey of adults in the Canton of Bern provides
-a snapshot of knowledge, attitudes, and practices related to
-vector-borne diseases (VBDs) in 2025. Overall, the public demonstrated
-good foundational understanding of vector concepts and strong
-recognition of ticks and mosquitoes as disease transmitters. However,
-knowledge was uneven across diseases: items involving tick-borne
-encephalitis (TBE) and Lyme disease were answered correctly by large
-majorities, while several mosquito-borne diseases, notably West Nile
-fever and chikungunya, were frequently misclassified or mismatched to
-their vectors. These gaps persisted even among respondents who otherwise
+<p>This population-based survey of adults in the canton of Bern provides
+a snapshot of knowledge, attitudes, and practices related to VBDs in
+2025. Overall, the public demonstrated good understanding of vector
+concepts and strong recognition of ticks and mosquitoes as disease
+transmitters. However, knowledge was uneven across diseases: items
+involving TBE and Lyme disease were answered correctly by a large
+majority, while several mosquito-borne diseases, notably West Nile fever
+and chikungunya, were frequently misclassified or mismatched to their
+vectors. These gaps persisted even among respondents who otherwise
 scored highly on vector identification and on classifying non-vector
 diseases (influenza and measles) correctly, suggesting disease-specific
 blind spots rather than general confusion about the vector concept.</p>
@@ -3786,7 +3795,7 @@ limited awareness of potential mosquito-borne disease risks could help
 explain the selective knowledge gaps observed in classification and
 matching tasks.</p>
 <p>Individual preventive behaviors were widely reported and, for ticks,
-appeared well aligned with best practices: post-activity tick checks and
+appeared well-aligned with best practices: post-activity tick checks and
 protective clothing were common, and nearly half used repellents. For
 mosquitoes, repellents, protective clothing, and window screens were the
 dominant strategies. Elimination of standing water was less prevalent
@@ -3812,59 +3821,62 @@ be representative of the Swiss adult population, the educational profile
 observed among respondents deviated from national benchmarks.
 Specifically, the sample includes a higher proportion of individuals
 with tertiary education (notably Master’s and Doctorate degrees) and a
-lower proportion of respondents with vocational or upper-secondary
+lower proportion of respondents with apprenticeship or upper-secondary
 education, compared to the nationwide distribution from the Swiss
-Federal Statistical Office. This form of participation bias where
-individuals with higher education are more likely to engage in
-voluntary-based studies is a well-documented phenomenon in
-population-based surveys. Higher female participation has also been
-reported in such study designs which might explained the observed sex
-bias. (cite : <a href="https://doi.org/10.1093/eurpub/ckx151" class="uri">https://doi.org/10.1093/eurpub/ckx151</a>, <a href="https://doi.org/10.1093/eurpub/ckx151" class="uri">https://doi.org/10.1093/eurpub/ckx151</a>). The web-based
-design and the observed sociodemographic profile may limit
-generalizability to harder-to-reach populations. Some items had missing
-data, and a subset of analyses relied on reduced denominators (e.g.,
-N=709 for test items, N=556 for the composite score), which could
-introduce selection effects if completion correlated with knowledge.
-Self-reported exposures and behaviors are also subject to recall biases.
-Finally, the restriction to the Bernese cantonal population prevents
-from exploring regional variations in the swiss population with regard
-to their knowledge, attitude and practice concerning vector-borne
-disease.</p>
+Federal Statistical Office <span class="citation">(<a href="#ref-HighestCompletedEducation2025"><span>“Highest Completed
+Education by Canton - 1970-2023 <span></span> <span>Table</span>”</span>
+2025</a>)</span>. This form of participation bias where individuals with
+higher education are more likely to engage in voluntary-based studies is
+a well-documented phenomenon in population-based surveys. Higher female
+participation has also been reported in such study designs which might
+explained the observed sex bias. <span class="citation">Reinikainen et
+al. (<a href="#ref-reinikainenParticipationRatesEducational2018">2018</a>)</span>.
+The web-based design and the observed sociodemographic profile may limit
+generalizability to the general population. Some items had missing data,
+and a subset of analyses relied on reduced denominators (e.g., N=709 for
+test items, N=556 for the composite score), which could introduce
+selection effects if completion correlated with knowledge. Self-reported
+exposures and behaviors are also subject to recall biases. Finally, the
+restriction to the Bernese cantonal population prevents from exploring
+regional variations in the Swiss population with regard to their
+knowledge, attitude and practice concerning vector-borne disease.</p>
 <p>This study is globally consistent with previous results. A study
-conducted in 2015 in Neuchâtel (cite <a href="https://doi.org/10.1186/s12889-015-1539-2" class="uri">https://doi.org/10.1186/s12889-015-1539-2</a>) investigating
-the adoption of preventive behavior regarding ticks reported high uptake
-of personal protection. 57% of the total population reported performing
-tick checks after outdoor activities, 53% reported wearing protective
-clothing, and 29% reported using tick repellents. These levels are lower
-than those observed in our survey of the Bernese population, where 74%
-reported tick checks, 67% protective clothing, and 48% repellent use.
-The discrepancy might reflect regional discrepancy or an evolution in
-the interest in tick preventive measures over the last ten years.
+conducted in 2015 in Neuchâtel <span class="citation">(<a href="#ref-aenishaenslinFactorsAssociatedPreventive2015a">Aenishaenslin
+et al. 2015</a>)</span> investigating the adoption of preventive
+behavior regarding ticks reported high uptake of personal protection:
+57% of the total population reported performing tick checks after
+outdoor activities, 53% reported wearing protective clothing, and 29%
+reported using tick repellents. These levels are lower than those
+observed in our survey of the Bernese population, where 74% reported
+tick checks, 67% protective clothing, and 48% repellent use. The
+discrepancy might reflect regional discrepancy or an evolution in the
+interest in tick preventive measures over the last ten years.
 Interestingly, when authors restricted their analysis to individuals
 aware of Lyme disease, reported adoption of tick checks and protective
 clothing became higher than in the present survey. For mosquitoes, a
-French survey (cite <a href="https://doi.org/10.1093/eurpub/ckae144.1926" class="uri">https://doi.org/10.1093/eurpub/ckae144.1926</a>) reported
-frequent use of repellents (36%), mosquito candles/coils (35%), and
-window nets (25%) as well as community-level practices such as removing
-standing water (37%). In comparison, our results show higher uptake of
-individual preventive behaviors, with 65% of Bernese respondents using
-repellents and 42% installing window screens, but lower uptake of
-community-level measures with 28% eliminating standing water. This
-suggests that in Switzerland, individual-level prevention is more widely
-adopted, while actions requiring sustained community engagement remain
-comparatively limited.</p>
+French survey <span class="citation">(<a href="#ref-ocampo-alvaradoFactorsAssociatedMosquitoborne2024">Ocampo-Alvarado,
+Dussault, and Mueller 2024</a>)</span> reported frequent use of
+repellents (36%), mosquito candles/coils (35%), and window nets (25%) as
+well as community-level practices such as removing standing water (37%).
+In comparison, our results show higher uptake of individual preventive
+behaviors, with 65% of Bernese respondents using repellents and 42%
+installing window screens, but lower uptake of community-level measures
+with 28% eliminating standing water. This suggests that in Switzerland,
+individual-level prevention is more widely adopted, while actions
+requiring sustained community engagement remain comparatively
+limited.</p>
 <p>From a preparedness perspective, respondents identified combating
 misinformation and maintaining public awareness as the top challenges
 for the next pandemic, followed by sustaining political commitment.
 These views, combined with the VBD findings, point to several actionable
 implications. First, targeted education should prioritize mosquito-borne
-disease literacy using concrete, locally relevant narratives and
+disease literacy using concrete, locally-relevant narratives and
 emphasizing practical household actions. Second, communications should
 continue reinforcing effective tick prevention behaviors. Third,
 public-level strategies could be framed to match existing preferences:
 scale up promotion of personal protection and low-complexity
 environmental measures, while involving communities early in dialogues
-about more complex or novel interventions (e.g., larviciding programs,
+about more complex or novel interventions (e.g., larvicide programs,
 genetic methods) to foster shared understanding and sustained community
 engagement.</p>
 </div>
@@ -3880,6 +3892,41 @@ engage communities around the rationale, benefits, and trade-offs of
 more complex control strategies. These steps can strengthen readiness
 for both current tick-borne risks and evolving mosquito-borne threats in
 a warming climate.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-aenishaenslinFactorsAssociatedPreventive2015a" class="csl-entry">
+Aenishaenslin, Cécile, Pascal Michel, André Ravel, Lise Gern, François
+Milord, Jean-Philippe Waaub, and Denise Bélanger. 2015. <span>“Factors
+Associated with Preventive Behaviors Regarding <span>Lyme</span> Disease
+in <span>Canada</span> and <span>Switzerland</span>: A Comparative
+Study.”</span> <em>BMC Public Health</em> 15 (1): 185. <a href="https://doi.org/10.1186/s12889-015-1539-2">https://doi.org/10.1186/s12889-015-1539-2</a>.
+</div>
+<div id="ref-cheungImpactNonresponseBias2017" class="csl-entry">
+Cheung, Kei Long, Peter M. ten Klooster, Cees Smit, Hein de Vries, and
+Marcel E. Pieterse. 2017. <span>“The Impact of Non-Response Bias Due to
+Sampling in Public Health Studies: <span>A</span> Comparison of
+Voluntary Versus Mandatory Recruitment in a <span>Dutch</span> National
+Survey on Adolescent Health.”</span> <em>BMC Public Health</em> 17 (1):
+276. <a href="https://doi.org/10.1186/s12889-017-4189-8">https://doi.org/10.1186/s12889-017-4189-8</a>.
+</div>
+<div id="ref-HighestCompletedEducation2025" class="csl-entry">
+<span>“Highest Completed Education by Canton - 1970-2023 <span></span>
+<span>Table</span>.”</span> 2025. <em>Federal Statistical Office</em>.
+https://www.bfs.admin.ch/asset/en/33927996.
+</div>
+<div id="ref-ocampo-alvaradoFactorsAssociatedMosquitoborne2024" class="csl-entry">
+Ocampo-Alvarado, J, J Dussault, and J Mueller. 2024. <span>“Factors
+Associated with Mosquito-Borne Disease Protective Behaviour in
+Metropolitan <span>France</span>.”</span> <em>European Journal of Public
+Health</em> 34 (Supplement_3): ckae144.1926. <a href="https://doi.org/10.1093/eurpub/ckae144.1926">https://doi.org/10.1093/eurpub/ckae144.1926</a>.
+</div>
+<div id="ref-reinikainenParticipationRatesEducational2018" class="csl-entry">
+Reinikainen, Jaakko, Hanna Tolonen, Katja Borodulin, Tommi Härkänen,
+Pekka Jousilahti, Juha Karvanen, Seppo Koskinen, et al. 2018.
+<span>“Participation Rates by Educational Levels Have Diverged During 25
+Years in <span>Finnish</span> Health Examination Surveys.”</span>
+<em>European Journal of Public Health</em> 28 (2): 237–43. <a href="https://doi.org/10.1093/eurpub/ckx151">https://doi.org/10.1093/eurpub/ckx151</a>.
+</div>
+</div>
 </div>
 
 
