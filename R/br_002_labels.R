@@ -7,7 +7,7 @@
 
 
 #extraction of the value of municipalities
-list_municipalities = read_excel("data/Gemeindestand.xlsx")
+list_municipalities = read_excel(file.path(controls$data_path,"Gemeindestand.xlsx"))
 list_municipalities=list_municipalities %>% filter(Kanton=="BE")
 value_commune=list_municipalities$`BFS Gde-nummer`
 names(value_commune)=list_municipalities$Gemeindename

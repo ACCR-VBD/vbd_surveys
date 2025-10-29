@@ -1,0 +1,316 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Cantonal Engagement in the Prevention and Control of Vector-Borne Diseases in Switzerland and Liechtenstein},
+  pdfauthor={Lilian Goepp, Nina Huber, Arlette Szelecsenyi, Julien Riou},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Cantonal Engagement in the Prevention and Control of Vector-Borne
+Diseases in Switzerland and Liechtenstein}
+\author{Lilian Goepp, Nina Huber, Arlette Szelecsenyi, Julien Riou}
+\date{2025-10-29}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\section{Introduction}\label{introduction}
+
+This survey is part of the health project within the research program
+``Decision Support for Dealing with Climate Change in Switzerland: a
+cross-sectoral approach'' (NCCS-Impacts). The goal of NCCS-Impacts is to
+develop practical climate-related services for the environment, the
+economy, and society. The associated health project, jointly led by the
+Federal Office of Public Health (FOPH) and the Federal Food Safety and
+Veterinary Office (FSVO), focuses on the impacts of heat, mycotoxins,
+and vector-borne diseases on both animal and human health.
+
+Regarding vector-borne diseases, a comprehensive risk assessment of
+current and future threats to humans and animals in Switzerland is being
+carried out. As part of this risk assessment, the project documents (1)
+the implementation of measures at the cantonal level in Switzerland and
+in Liechtenstein and (2) the state of knowledge about vector-borne
+diseases among the Bernese population. The national survey of
+departments of health, veterinary services, and the environment aims to
+gather information on engagement, specific measures, and collaboration
+with other stakeholders.
+
+\section{Methods}\label{methods}
+
+To assess the engagement of cantonal and Liechtenstein authorities with
+regard to vector-borne diseases, a cross-sectional survey was conducted
+among stakeholders in departments responsible for health, veterinary
+services, and environmental protection. In order to facilitate open
+communication and increase willingness to participate, the responses
+were not attributed to specific cantons (or Liechtenstein) or specific
+departments outside of the general area of human health, animal health
+and environment. Consequently, our analysis is limited in that it does
+not identify which canton or department provided specific information,
+nor does it allow for comparison between cantonal approaches.
+
+The survey was implemented using the REDCap electronic data capture
+platform (Research Electronic Data Capture, hosted by Unisanté) and
+administered via an online questionnaire. The questionnaire was
+distributed by email to targeted respondents within relevant cantonal
+and Liechtenstein services, based on their role and responsibilities in
+managing public health or environmental risks. Participation was
+voluntary. Participants were able to save their answers and come back to
+it later.
+
+The online survey was open from April 25 to June 6, 2025. A reminder was
+sent on May 16. The questionnaire included structured multiple-choice
+and checkbox items, as well as a small number of open-ended questions,
+covering topics such as awareness of vector-borne diseases, existing
+preventive measures, interdepartmental collaboration, and perceived
+needs or challenges. Respondents were ensured not to be identified.
+
+The full questionnaire is available online:
+\url{https://redcap.unisante.ch/surveys/?s=YKERXDNR4KAMWYP9}. Data were
+anonymised, exported securely from REDCap and described using R (version
+4.4.2). Open-text answers in multiple languages were summarized using
+GPT-4-turbo (June 2025 version). More details are available in the
+supplementary file.
+
+\section{Results}\label{results}
+
+\subsection{Participants}\label{participants}
+
+We conducted a nationwide survey across all cantons, initially
+contacting 88 general email addresses from the health, environment and
+veterinary departments. Following feedback to include neobiota-related
+stakeholders, we expanded the environmental sector contact list and sent
+reminder emails to additional addresses, bringing the total to 153
+contacts. Some recipients responded indicating their department was not
+responsible for the survey topics, and others redirected us to
+appropriate departments. Ultimately, we received 55 complete responses,
+covering all 26 Swiss cantons and Liechtenstein. The number of answers
+per canton varied between 1 and 3. Participants primarily belonged to
+human health cantonal departments (n= 22), followed by the animal health
+departments (n= 17) and the environment departments (n= 16).
+
+\subsection{Involvement and resources}\label{involvement-and-resources}
+
+Most participants (77\%) reported that their authority is currently
+involved in the implementation of measures or activities related to
+diseases transmitted by ticks and mosquitoes, such as public relations,
+monitoring, or control (Supplementary table 1). This was especially true
+in animal health departments (94\%). Among 12 of 55 respondents who
+indicated no current involvement, the most frequently cited reasons
+included a lack of financial or human resources (50\%) and a perception
+that such diseases are outside the authority's responsibilities (42\%).
+Regarding the existence of cantonal strategies or action plans, 49\% of
+respondents were aware of a plan for mosquito-borne diseases and 11\%
+for tick-borne diseases, while 33\% reported that no strategy exists in
+their canton. Around half of the respondents reported lack of human
+(49\%) and financial (55\%) resources
+
+\subsection{Concrete measures and
+activities}\label{concrete-measures-and-activities}
+
+Reported concrete measures and activities in the field of vector-borne
+diseases varied markedly between tick- and mosquito-borne diseases
+(Supplementary table 2). The most common actions cited for ticks
+included public information campaigns (22\%) and targeted awareness of
+professionals (13\%), with rare reports of monitoring (4\% passive; 0\%
+active) and vaccination advice (6\%). In contrast, involvement in
+mosquito-related activities was broader and more diverse: 40\% of
+respondents reported engaging in public relations and professional
+awareness efforts, while active and passive mosquito monitoring were
+cited by 36\% and 33\% of respondents, respectively. Nearly one-third
+(29\%) mentioned verifying sightings at new locations, and around
+15--18\% reported involvement in mosquito control on public or private
+land. Information and training activities were mentioned by 20\% of
+respondents. If the authority develops information, topics covered
+included vaccination (65\%), protection against bites (53\%), and
+elimination of breeding sites (47\%). Open-text responses further
+highlighted involvement in national vaccination campaigns (e.g., against
+tick-borne encephalitis for humans or bluetongue disease for ruminants
+and camelids), interdepartmental coordination, media engagement, and
+surveillance of animal diseases transmitted by ticks and mosquitoes as
+defined in the Animal Disease Ordinance. Participants reported using a
+wide range of channels to disseminate information, most commonly
+official websites, emails, flyers, and direct communication with
+veterinarians or animal owners. Additional methods included newsletters,
+social media, articles in agricultural media, information sessions, and
+training courses, often in collaboration with municipalities or other
+local actors.
+
+Respondents reported using a wide variety of guidelines, support
+materials, and reference documents to inform the development and
+implementation of measures against vector-borne diseases. The most
+frequently cited sources included technical instructions and documents
+from the Federal Food Safety and Veterinary Office (FSVO/OSAV/BLV), the
+Federal Office for the Environment (FOEN/OFE/BAFU), and the Federal
+Office of Public Health (FOPH/OFSP/BAG). Several participants also
+referred to cantonal materials (particularly from Ticino) as well as
+international resources such as those from the World Health Organization
+(WHO), World Organization for Animal Health (WOAH), or cross-border
+exchanges with France and Germany. Additionally, documents from academic
+or technical partners like Scuola universitaria professionale della
+Svizzera italiana (SUPSI) and Schweizerisches Tropen- und Public
+Health-Institut (SwissTPH) were mentioned. A few respondents reported
+using self-developed materials or relying on exchanges of expert
+knowledge, while others indicated they did not use any specific
+documents.
+
+Respondents identified a range of knowledge gaps within their
+authorities concerning both tick- and mosquito-borne diseases
+(Supplementary table 3). For tick-borne diseases, the most commonly
+cited areas of limited knowledge included disease management (20\%),
+followed by detection and prevention (both 18\%). Open-text responses
+often emphasized limited relevance or jurisdictional responsibility,
+while some highlighted a lack of resources or the need for clearer
+coordination and federally supported monitoring. For mosquito-borne
+diseases, the main knowledge gaps were in disease and vector management
+and control (36\%), as well as prevention (22\%) and detection (20\%).
+Several respondents pointed to uncertainties around the appropriate use
+of adulticides, sharing of responsibilities among stakeholders, and
+long-term control strategies. Regarding actual control measures against
+mosquitoes, over half of participants (53\%) reported that no active
+mosquito control measures are in place. Among those that did report
+activities, biological larvicides (25\%) and elimination of breeding
+sites (20\%) were the most common, while use of adulticides (11\%) and
+non-chemical larvicides (7\%) was less frequent. Open-text answers
+revealed a mix of pilot studies, public awareness campaigns, and
+experimental approaches like sterile insect techniques (SIT), often in
+collaboration with academic or federal partners. Some respondents
+indicated that control responsibilities lie with other agencies, such as
+municipalities or environmental offices.
+
+\subsection{Collaboration and
+coordination}\label{collaboration-and-coordination}
+
+Collaboration and coordination emerged as important themes in
+participants' responses regarding vector-borne disease control
+(Supplementary table 4). While 60\% of respondents reported active
+networks or exchanges with researchers and specialists for
+mosquito-borne diseases, only 20\% indicated such collaborations for
+tick-borne diseases, and over a quarter (27\%) reported no active
+exchange at all. Open-text responses highlighted needs for stronger
+inter-cantonal coordination, improved knowledge transfer, and harmonized
+federal guidelines, particularly for outbreak preparedness,
+surveillance, and the responsible use of control tools like biocides or
+adulticides. Several participants emphasized the importance of financial
+and human resource support, centralized information platforms, and a
+coordinated national monitoring strategy. Others cited challenges
+related to fragmented responsibilities across levels of government or
+lack of expertise and capacity. When asked about the integration of
+tick- and mosquito-borne disease issues into national and cantonal
+climate adaptation strategies, most respondents indicated limited
+awareness or engagement: 65\% were unsure about national-level
+integration, and 53\% did not know whether these issues were addressed
+in their own canton's strategy.
+
+\section{Conclusion}\label{conclusion}
+
+This national survey provides a first detailed overview of how cantonal
+authorities in Switzerland and Liechtenstein are engaged in the
+monitoring, prevention, and control of diseases transmitted by ticks and
+mosquitoes. While most respondents (77\%) reported some level of
+involvement in related activities, findings reveal notable disparities
+in resources, actions, and strategic alignment across cantons and
+sectors.
+
+Efforts appear more advanced for mosquito-borne diseases, with a broader
+range of implemented activities such as public awareness campaigns,
+professional training, and both active and passive monitoring. In
+contrast, tick-related activities were reported far less frequently,
+with more than half of respondents stating that their authority does not
+currently engage in any tick-related measures. Access to dedicated human
+or financial resources remains limited overall, particularly for
+tick-borne disease interventions.
+
+The survey highlights important knowledge gaps reported by cantonal
+authorities, particularly in the areas of disease management and
+pathogen detection. These gaps were reported more frequently for
+mosquito-borne than tick-borne diseases, reflecting the growing public
+health importance of invasive mosquito species. Despite these
+challenges, several authorities reported innovative or pilot measures,
+such as the use of biological larvicides and participation in sterile
+insect technique studies.
+
+Collaborative networks are more commonly established around
+mosquito-related issues, with 60\% of respondents indicating active
+exchanges with researchers and specialists in that domain, compared to
+only 20\% for tick-related issues. Many participants called for stronger
+coordination across cantons, improved knowledge transfer, and clearer
+federal leadership, especially regarding outbreak preparedness,
+standardized intervention strategies, and resource sharing.
+
+Finally, the survey underscores a general lack of integration of
+vector-borne diseases into climate adaptation strategies, both at the
+national and cantonal levels. Most respondents were unaware of whether
+these health issues are considered in existing climate strategies,
+suggesting a need to strengthen the connection between climate and
+vector-borne disease planning. Together, these findings point to the
+importance of reinforcing institutional capacity, inter-cantonal
+collaboration, and federal support in order to build a more coherent and
+effective response to the rising threat of vector-borne diseases under
+changing climatic conditions.
+
+\end{document}

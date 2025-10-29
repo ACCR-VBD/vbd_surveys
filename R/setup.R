@@ -14,7 +14,9 @@ pacman::p_load(tidyverse,
                labelled,
                readxl,
                gt,
-               gridExtra)
+               gridExtra,
+               leaflet,
+               rmapshaper)
 
 # set paths ---------------------------------------------------------------
 

@@ -3,23 +3,28 @@
 #' author: Lilian Goepp, Nina Huber, Arlette Szelecsenyi, Julien Riou
 #' date: "`r Sys.Date()`"
 #' output:
-#'   html_document:
+#'   pdf_document:
+#'     number_section: true
+#'     latex_engine: xelatex
+#'     fig_crop: false
 #'     toc: true
-#'     toc_float: true
-#'     number_sections: true
-#'     code_folding: hide
-#'     theme: cosmo
-#'     highlight: pygments
-#'     fig_width: 10
-#'     fig_height: 8
-#'     fig_caption: true
+#'     keep_tex: true
+#' geometry: margin=1in
+#' fontsize: 11pt
+#' knitr:
+#'   opts_chunk:
+#'     echo: false
+#'     message: false
+#'     warning: false
 #' ---
+#' 
 
-#+ results="hide", warnings="false", echo="false"
-analysis_date = "2025-09-04"
+#+ setup, include=FALSE
+knitr::opts_chunk$set(echo = FALSE, fig.path="figures/", dev="pdf")
+
+analysis_date = "2025-10-29"
 load(paste0("savepoints/savepoint_",analysis_date,"/shs_3.Rdata"))
 source("R/setup.R")
-knitr::opts_chunk$set(echo = FALSE)
 
 #' # Introduction
 #' 
@@ -46,7 +51,7 @@ knitr::opts_chunk$set(echo = FALSE)
 #' To assess the engagement of cantonal and Liechtenstein authorities with regard to vector-borne 
 #' diseases, a cross-sectional survey was conducted among stakeholders 
 #' in departments responsible for health, veterinary services, and 
-#' environmental protection. 
+#' environmental protection. In order to facilitate open communication and increase willingness to participate, the responses were not attributed to specific cantons (or Liechtenstein) or specific departments outside of the general area of human health, animal health and environment. Consequently, our analysis is limited in that it does not identify which canton or department provided specific information, nor does it allow for comparison between cantonal approaches.
 #' 
 #' The survey was implemented using the REDCap electronic data capture platform 
 #' (Research Electronic Data Capture, hosted by Unisanté) and administered via 
@@ -69,6 +74,7 @@ knitr::opts_chunk$set(echo = FALSE)
 #' # Results
 #' 
 #' ## Participants
+#' 
 
 n_responses = nrow(shs_3)
 n_canton = length(unique(shs_3$canton))
@@ -81,7 +87,7 @@ n_dep = shs_3 %>%
   count() %>% 
   arrange(-n)
 
-#' Requests for participation were sent to X persons. A total of `r n_responses` complete responses were collected during the study period, 
+#' We conducted a nationwide survey across all cantons, initially contacting 88 general email addresses from the health, environment and veterinary departments. Following feedback to include neobiota-related stakeholders, we expanded the environmental sector contact list and sent reminder emails to additional addresses, bringing the total to 153 contacts. Some recipients responded indicating their department was not responsible for the survey topics, and others redirected us to appropriate departments. Ultimately, we received 55 complete responses,
 #' covering all `r n_canton-1` Swiss cantons and Liechtenstein. The number of answers per canton varied between `r min(n_per_canton$n)` 
 #' and `r max(n_per_canton$n)`. Participants primarily belonged to human health cantonal departments (n= `r n_dep$n[1]`), 
 #' followed by the animal health  departments (n= `r n_dep$n[2]`) and the environment departments (n= `r n_dep$n[3]`). 
@@ -128,10 +134,10 @@ if(FALSE) {
 
 #' Respondents reported using a wide variety of guidelines, support materials, and reference documents to inform the development and 
 #' implementation of measures against vector-borne diseases. The most frequently cited sources included technical instructions and 
-#' documents from the Federal Food Safety and Veterinary Office (OSAV/BLV), the Federal Office for the Environment (OFE/BAFU), and 
-#' the Federal Office of Public Health (OFSP/BAG). Several participants also referred to cantonal materials (particularly from Ticino) 
-#' as well as international resources such as those from the WHO, WOAH, or cross-border exchanges with France and Germany. Additionally, 
-#' documents from academic or technical partners like SUPSI and Swiss TPH were mentioned. A few respondents reported using self-developed 
+#' documents from the Federal Food Safety and Veterinary Office (FSVO/OSAV/BLV), the Federal Office for the Environment (FOEN/OFE/BAFU), and 
+#' the Federal Office of Public Health (FOPH/OFSP/BAG). Several participants also referred to cantonal materials (particularly from Ticino) 
+#' as well as international resources such as those from the World Health Organization (WHO), World Organization for Animal Health (WOAH), or cross-border exchanges with France and Germany. Additionally, 
+#' documents from academic or technical partners like Scuola universitaria professionale della Svizzera italiana (SUPSI) and Schweizerisches Tropen- und Public Health-Institut (SwissTPH) were mentioned. A few respondents reported using self-developed 
 #' materials or relying on exchanges of expert knowledge, while others indicated they did not use any specific documents.
 #' 
 #' Respondents identified a range of knowledge gaps within their authorities concerning both tick- and mosquito-borne diseases (Supplementary table 3). 

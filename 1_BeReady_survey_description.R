@@ -18,7 +18,7 @@
 #' ---
 
 #+ results="hide", warnings="false", echo="false"
-analysis_date = "2025-09-04"
+analysis_date = "2025-10-29"
 load(paste0("savepoints/savepoint_",analysis_date,"/brs_3.Rdata"))
 source("R/setup.R")
 knitr::opts_chunk$set(echo = FALSE)
@@ -32,12 +32,11 @@ set_gtsummary_theme(list(
 #' (“Decision Support for Dealing with Climate Change in Switzerland: a cross-sectoral approach”), 
 #' which develops climate-related services for the environment, the economy, and society. Within this 
 #' framework, the health project jointly led by the Federal Office of Public Health (FOPH) and the 
-#' Federal Food Safety and Veterinary Office (FSVO) addresses heat, mycotoxins, and vector-borne diseases in humans and animals. 
-#' (VBDs).
+#' Federal Food Safety and Veterinary Office (FSVO) addresses heat, mycotoxins, and vector-borne diseases (VBDs) in humans and animals.
 #' 
 #' A comprehensive risk assessment of current and future VBD threats to humans and animals in Switzerland is 
 #' being carried out as part of this effort. It includes documenting both the implementation of measures by 
-#' cantonal authorities and the knowledge, attitude and practice (KAP) concerning vector-borne diseases among the Bernese population. 
+#' cantonal authorities and the knowledge, attitude and practice (KAP) concerning VBDs among the Bernese population. 
 #' The general population survey was embedded in the BEready cohort study at the University of Bern. 
 #' BEready is a long-term study started in 2021 involving households across the canton of Bern, designed to generate data on 
 #' infectious diseases and improve preparedness for future health threats. In this context, the survey 
@@ -52,7 +51,7 @@ set_gtsummary_theme(list(
 #' increasing opportunities for human–vector contacts and thus epidemic risk.
 #'
 #' Individual preventive measures are essential to limit the transmission of these diseases. 
-#' Public awareness and knowledge are therefore important factors in planning and implementing 
+#' Public familiarity and knowledge are therefore important factors in planning and implementing 
 #' public health actions. By collecting data on how Bernese residents perceive these risks and protect 
 #' themselves, this survey assesses the population’s level of preparedness in the face of this emerging 
 #' threat. Understanding current behaviors and perceptions will support the development of effective communication 
@@ -77,28 +76,26 @@ set_gtsummary_theme(list(
 #' to the internet (Wi-Fi, fixed, or mobile) and a personal email address was required. Sufficient language 
 #' proficiency to understand, speak, read, and write in German, French, and/or English was required. 
 #' Individuals were excluded if they had a planned move outside the canton of Bern during the study period. 
-#' As the VBD module of the questionnaire was only provided to adults, 
-#' children were not included in this report. 
 #' 
 #' At inclusion, participants have a brief physical checkup and give a blood sample. 
 #' Immediately after the initial visit and annually thereafter, participants complete an online questionnaire 
 #' about their current state of health and factors that may make them more susceptible to infections 
-#' or protect against them, including their knowledge, attitude and practice concerning vector-borne diseases. 
+#' or protect against them, including their knowledge, attitude and practice concerning VBDs. 
 #' Participation in BEready is always voluntary. Participants may leave the study at any time, and BEready 
 #' complies with Swiss legislation and applicable international guidelines. The study was reviewed and approved 
 #' by the responsible Ethics Committee. All collected data are processed under strict data-protection standards.
 #' 
 #' The questionnaire design followed a structured, multi-stage approach to assess public knowledge of 
-#' vector-borne diseases and their transmission, incorporating both awareness and comprehension measures. 
+#' VBDs and their transmission, incorporating both familiarity and comprehension measures. 
 #' In the first stage, respondents were presented with three items to determine whether they had 
 #' previously encountered the relevant concepts or understood the underlying concepts as follows.
-#' 1) An introductory text provided respondents with a definition of vector-borne diseases and the fact 
+#' 1) An introductory text provided respondents with a definition of VBDs and the fact 
 #' that tick-borne encephalitis is a disease transmitted by ticks. Respondents were subsequently asked to 
 #' classify tick-borne encephalitis as vector-borne or not, serving as an initial measure of their 
 #' conceptual understanding. 
-#' 2) A disease awareness component, capturing whether respondents reported prior exposure to the names 
+#' 2) A disease familiarity component, capturing whether respondents reported prior exposure to the names 
 #' of particular diseases.
-#' 3) A vector awareness component, capturing whether they reported prior exposure to the names of specified organisms. 
+#' 3) A vector familiarity component, capturing whether they reported prior exposure to the names of specified organisms. 
 #' In the second stage, participants completed classification exercises in which they were required to identify, 
 #' from structured lists, which diseases they believed were vector-borne and which organisms 
 #' functioned as vectors. 
@@ -108,7 +105,7 @@ set_gtsummary_theme(list(
 #' systematic misconceptions, distractor items were intentionally included: measles 
 #' and influenza in the disease set, and wasps and bed bugs in the organism set. These items, 
 #' while familiar to most respondents, do not fall within the epidemiological definition of 
-#' vector-borne diseases or recognized disease vectors, and thus provided a validity check. 
+#' VBDs or recognized disease vectors, and thus provided a validity check. 
 #' Results from the first stage as well as logical contradiction in the second stage were used to filter out
 #' unreliable answers.
 #' 
@@ -133,10 +130,10 @@ set_gtsummary_theme(list(
 #'
 #' When asked to classify TBE, which is transmitted through tick bites, 
 #' 78% of respondents correctly recognized it as a vector-borne disease, 11% incorrectly applied the classification, and 11% stated they did not know. This indicates a generally strong but not 
-#' universal grasp of the basic definition of vector-borne diseases among the surveyed population. 
-#' Awareness of diseases varied considerably. Measles (95%), influenza (94%), and dengue (88%) 
+#' universal grasp of the basic definition of VBDs among the surveyed population. 
+#' Familiarity with diseases varied considerably. Measles (95%), influenza (94%), and dengue (88%) 
 #' were the most widely recognized. Zika (62%) and Lyme disease (76%) were moderately well-known while West 
-#' Nile fever (29%) and chikungunya (20%) were far less familiar. Awareness of potential vectors was 
+#' Nile fever (29%) and chikungunya (20%) were far less familiar. Familiarity with potential vectors was 
 #' consistently high, with ticks (96%), mosquitoes (96%), wasps (93%), and bed bugs (92%) all classified correctly 
 #' by most respondents. The corresponding table is provided in the Supplementary Materials.
 #'
@@ -160,7 +157,7 @@ filtering_var[is.na(filtering_var)]=F
 #' public health discourse. The corresponding tables are reported in Supplementary Material.
 #' 
 #' The knowledge score, defined as the proportion of correct answers across three test items
-#' assessing recognition of vector-borne diseases, identification of vectors, and disease–vector matching,
+#' assessing recognition of VBDs, identification of vectors, and disease–vector matching,
 #' showed clear variation within the sample. Among the 556 respondents with complete answers to all items, 39 individuals (7%) scored below 50%,
 #' indicating low overall knowledge. At the other end of the spectrum, 80 respondents (14%) achieved a
 #' perfect score of 100%, demonstrating complete accuracy across all items. The majority of participants fell
@@ -198,7 +195,7 @@ brs_3 %>%
     )
   )
 
-#' ## Individual prevention 
+#' ## Individual prevention measures
 #' 
 #' Most respondents reported adopting at least one protective measure against tick bites, particularly checking for and 
 #' removing ticks after outdoor activities (74%) and wearing protective clothing (67%). The use of insect repellent was also commonly reported (48%).
@@ -236,7 +233,7 @@ brs_3 %>%
 
 #' ## Mitigation strategies and vector control 
 #'
-#' When asked about effective public-level interventions, respondents placed greater confidence 
+#' When asked about effective interventions, respondents placed greater confidence 
 #' in personal protective measures than in environmental or ecological strategies. For ticks, 
 #' 79% endorsed promoting personal protection, while biological control (38%) was the next most supported. 
 #' Measures targeting wildlife or habitat management received little support (<6%). For mosquitoes, 
@@ -244,6 +241,10 @@ brs_3 %>%
 #' by biological control (41%) and traps (36%). Genetically modified mosquitoes gained support from 18%. 
 #' Overall, confidence leaned strongly toward individual-level protection and simple 
 #' environmental measures over systemic ecological or technological interventions.
+#' While the findings suggest greater support for individual-level protective measures, 
+#' this pattern may also reflect greater familiarity or perceived agency, rather than actual 
+#' confidence in efficacy. Broader ecological or technological interventions may be under-recognized 
+#' by the public, and thus under-represented in responses due to lower awareness or understanding.
 
 #+ attitudes-table
 brs_3 %>%
@@ -272,13 +273,15 @@ brs_3 %>%
   )
 
 #'
-#' ## Perception of risk
+#' ## Perceived relevance of VBDs
 #' 
 #' Most respondents considered tick-borne encephalitis (72%) and Lyme disease (61%) 
 #' to be current health problems in Switzerland, whereas few perceived West Nile fever (2%), 
 #' chikungunya (2%), Zika (6%), or dengue (10%) as current problems. Regarding the need 
 #' for vector control measures in Switzerland, 48% answered “yes” 20% “no” and 31% “don’t know” 
 #' indicating substantial perceived relevance but also considerable uncertainty.
+#' 
+#TODO: I would like to have some more info on this section. what was asked to assess preparedness?
 
 brs_3 %>% select(starts_with("bl_vbd_dis_problem___"),bl_vbd_meth_yn) %>%
   tbl_summary(missing = "always",
@@ -303,8 +306,12 @@ brs_3 %>% select(starts_with("bl_vbd_dis_problem___"),bl_vbd_meth_yn) %>%
 
 #' ## Preparedness
 #' 
-#' From a preparedness perspective, respondents identified combating misinformation and maintaining public 
-#' awareness as the top challenges for the next pandemic, followed by sustaining political commitment. 
+#' When asked about 
+#' future pandemic preparedness, respondents highlighted the importance of combating 
+#' misinformation (69.7%) and maintaining public awareness (68.2%) and government commitment (55.8%). 
+#' Other challenges mentioned included strengthening pathogen surveillance (35.4%) and addressing 
+#' regulatory barriers in vaccine production (28.6%), while climate change mitigation (18.2%) and 
+#' ventilation improvements (12.8%) were less commonly emphasized.
 #' 
 
 #' # Discussion
@@ -319,12 +326,12 @@ brs_3 %>% select(starts_with("bl_vbd_dis_problem___"),bl_vbd_meth_yn) %>%
 #' on classifying non-vector diseases (influenza and measles) correctly, suggesting disease-specific blind 
 #' spots rather than general confusion about the vector concept.
 #' 
-#' Perceived risk aligned with this pattern. Most respondents viewed TBE and Lyme disease as current 
+#' Perceived relevance aligned with this pattern. Most respondents viewed TBE and Lyme disease as current 
 #' health problems in Switzerland, while only small minorities considered West Nile fever, chikungunya, 
 #' Zika, or dengue to be present concerns. Self-reported exposure also reflected local exposure: 
 #' tick bites were uncommon for most, whereas mosquito bites in summer were routine, with a majority 
 #' reporting at least weekly bites. This combination of frequent nuisance exposure to mosquitoes but limited 
-#' awareness of potential mosquito-borne disease risks could help explain the selective knowledge gaps observed 
+#' familiarity with potential mosquito-borne disease risks could help explain the selective knowledge gaps observed 
 #' in classification and matching tasks. 
 #' 
 #' Individual preventive behaviors were widely reported and, for ticks, appeared well-aligned with best practices: 
@@ -354,7 +361,11 @@ brs_3 %>% select(starts_with("bl_vbd_dis_problem___"),bl_vbd_meth_yn) %>%
 #' profile may limit generalizability to the general population. Some items had missing 
 #' data, and a subset of analyses relied on reduced denominators (e.g., N=709 for test items, N=556 for 
 #' the composite score), which could introduce selection effects if completion correlated with knowledge. 
-#' Self-reported exposures and behaviors are also subject to recall biases. Finally, the restriction to the Bernese 
+#' Self-reported exposures and behaviors are also subject to recall biases. We only measured familiarity with vectors and diseases, not awareness, 
+#' which includes knowledge of cause, recognition of health implications, knowledge of protective behaviors, and perceived susceptibility. 
+#' Related to this, we do not know if wrong answers can be attributed to lack of knowledge from the participant or 
+#' insufficient explanation in the questionnaire.
+#' Finally, the restriction to the Bernese 
 #' cantonal population prevents from exploring regional variations in the Swiss population with regard to their
 #' knowledge, attitude and practice concerning vector-borne disease.
 #' 
